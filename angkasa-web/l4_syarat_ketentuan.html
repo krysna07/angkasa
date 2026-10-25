@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-error-container":"#93000a","primary":"#15102f","on-surface":"#1b1830","surface-dim":"#dcd6f7","background":"#fcf8ff","on-secondary":"#ffffff","tertiary-fixed-dim":"#c5c2ee","on-tertiary-fixed":"#191739","outline-variant":"#c9c5ce","secondary-container":"#aba7ff","error-container":"#ffdad6","primary-fixed-dim":"#c9c1ea","surface":"#fcf8ff","on-tertiary-container":"#8e8cb5","surface-tint":"#605a7d","on-tertiary":"#ffffff","on-secondary-fixed-variant":"#403c8d","secondary-fixed-dim":"#c4c0ff","secondary-fixed":"#e3dfff","on-primary":"#ffffff","on-secondary-fixed":"#130661","tertiary-container":"#262548","on-primary-fixed-variant":"#484264","on-tertiary-fixed-variant":"#444367","on-secondary-container":"#3d3889","primary-fixed":"#e6deff","surface-container":"#f1ebff","tertiary-fixed":"#e3dfff","surface-container-lowest":"#ffffff","on-surface-variant":"#48464d","surface-container-high":"#ebe5ff","on-error":"#ffffff","inverse-primary":"#c9c1ea","primary-container":"#2a2545","on-primary-container":"#938cb2","inverse-surface":"#312d47","on-primary-fixed":"#1c1736","secondary":"#5854a6","surface-container-highest":"#e5deff","on-background":"#1b1830","inverse-on-surface":"#f4eeff","error":"#ba1a1a","outline":"#79767e","surface-container-low":"#f7f1ff","surface-bright":"#fcf8ff","surface-variant":"#e5deff","tertiary":"#121032"},borderRadius:{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},spacing:{"gutter":"1.5rem","space-lg":"1.5rem","margin":"3rem","gutter-mobile":"1rem","space-xl":"2.5rem","margin-mobile":"1.25rem","space-xs":"0.25rem","space-sm":"0.5rem","space-md":"1rem"},fontFamily:{"headline-lg":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"title-lg":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"]},fontSize:{"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.015em","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"500"}],"title-md":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"600"}],"title-lg":["20px",{"lineHeight":"28px","letterSpacing":"-0.005em","fontWeight":"600"}],"display-lg-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"300"}],"display-lg":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"300"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"500"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(42,37,69,0.04)]"><div class="h-20 w-full max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-space-md"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[22px]">auto_awesome</span></div><div class="flex flex-col"><span class="font-title-lg text-title-lg text-primary tracking-tight">Angkasa</span><span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase font-semibold">PHOTOSTUDIO</span></div></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-primary font-title-md"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="beranda" href="#">Beranda</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="fitur" href="#">Fitur</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="paket-dan-harga" href="#">Paket &amp; Harga</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="lokasi-booth" href="#">Lokasi Booth</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="kontak" href="#">Kontak</a></nav><div class="flex items-center gap-3"><a class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-full font-label-lg text-label-lg text-primary hover:bg-surface-container-high transition-colors" data-path="masuk-admin" href="#">Masuk Admin</a><a class="inline-flex items-center justify-center px-6 py-2.5 rounded-full font-label-lg text-label-lg bg-primary text-on-primary hover:bg-primary-container shadow-[0_8px_24px_-4px_rgba(42,37,69,0.35)] transition-all" data-path="mulai-foto" href="#">Mulai Foto</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Atmospheric Ambient Glows -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[900px] h-[360px] bg-gradient-to-b from-secondary-fixed/40 via-surface-container-high/30 to-transparent blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-96 right-10 w-96 h-96 bg-secondary-container/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<!-- Header Section -->
+<section class="max-w-6xl mx-auto px-6 pt-12 pb-8">
+<div class="flex flex-col items-start gap-4">
+<!-- Pill Badge -->
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary-fixed/70 text-on-secondary-fixed-variant shadow-sm backdrop-blur-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+<span class="font-label-sm text-label-sm tracking-wider uppercase font-semibold">Ketentuan Layanan Kiosk &amp; Pengguna</span>
+</div>
+<!-- Large Title -->
+<h1 class="font-display-lg text-display-lg text-primary tracking-tight font-light mt-1">
+          Syarat &amp; <span class="text-secondary font-normal">Ketentuan</span>
+</h1>
+<!-- Metadata & Status Tag -->
+<div class="flex flex-wrap items-center gap-3 pt-1 text-on-surface-variant font-body-md text-body-md">
+<div class="flex items-center gap-1.5 bg-surface-container-lowest/80 px-3.5 py-1 rounded-full shadow-xs">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-md text-label-md text-on-surface font-medium">Versi 1.2</span>
+</div>
+<span>•</span>
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">schedule</span>
+            Terakhir diperbarui 19 Okt 2025
+          </span>
+<span>•</span>
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">location_on</span>
+            Berlaku untuk seluruh bilik kiosk terdaftar
+          </span>
+</div>
+<!-- Introductory Description -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl leading-relaxed mt-2">
+          Selamat datang di Angkasa Photobooth. Dengan menggunakan layanan bilik foto kiosk interaktif maupun fitur phone companion kami, Anda dianggap menyetujui seluruh ketentuan operasional di bawah ini. Harap membaca setiap klausul dengan seksama untuk menjamin pengalaman berfoto yang menyenangkan dan aman.
+        </p>
+<!-- Quick Summary Ribbon -->
+<div class="w-full mt-4 p-5 rounded-2xl bg-surface-container-low shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-3.5">
+<div class="w-11 h-11 rounded-full bg-secondary-fixed flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">gavel</span>
+</div>
+<div>
+<p class="font-title-md text-title-md text-primary font-semibold">Ringkasan Utama</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Cetak fisik otomatis 2 strip, retensi softcopy 24 jam, dan verifikasi instan via QRIS.</p>
+</div>
+</div>
+<a class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md shadow-sm transition-all flex-shrink-0" href="#section-1">
+<span>Pelajari Klausul</span>
+<span class="material-symbols-outlined text-[16px]">arrow_downward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Two-Column Layout -->
+<div class="max-w-6xl mx-auto px-6 py-6 pb-24 flex flex-col lg:flex-row gap-12 items-start">
+<!-- Left Column (Sticky Sidebar ~280px) -->
+<aside class="w-full lg:w-[280px] lg:sticky lg:top-28 flex flex-col gap-6 flex-shrink-0">
+<!-- Table of Contents Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm">
+<div class="flex items-center gap-2.5 mb-5 pb-3">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed/60 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+</div>
+<h2 class="font-title-md text-title-md text-primary font-semibold">Daftar Isi</h2>
+</div>
+<nav class="flex flex-col gap-1.5" id="toc-nav">
+<a class="toc-link group flex items-center justify-between px-3.5 py-2.5 rounded-full bg-secondary-fixed text-primary font-label-lg text-label-lg transition-all" data-toc-target="section-1" href="#section-1">
+<span class="flex items-center gap-2.5 truncate">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span>1. Penggunaan Layanan</span>
+</span>
+<span class="material-symbols-outlined text-[16px] text-primary">chevron_right</span>
+</a>
+<a class="toc-link group flex items-center justify-between px-3.5 py-2.5 rounded-full text-on-surface-variant hover:text-primary hover:bg-surface-container-low font-label-lg text-label-lg transition-all" data-toc-target="section-2" href="#section-2">
+<span class="flex items-center gap-2.5 truncate">
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span>2. Pembayaran</span>
+</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:text-primary">chevron_right</span>
+</a>
+<a class="toc-link group flex items-center justify-between px-3.5 py-2.5 rounded-full text-on-surface-variant hover:text-primary hover:bg-surface-container-low font-label-lg text-label-lg transition-all" data-toc-target="section-3" href="#section-3">
+<span class="flex items-center gap-2.5 truncate">
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span>3. Hasil Foto &amp; Unduh</span>
+</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:text-primary">chevron_right</span>
+</a>
+<a class="toc-link group flex items-center justify-between px-3.5 py-2.5 rounded-full text-on-surface-variant hover:text-primary hover:bg-surface-container-low font-label-lg text-label-lg transition-all" data-toc-target="section-4" href="#section-4">
+<span class="flex items-center gap-2.5 truncate">
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span>4. Konten Dekorasi</span>
+</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:text-primary">chevron_right</span>
+</a>
+<a class="toc-link group flex items-center justify-between px-3.5 py-2.5 rounded-full text-on-surface-variant hover:text-primary hover:bg-surface-container-low font-label-lg text-label-lg transition-all" data-toc-target="section-5" href="#section-5">
+<span class="flex items-center gap-2.5 truncate">
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span>5. Perubahan Ketentuan</span>
+</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:text-primary">chevron_right</span>
+</a>
+</nav>
+<div class="mt-6 pt-4 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Estimasi baca: ~4 menit</span>
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">translate</span> ID
+            </span>
+</div>
+</div>
+<!-- Customer Service / On-site Help Card -->
+<div class="bg-surface-container rounded-2xl p-6 shadow-sm flex flex-col gap-4 relative overflow-hidden">
+<div class="flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-on-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">support_agent</span>
+</div>
+<div>
+<p class="font-title-md text-title-md text-primary font-semibold">Bantuan di Bilik?</p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 leading-snug">
+                Mengalami kendala kertas printer macet atau scanner gagal membaca?
+              </p>
+</div>
+</div>
+<div class="bg-surface-container-lowest/80 rounded-xl p-3 flex items-center gap-3">
+<span class="material-symbols-outlined text-[20px] text-secondary">sensors</span>
+<div class="text-left">
+<p class="font-label-md text-label-md text-primary font-semibold">Kiosk Monitoring: Aktif</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Respon operator &lt; 3 menit</p>
+</div>
+</div>
+<button class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-full bg-primary text-on-primary font-label-lg text-label-lg hover:bg-primary-container shadow-md transition-all active:scale-[0.98]" onclick="alert('Panggilan bantuan telah diteruskan ke petugas kiosk terdekat. Mohon tunggu sejenak.')" type="button">
+<span class="material-symbols-outlined text-[18px]">notifications_active</span>
+<span>Panggil Operator Booth</span>
+</button>
+</div>
+<!-- Download PDF Legal Document Link -->
+<div class="px-3 py-2 flex items-center justify-between text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+            Salinan Dokumen Resmi
+          </span>
+<a class="text-secondary font-semibold hover:underline flex items-center gap-0.5" href="#" onclick="window.print(); return false;">
+            Cetak PDF
+          </a>
+</div>
+</aside>
+<!-- Right Column (Content Stream) -->
+<main class="flex-1 w-full flex flex-col gap-10">
+<!-- SECTION 1 -->
+<section class="scroll-mt-28 bg-surface-container-lowest rounded-3xl p-8 lg:p-10 shadow-sm relative transition-all" id="section-1">
+<!-- Section Tag & Title -->
+<div class="flex items-center justify-between gap-4 mb-6 pb-4">
+<div class="flex items-center gap-3.5">
+<div class="w-10 h-10 rounded-2xl bg-secondary-fixed flex items-center justify-center text-primary font-title-lg text-title-lg font-bold">
+                1
+              </div>
+<div>
+<h2 class="font-headline-md text-headline-md text-primary font-semibold tracking-tight">Penggunaan Layanan</h2>
+<p class="font-label-md text-label-md text-on-surface-variant">Aturan operasional dan tata tertib dalam bilik kiosk fisik</p>
+</div>
+</div>
+<span class="hidden sm:inline-flex px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+              Operasional Kiosk
+            </span>
+</div>
+<!-- Content Paragraphs & Points -->
+<div class="flex flex-col gap-5 text-on-surface-variant font-body-lg text-body-lg leading-relaxed">
+<p>
+              Layanan Angkasa Photobooth diselenggarakan melalui instalasi unit bilik otomatis (*self-service kiosk*) serta aplikasi pendamping mobile web. Dengan memulai sesi pada layar sentuh, Pengguna menyetujui seluruh tata tertib penggunaan sarana foto bersama:
+            </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-2">
+<div class="p-5 rounded-2xl bg-surface-container-low flex flex-col gap-2.5">
+<div class="flex items-center gap-2 text-primary font-title-md text-title-md font-semibold">
+<span class="material-symbols-outlined text-secondary text-[22px]">storefront</span>
+<span>Akses Booth Fisik</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-normal">
+                  Layanan photobooth beroperasi secara terbuka untuk umum di booth fisik terdaftar (seperti Booth #01 Grand Atrium Mall, Lantai UG) mengikuti jam operasional lokasi venue mitra.
+                </p>
+</div>
+<div class="p-5 rounded-2xl bg-surface-container-low flex flex-col gap-2.5">
+<div class="flex items-center gap-2 text-primary font-title-md text-title-md font-semibold">
+<span class="material-symbols-outlined text-secondary text-[22px]">group</span>
+<span>Kapasitas Ruang</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-normal">
+                  Setiap bilik foto dirancang dengan batas ideal maksimal <strong>4 hingga 6 orang</strong> demi keamanan sirkulasi udara, stabilitas instalasi studio, dan kenyamanan pemotretan bersama.
+                </p>
+</div>
+</div>
+<!-- Bullet List -->
+<ul class="flex flex-col gap-3.5 pl-1 mt-1">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5 flex-shrink-0">timer</span>
+<span>
+<strong>Batas Waktu Sesi:</strong> Pengguna wajib mematuhi countdown kuota waktu pose otomatis (rentang 5–8 detik per shot) dan instruksi lampu kilat studio yang terpampang secara visual pada antarmuka kiosk.
+                </span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-error text-[20px] mt-0.5 flex-shrink-0">do_not_touch</span>
+<span>
+<strong>Integritas Perangkat Keras:</strong> Dilarang keras mengguncang kabin bilik, membongkar periferal kamera, menarik kertas foto sebelum proses thermal-cut selesai, atau menutup sensor infra-merah kiosk.
+                </span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5 flex-shrink-0">clean_hands</span>
+<span>
+<strong>Ketertiban Area:</strong> Pengguna dilarang membawa makanan berkuah, minuman terbuka tanpa penutup, maupun bahan kimia yang berisiko merusak meja sentuh kios dan alas studio.
+                </span>
+</li>
+</ul>
+</div>
+</section>
+<!-- SECTION 2 -->
+<section class="scroll-mt-28 bg-surface-container-lowest rounded-3xl p-8 lg:p-10 shadow-sm relative transition-all" id="section-2">
+<div class="flex items-center justify-between gap-4 mb-6 pb-4">
+<div class="flex items-center gap-3.5">
+<div class="w-10 h-10 rounded-2xl bg-secondary-fixed flex items-center justify-center text-primary font-title-lg text-title-lg font-bold">
+                2
+              </div>
+<div>
+<h2 class="font-headline-md text-headline-md text-primary font-semibold tracking-tight">Pembayaran</h2>
+<p class="font-label-md text-label-md text-on-surface-variant">Struktur tarif paket, metode verifikasi, dan kebijakan refund</p>
+</div>
+</div>
+<span class="hidden sm:inline-flex px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+              Transaksi &amp; Tarif
+            </span>
+</div>
+<div class="flex flex-col gap-6 text-on-surface-variant font-body-lg text-body-lg leading-relaxed">
+<p>
+              Setiap pemotretan memerlukan pra-pembayaran penuh yang diverifikasi sebelum tirai lensa dibuka dan urutan hitung mundur foto dimulai:
+            </p>
+<!-- Pricing Breakdown Visual Box -->
+<div class="p-6 rounded-2xl bg-surface-container-low flex flex-col gap-4">
+<p class="font-title-md text-title-md text-primary font-semibold flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">receipt_long</span>
+                Tarif Paket Resmi Angkasa Photobooth
+              </p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+<div class="p-4 rounded-xl bg-surface-container-lowest flex flex-col gap-1 shadow-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Paket Klasik</span>
+<span class="font-title-lg text-title-lg text-primary font-bold">Rp 25.000</span>
+<span class="font-body-md text-body-md text-on-surface-variant">4 Pose • 2 Strip Cetak</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-lowest flex flex-col gap-1 shadow-xs">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Paket Wedding</span>
+<span class="font-title-lg text-title-lg text-primary font-bold">Rp 30.000</span>
+<span class="font-body-md text-body-md text-on-surface-variant">3 Pose Elegan • 2 Strip</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-lowest flex flex-col gap-1 shadow-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Ulang Tahun</span>
+<span class="font-title-lg text-title-lg text-primary font-bold">Rp 35.000</span>
+<span class="font-body-md text-body-md text-on-surface-variant">6 Pose Pesta • 2 Strip</span>
+</div>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant italic">
+                *Tarif di atas bersifat final, sudah termasuk Pajak Pembangunan (PB1) dan hak unduh softcopy digital 300 DPI.
+              </p>
+</div>
+<!-- Detailed clauses -->
+<div class="flex flex-col gap-3.5">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5 flex-shrink-0">qr_code_2</span>
+<p>
+<strong>Metode Pembayaran Digital:</strong> Pembayaran diverifikasi seketika via QRIS Dinamis nasional (GoPay, OVO, ShopeePay, DANA, BCA Mobile, Livin') serta integrasi terminal nirkabel. Sesi akan otomatis terbuka saat status transaksi terverifikasi sukses.
+                </p>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5 flex-shrink-0">sync_problem</span>
+<p>
+<strong>Kebijakan Non-Refundable &amp; Kerusakan Hardware:</strong> Sesi yang telah dibayar dan dimulai tidak dapat dibatalkan atau dikembalikan dengan uang tunai. Namun, apabila terjadi kegagalan teknis mekanis (kertas macet, pita tinta habis, atau listrik padam), operator bilik akan memberikan kode voucher sesi ulang penuh tanpa biaya tambahan.
+                </p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3 -->
+<section class="scroll-mt-28 bg-surface-container-lowest rounded-3xl p-8 lg:p-10 shadow-sm relative transition-all" id="section-3">
+<div class="flex items-center justify-between gap-4 mb-6 pb-4">
+<div class="flex items-center gap-3.5">
+<div class="w-10 h-10 rounded-2xl bg-secondary-fixed flex items-center justify-center text-primary font-title-lg text-title-lg font-bold">
+                3
+              </div>
+<div>
+<h2 class="font-headline-md text-headline-md text-primary font-semibold tracking-tight">Hasil Foto &amp; Tautan Unduh</h2>
+<p class="font-label-md text-label-md text-on-surface-variant">Spesifikasi strip cetak fisik dan masa retensi cloud softcopy</p>
+</div>
+</div>
+<span class="hidden sm:inline-flex px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+              Keluaran Produk
+            </span>
+</div>
+<div class="flex flex-col gap-5 text-on-surface-variant font-body-lg text-body-lg leading-relaxed">
+<p>
+              Angkasa Photobooth memberikan dua keluaran utama untuk setiap transaksi yang berhasil diselesaikan di bilik kiosk kami:
+            </p>
+<!-- Product Split Card -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Physical Print -->
+<div class="p-6 rounded-2xl bg-surface-container-low flex flex-col justify-between gap-4">
+<div class="flex flex-col gap-2">
+<div class="w-9 h-9 rounded-full bg-secondary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">photo_library</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary font-semibold">Cetak Fisik Instan</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Bilik mencetak 2 rangkap strip foto berdimensi standar 5x15 cm (2x6 inci) menggunakan teknologi sublimasi pewarna anti-pudar (*dye-sublimation* tahan air dan sidik jari).
+                  </p>
+</div>
+<div class="flex items-center gap-2 text-secondary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>2 Salinan Termasuk</span>
+</div>
+</div>
+<!-- Digital Softcopy -->
+<div class="p-6 rounded-2xl bg-surface-container-low flex flex-col justify-between gap-4">
+<div class="flex flex-col gap-2">
+<div class="w-9 h-9 rounded-full bg-secondary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">cloud_download</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary font-semibold">Softcopy Digital 300 DPI</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Pengguna menerima kode QR di layar kiosk untuk mengunduh arsip foto format PNG resolusi tinggi tanpa watermark serta video klip stop-motion 3 detik.
+                  </p>
+</div>
+<div class="flex items-center gap-2 text-secondary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>Masa Simpan Cloud: 24 Jam</span>
+</div>
+</div>
+</div>
+<!-- Crucial Retention Warning -->
+<div class="p-5 rounded-2xl bg-surface-container border-l-4 border-secondary flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary text-[26px] flex-shrink-0 mt-0.5">info</span>
+<div class="flex flex-col gap-1">
+<p class="font-title-md text-title-md text-primary font-semibold">Batas Masa Retensi Cloud 24 Jam</p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                  Demi perlindungan privasi dan efisiensi penyimpanan terdesentralisasi, server kami secara otomatis menghapus softcopy digital setelah <strong>24 jam</strong> terhitung sejak invoice diterbitkan. Pastikan Anda dan rekan telah mengunduh berkas ke penyimpanan ponsel sebelum jangka waktu berakhir.
+                </p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4 -->
+<section class="scroll-mt-28 bg-surface-container-lowest rounded-3xl p-8 lg:p-10 shadow-sm relative transition-all" id="section-4">
+<div class="flex items-center justify-between gap-4 mb-6 pb-4">
+<div class="flex items-center gap-3.5">
+<div class="w-10 h-10 rounded-2xl bg-secondary-fixed flex items-center justify-center text-primary font-title-lg text-title-lg font-bold">
+                4
+              </div>
+<div>
+<h2 class="font-headline-md text-headline-md text-primary font-semibold tracking-tight">Konten Dekorasi Pengguna</h2>
+<p class="font-label-md text-label-md text-on-surface-variant">Etika penggunaan stiker, teks kustom, dan hak kekayaan intelektual</p>
+</div>
+</div>
+<span class="hidden sm:inline-flex px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+              Etika Konten
+            </span>
+</div>
+<div class="flex flex-col gap-5 text-on-surface-variant font-body-lg text-body-lg leading-relaxed">
+<p>
+              Melalui kanvas personalisasi kiosk dan fitur phone companion, pengguna dapat menambahkan stiker digital resmi, doodle kuas, serta keterangan teks khusus ke atas tata letak strip foto:
+            </p>
+<div class="flex flex-col gap-4">
+<div class="p-5 rounded-2xl bg-surface-container-low flex items-start gap-3.5">
+<span class="material-symbols-outlined text-secondary text-[22px] mt-0.5 flex-shrink-0">palette</span>
+<div class="flex flex-col gap-1">
+<span class="font-title-md text-title-md text-primary font-semibold">Aset Grafis Angkasa Studio</span>
+<span class="font-body-md text-body-md text-on-surface-variant">
+                    Seluruh stiker, frame washi tape, dan tipografi eksklusif yang disediakan dalam antarmuka adalah hak cipta Angkasa Photobooth yang dilisensikan hanya untuk penggunaan hasil cetak pribadi non-komersial.
+                  </span>
+</div>
+</div>
+<div class="p-5 rounded-2xl bg-surface-container-low flex items-start gap-3.5">
+<span class="material-symbols-outlined text-error text-[22px] mt-0.5 flex-shrink-0">block</span>
+<div class="flex flex-col gap-1">
+<span class="font-title-md text-title-md text-primary font-semibold">Larangan Konten Ilegal &amp; Vulgar</span>
+<span class="font-body-md text-body-md text-on-surface-variant">
+                    Pengguna dilarang mengunggah, mengetikkan, atau mencetak teks dan gambar yang mengandung unsur pornografi, pelecehan seksual, ujaran kebencian berbasis SARA, pencemaran nama baik pihak lain, atau simbol organisasi terlarang menurut hukum Republik Indonesia.
+                  </span>
+</div>
+</div>
+<div class="p-5 rounded-2xl bg-surface-container-low flex items-start gap-3.5">
+<span class="material-symbols-outlined text-secondary text-[22px] mt-0.5 flex-shrink-0">shield</span>
+<div class="flex flex-col gap-1">
+<span class="font-title-md text-title-md text-primary font-semibold">Tanggung Jawab Pengguna</span>
+<span class="font-body-md text-body-md text-on-surface-variant">
+                    Pengguna membebaskan Angkasa Photobooth dari segala bentuk gugatan hukum pihak ketiga yang timbul akibat penyalahgunaan hak cipta logo merek, gambar personal pihak lain, atau ornamen eksternal yang diunggah secara mandiri.
+                  </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5 -->
+<section class="scroll-mt-28 bg-surface-container-lowest rounded-3xl p-8 lg:p-10 shadow-sm relative transition-all" id="section-5">
+<div class="flex items-center justify-between gap-4 mb-6 pb-4">
+<div class="flex items-center gap-3.5">
+<div class="w-10 h-10 rounded-2xl bg-secondary-fixed flex items-center justify-center text-primary font-title-lg text-title-lg font-bold">
+                5
+              </div>
+<div>
+<h2 class="font-headline-md text-headline-md text-primary font-semibold tracking-tight">Perubahan Ketentuan</h2>
+<p class="font-label-md text-label-md text-on-surface-variant">Mekanisme pembaruan kebijakan operasional berkala</p>
+</div>
+</div>
+<span class="hidden sm:inline-flex px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+              Revisi Dokumen
+            </span>
+</div>
+<div class="flex flex-col gap-5 text-on-surface-variant font-body-lg text-body-lg leading-relaxed">
+<p>
+              Sebagai wujud komitmen terhadap peningkatan mutu teknologi dan kepatuhan hukum:
+            </p>
+<ul class="flex flex-col gap-3 pl-1">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5 flex-shrink-0">history_edu</span>
+<span>
+<strong>Hak Pembaruan:</strong> Angkasa Photobooth berhak memodifikasi, menambah, atau merevisi butir syarat dan ketentuan ini tanpa pemberitahuan individu langsung, dengan tetap mencantumkan nomor versi terbaru pada bagian pembuka halaman ini.
+                </span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5 flex-shrink-0">touch_app</span>
+<span>
+<strong>Persetujuan Berkelanjutan:</strong> Kunjungan atau transaksi berikutnya yang Anda lakukan di bilik foto setelah perubahan resmi dipublikasikan dianggap sebagai persetujuan penuh terhadap versi syarat dan ketentuan yang berlaku.
+                </span>
+</li>
+</ul>
+<!-- Contact Support Action Card -->
+<div class="mt-4 p-8 rounded-2xl bg-gradient-to-br from-surface-container via-surface-container-high to-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xs">
+<div class="flex flex-col gap-2 text-center sm:text-left">
+<div class="inline-flex items-center gap-2 self-center sm:self-start px-3 py-1 rounded-full bg-surface-container-lowest text-secondary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">contact_support</span>
+<span>Saluran Pertanyaan Resmi</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary font-bold">Ada pertanyaan mengenai ketentuan ini?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+                  Tim legal dan operasional kami siap membantu mengklarifikasi hak Anda dalam bertransaksi di bilik foto Angkasa.
+                </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-3 flex-shrink-0">
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-primary text-on-primary hover:bg-primary-container font-label-lg text-label-lg shadow-sm transition-all" href="mailto:legal@angkasaphoto.id">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+<span>Email Legal Team</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Acceptance Indicator Banner -->
+<div class="p-6 rounded-2xl bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-4 text-on-surface-variant">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[24px]">verified</span>
+<span class="font-body-md text-body-md">
+              Ketentuan ini dilindungi oleh hukum transaksi elektronik Republik Indonesia (UU ITE).
+            </span>
+</div>
+<a class="inline-flex items-center gap-1.5 text-primary hover:text-secondary font-label-lg text-label-lg transition-colors flex-shrink-0" href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
+<span>Kembali ke atas</span>
+<span class="material-symbols-outlined text-[18px]">arrow_upward</span>
+</a>
+</div>
+</main>
+</div>
+</div>
+</div>
+<script>
+  // Simple Table of Contents ScrollSpy Behavior
+  document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('section[id^="section-"]');
+    const navLinks = document.querySelectorAll('.toc-link');
+
+    function updateActiveToc() {
+      let currentSectionId = '';
+      const scrollPosition = window.scrollY + 180;
+
+      sections.forEach((section) => {
+        const top = section.offsetTop;
+        const height = section.offsetHeight;
+        if (scrollPosition >= top && scrollPosition < top + height) {
+          currentSectionId = section.getAttribute('id');
+        }
+      });
+
+      if (!currentSectionId && window.scrollY < 200) {
+        currentSectionId = 'section-1';
+      }
+
+      navLinks.forEach((link) => {
+        const target = link.getAttribute('data-toc-target');
+        const dot = link.querySelector('span > span');
+        const icon = link.querySelector('.material-symbols-outlined');
+
+        if (target === currentSectionId) {
+          link.classList.remove('text-on-surface-variant', 'hover:bg-surface-container-low');
+          link.classList.add('bg-secondary-fixed', 'text-primary');
+          if (dot) {
+            dot.classList.remove('bg-outline-variant');
+            dot.classList.add('bg-primary');
+          }
+          if (icon) {
+            icon.classList.remove('text-on-surface-variant');
+            icon.classList.add('text-primary');
+          }
+        } else {
+          link.classList.remove('bg-secondary-fixed', 'text-primary');
+          link.classList.add('text-on-surface-variant', 'hover:bg-surface-container-low');
+          if (dot) {
+            dot.classList.remove('bg-primary');
+            dot.classList.add('bg-outline-variant');
+          }
+          if (icon) {
+            icon.classList.add('text-on-surface-variant');
+            icon.classList.remove('text-primary');
+          }
+        }
+      });
+    }
+
+    window.addEventListener('scroll', updateActiveToc, { passive: true });
+    updateActiveToc();
+  });
+</script></main><footer class="w-full bg-surface-container-low shadow-[0_-1px_12px_rgba(42,37,69,0.03)]"><div class="max-w-7xl mx-auto px-6 lg:px-12 pt-16 pb-12"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16"><div class="flex flex-col gap-4"><div class="flex items-center gap-3"><div class="w-9 h-9 rounded-full bg-secondary-fixed flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[20px]">auto_awesome</span></div><span class="font-title-lg text-title-lg text-primary tracking-tight">Angkasa Photobooth</span></div><p class="font-body-md text-body-md text-on-surface-variant leading-relaxed max-w-xs">Momen berharga dalam setiap cetakan strip foto. Pengalaman photobooth mandiri yang modern, estetik, dan menyenangkan.</p><div class="flex items-center gap-3 pt-2"><a aria-label="Instagram" class="w-9 h-9 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">photo_camera</span></a><a aria-label="TikTok" class="w-9 h-9 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">videocam</span></a></div></div><div class="flex flex-col gap-3"><span class="font-label-lg text-label-lg text-primary uppercase tracking-wider mb-2">Navigasi</span><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="beranda" href="#">Beranda</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="fitur" href="#">Fitur</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="paket-dan-harga" href="#">Paket &amp; Harga</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="lokasi-booth" href="#">Kiosk Booth</a></div><div class="flex flex-col gap-3"><span class="font-label-lg text-label-lg text-primary uppercase tracking-wider mb-2">Legal &amp; Bantuan</span><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="kebijakan-privasi" href="#">Kebijakan Privasi</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="syarat-dan-ketentuan" href="#">Syarat &amp; Ketentuan</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="faq" href="#">FAQ</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="kontak" href="#">Hubungi Kami</a></div><div class="flex flex-col gap-3"><span class="font-label-lg text-label-lg text-primary uppercase tracking-wider mb-2">Kontak &amp; Lokasi</span><div class="flex items-start gap-2.5 text-on-surface-variant"><span class="material-symbols-outlined text-[18px] text-primary mt-0.5">mail</span><span class="font-body-md text-body-md">info@angkasaphoto.id</span></div><div class="flex items-start gap-2.5 text-on-surface-variant"><span class="material-symbols-outlined text-[18px] text-primary mt-0.5">location_on</span><span class="font-body-md text-body-md leading-snug">Grand Atrium Mall, Lantai UG, Jakarta Selatan</span></div></div></div><div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4"><p class="font-body-md text-body-md text-on-surface-variant text-center sm:text-left">© 2025 Angkasa Photobooth. Hak cipta dilindungi.</p><div class="flex items-center gap-6"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="kebijakan-privasi" href="#">Kebijakan Privasi</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="syarat-dan-ketentuan" href="#">Syarat &amp; Ketentuan</a></div></div></div></footer><script src="router.js"></script></body></html>

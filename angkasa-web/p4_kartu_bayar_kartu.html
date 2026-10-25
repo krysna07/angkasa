@@ -1,0 +1,213 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_stack" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#fcf8ff;}body{overscroll-behavior:none;font-family:'Plus Jakarta Sans',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'tertiary-container': '#262548', 'surface-variant': '#e5deff', 'on-error': '#ffffff', 'inverse-on-surface': '#f4eeff', 'surface-container-lowest': '#ffffff', 'surface-dim': '#dcd6f7', 'primary-fixed': '#e6deff', 'secondary-fixed': '#e3dfff', 'surface-tint': '#605a7d', 'outline': '#79767e', 'on-background': '#1b1830', 'surface-container': '#f1ebff', 'on-tertiary-fixed-variant': '#444367', 'secondary': '#5854a6', 'on-tertiary-container': '#8e8cb5', 'on-tertiary-fixed': '#191739', 'surface-container-highest': '#e5deff', 'tertiary': '#121032', 'primary-fixed-dim': '#c9c1ea', 'on-secondary-container': '#3d3889', 'on-primary-container': '#938cb2', 'secondary-fixed-dim': '#c4c0ff', 'on-surface': '#1b1830', 'on-primary-fixed': '#1c1736', 'on-primary': '#ffffff', 'on-tertiary': '#ffffff', 'surface-container-high': '#ebe5ff', 'outline-variant': '#c9c5ce', 'primary-container': '#2a2545', 'surface': '#fcf8ff', 'tertiary-fixed': '#e3dfff', 'surface-bright': '#fcf8ff', 'inverse-primary': '#c9c1ea', 'on-error-container': '#93000a', 'on-secondary': '#ffffff', 'primary': '#15102f', 'surface-container-low': '#f7f1ff', 'error-container': '#ffdad6', 'background': '#fcf8ff', 'inverse-surface': '#312d47', 'on-primary-fixed-variant': '#484264', 'secondary-container': '#aba7ff', 'tertiary-fixed-dim': '#c5c2ee', 'on-secondary-fixed-variant': '#403c8d', 'on-secondary-fixed': '#130661', 'on-surface-variant': '#48464d', 'error': '#ba1a1a' }, borderRadius: { 'DEFAULT': '1rem', 'lg': '2rem', 'xl': '3rem', 'full': '9999px' }, spacing: { 'gutter-mobile': '1rem', 'space-lg': '1.5rem', 'margin-mobile': '1.25rem', 'space-xs': '0.25rem', 'space-md': '1rem', 'margin': '3rem', 'space-xl': '2.5rem', 'space-sm': '0.5rem', 'gutter': '1.5rem' }, fontFamily: { 'body-lg': ['Plus Jakarta Sans'], 'label-md': ['Plus Jakarta Sans'], 'display-lg': ['Plus Jakarta Sans'], 'title-md': ['Plus Jakarta Sans'], 'title-lg': ['Plus Jakarta Sans'], 'headline-lg': ['Plus Jakarta Sans'], 'label-sm': ['Plus Jakarta Sans'], 'body-md': ['Plus Jakarta Sans'], 'label-lg': ['Plus Jakarta Sans'], 'headline-lg-mobile': ['Plus Jakarta Sans'], 'display-lg-mobile': ['Plus Jakarta Sans'], 'headline-md': ['Plus Jakarta Sans'] }, fontSize: { 'body-lg': ['16px', { lineHeight: '24px', letterSpacing: '0em', fontWeight: '400' }], 'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.02em', fontWeight: '500' }], 'display-lg': ['56px', { lineHeight: '64px', letterSpacing: '-0.03em', fontWeight: '300' }], 'title-md': ['16px', { lineHeight: '24px', letterSpacing: '0em', fontWeight: '600' }], 'title-lg': ['20px', { lineHeight: '28px', letterSpacing: '-0.005em', fontWeight: '600' }], 'headline-lg': ['32px', { lineHeight: '40px', letterSpacing: '-0.02em', fontWeight: '400' }], 'label-sm': ['11px', { lineHeight: '14px', letterSpacing: '0.03em', fontWeight: '500' }], 'body-md': ['14px', { lineHeight: '20px', letterSpacing: '0em', fontWeight: '400' }], 'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '0.01em', fontWeight: '600' }], 'headline-lg-mobile': ['26px', { lineHeight: '34px', letterSpacing: '-0.015em', fontWeight: '400' }], 'display-lg-mobile': ['36px', { lineHeight: '44px', letterSpacing: '-0.02em', fontWeight: '300' }], 'headline-md': ['24px', { lineHeight: '32px', letterSpacing: '-0.01em', fontWeight: '500' }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(42,37,69,0.03)] pt-safe"><div class="h-28 px-margin-mobile flex flex-col justify-center gap-space-xs"><div class="flex items-center justify-between"><div class="flex items-center gap-space-xs"><button class="w-11 h-11 -ml-2 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container active:scale-95 transition-all" onclick="history.back()"><span class="material-symbols-outlined text-[20px]">arrow_back</span></button><div class="flex items-center gap-2"><div class="w-7 h-7 rounded-full bg-primary-container flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-[15px]">auto_awesome</span></div><div class="flex flex-col"><span class="font-title-md text-title-md text-on-surface leading-tight">Angkasa Photobooth</span><div class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span><span class="font-label-sm text-label-sm text-[#059669]">Tersinkron</span><span class="text-outline-variant font-label-sm text-label-sm">•</span><span class="font-label-sm text-label-sm text-on-surface-variant font-mono">SES-0042</span></div></div></div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div><div class="flex items-center justify-between pt-1 px-1"><div class="flex items-center gap-1.5"><span class="w-5 h-5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm flex items-center justify-center font-semibold">1</span><span class="font-label-sm text-label-sm text-on-surface-variant">Invoice</span></div><div class="w-6 h-0.5 bg-surface-container-high rounded-full"></div><div class="flex items-center gap-1.5"><span class="w-5 h-5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center justify-center font-bold shadow-[0_2px_8px_rgba(21,16,47,0.25)]">2</span><span class="font-label-sm text-label-sm text-primary font-bold">Bayar</span></div><div class="w-6 h-0.5 bg-surface-container-high rounded-full"></div><div class="flex items-center gap-1.5"><span class="w-5 h-5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm flex items-center justify-center font-semibold">3</span><span class="font-label-sm text-label-sm text-on-surface-variant">Selesai</span></div></div></div></header><main class="flex flex-col relative w-full px-margin-mobile pt-28 pb-safe bg-surface min-h-screen"><div class="flex flex-col w-full pb-8">
+<div class="flex flex-col gap-5 pt-3">
+<!-- Sandbox Environment Pill Banner -->
+<div class="flex items-center justify-between px-4 py-2.5 rounded-full bg-surface-container-high/80 backdrop-blur-md shadow-sm">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">Mode Sandbox Aktif</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Simulasi Pembayaran</span>
+</div>
+<!-- Title & Secure SSL Subtext -->
+<div class="flex flex-col gap-1">
+<h1 class="font-title-lg text-title-lg text-on-surface font-bold tracking-tight">Bayar dengan Kartu</h1>
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px] text-secondary">verified_user</span>
+<p class="font-body-md text-body-md text-on-surface-variant">Pembayaran aman terenkripsi 256-bit SSL</p>
+</div>
+</div>
+<!-- Card Preview Illustration / Tactile Mockup -->
+<div class="relative w-full overflow-hidden rounded-lg bg-gradient-to-br from-primary via-primary-container to-tertiary text-on-primary p-6 shadow-xl shadow-primary-container/20 aspect-[1.58/1] flex flex-col justify-between">
+<!-- Ambient Ethereal Glow inside Card -->
+<div class="absolute -top-12 -right-12 w-44 h-44 rounded-full bg-secondary-container/25 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-8 -left-8 w-36 h-36 rounded-full bg-surface-variant/15 blur-2xl pointer-events-none"></div>
+<!-- Top Row: Chip & Contactless -->
+<div class="relative z-10 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<!-- Tactile Chip SVG -->
+<div class="w-11 h-8 rounded-md bg-gradient-to-tr from-[#e2c974] via-[#f7e8a9] to-[#c9ab4c] p-1.5 shadow-inner flex flex-col justify-between">
+<div class="w-full h-0.5 bg-[#96771d]/40 rounded-full"></div>
+<div class="w-2/3 h-0.5 bg-[#96771d]/40 rounded-full"></div>
+<div class="w-full h-0.5 bg-[#96771d]/40 rounded-full"></div>
+</div>
+<span class="material-symbols-outlined text-white/70 text-[20px] rotate-90">contactless</span>
+</div>
+<!-- Card Network Pill Badge -->
+<div class="px-2.5 py-1 rounded-full bg-white/10 backdrop-blur-md flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-red-400 opacity-90 inline-block"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-amber-400 opacity-90 -ml-2 inline-block"></span>
+<span class="font-label-sm text-label-sm text-white/90 font-medium">Debit/Kredit</span>
+</div>
+</div>
+<!-- Center: Card Digits with Live Feedback -->
+<div class="relative z-10 my-auto pt-2">
+<p class="font-label-sm text-label-sm text-primary-fixed-dim tracking-widest uppercase mb-1">Nomor Kartu</p>
+<p class="font-mono text-lg tracking-widest text-white font-medium drop-shadow-sm" id="preview-card-number">•••• •••• •••• 4242</p>
+</div>
+<!-- Bottom Row: Cardholder & Expiry -->
+<div class="relative z-10 flex items-end justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim uppercase tracking-wider">Pemilik Kartu</span>
+<span class="font-title-md text-title-md text-white font-semibold tracking-wide uppercase truncate max-w-[190px]" id="preview-card-name">ANGKASA GUEST</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim uppercase tracking-wider">Berlaku</span>
+<span class="font-mono text-body-md text-body-md text-white font-medium" id="preview-card-expiry">12/28</span>
+</div>
+</div>
+</div>
+<!-- Bill Summary Accordion Card -->
+<div class="flex items-center justify-between p-4 rounded-lg bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">photo_camera</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface leading-tight font-semibold">Paket Klasik 4 Pose</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">INV-20251019-0042</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Total Tagihan</span>
+<span class="font-title-lg text-title-lg text-primary font-bold">Rp 25.000</span>
+</div>
+</div>
+<!-- Input Form -->
+<form class="flex flex-col gap-4" id="card-form">
+<!-- Card Number Field -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center justify-between">
+<span>Nomor Kartu</span>
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">credit_card</span>
+<span class="material-symbols-outlined text-[18px]">lock</span>
+</div>
+</label>
+<div class="relative flex items-center">
+<input class="w-full h-13 px-5 py-3.5 rounded-full bg-surface-container-lowest text-on-surface font-mono text-body-lg placeholder:text-outline-variant shadow-sm focus:outline-none focus:bg-surface-container-low transition-all" id="card-number-input" maxlength="19" placeholder="•••• •••• •••• ••••" type="text" value="4242 4242 4242 4242">
+<div class="absolute right-4 flex items-center gap-1 pointer-events-none">
+<span class="w-2.5 h-2.5 rounded-full bg-red-400"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-amber-400 -ml-1"></span>
+</div>
+</div>
+</div>
+<!-- Expiry Date & CVV Row -->
+<div class="grid grid-cols-2 gap-3">
+<!-- Expiry Field -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold">
+            Masa Berlaku
+          </label>
+<div class="relative flex items-center">
+<input class="w-full h-13 px-5 py-3.5 rounded-full bg-surface-container-lowest text-on-surface font-mono text-body-lg placeholder:text-outline-variant shadow-sm focus:outline-none focus:bg-surface-container-low transition-all" id="card-expiry-input" maxlength="5" placeholder="BB/TT" type="text" value="12/28">
+<span class="material-symbols-outlined text-outline-variant absolute right-4 pointer-events-none text-[18px]">calendar_today</span>
+</div>
+</div>
+<!-- CVV Field -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold">
+              CVV
+            </label>
+<button class="flex items-center text-secondary hover:text-primary transition-colors" title="3 angka di balik kartu" type="button">
+<span class="material-symbols-outlined text-[16px]">info</span>
+</button>
+</div>
+<div class="relative flex items-center">
+<input class="w-full h-13 px-5 py-3.5 rounded-full bg-surface-container-lowest text-on-surface font-mono text-body-lg placeholder:text-outline-variant shadow-sm focus:outline-none focus:bg-surface-container-low tracking-widest transition-all" id="card-cvv-input" maxlength="3" placeholder="•••" type="password" value="888">
+<span class="material-symbols-outlined text-outline-variant absolute right-4 pointer-events-none text-[18px]">shield</span>
+</div>
+</div>
+</div>
+<!-- Cardholder Name Field -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold">
+          Nama Pemilik Kartu
+        </label>
+<div class="relative flex items-center">
+<input class="w-full h-13 px-5 py-3.5 rounded-full bg-surface-container-lowest text-on-surface font-body-lg text-body-lg placeholder:text-outline-variant shadow-sm focus:outline-none focus:bg-surface-container-low uppercase tracking-wide transition-all" id="card-name-input" placeholder="Nama sesuai kartu" type="text" value="Angkasa Guest">
+<span class="material-symbols-outlined text-outline-variant absolute right-4 pointer-events-none text-[18px]">badge</span>
+</div>
+</div>
+</form>
+<!-- Visual Divider & Assurance Micro-Note -->
+<div class="flex items-center justify-center gap-2 pt-1 pb-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-[#059669]">check_circle</span>
+<span class="font-label-sm text-label-sm">Otomatis cetak 2 strip foto setelah verifikasi</span>
+</div>
+<!-- Actions Section -->
+<div class="flex flex-col gap-2.5 pt-2">
+<!-- Primary Dark Pill Action -->
+<button class="w-full py-4 px-6 rounded-full bg-primary text-on-primary font-title-md text-title-md font-semibold flex items-center justify-center gap-2 shadow-lg shadow-primary/25 hover:opacity-95 active:scale-[0.98] transition-all" id="pay-button" type="button">
+<span class="material-symbols-outlined text-[20px]">lock</span>
+<span>Bayar Rp 25.000</span>
+</button>
+<!-- Ghost Cancel Action -->
+<button class="w-full py-3 px-6 rounded-full bg-transparent text-secondary font-title-md text-title-md font-medium text-center hover:bg-surface-container-low transition-colors" onclick="history.back()" type="button">
+        Batalkan Transaksi
+      </button>
+</div>
+</div>
+</div>
+<script>
+  // Interactive micro-interaction syncing input with card preview
+  const numInput = document.getElementById('card-number-input');
+  const nameInput = document.getElementById('card-name-input');
+  const expiryInput = document.getElementById('card-expiry-input');
+
+  const previewNum = document.getElementById('preview-card-number');
+  const previewName = document.getElementById('preview-card-name');
+  const previewExpiry = document.getElementById('preview-card-expiry');
+
+  if (numInput && previewNum) {
+    numInput.addEventListener('input', (e) => {
+      let val = e.target.value.replace(/\D/g, '');
+      val = val.substring(0, 16);
+      let formatted = val.match(/.{1,4}/g)?.join(' ') || '';
+      e.target.value = formatted;
+      previewNum.innerText = formatted || '•••• •••• •••• 4242';
+    });
+  }
+
+  if (nameInput && previewName) {
+    nameInput.addEventListener('input', (e) => {
+      previewName.innerText = e.target.value.trim() ? e.target.value.toUpperCase() : 'NAMA PEMILIK';
+    });
+  }
+
+  if (expiryInput && previewExpiry) {
+    expiryInput.addEventListener('input', (e) => {
+      let val = e.target.value.replace(/\D/g, '');
+      if (val.length > 2) {
+        val = val.substring(0, 2) + '/' + val.substring(2, 4);
+      }
+      e.target.value = val;
+      previewExpiry.innerText = val || 'BB/TT';
+    });
+  }
+
+  const payBtn = document.getElementById('pay-button');
+  if (payBtn) {
+    payBtn.addEventListener('click', () => {
+      payBtn.disabled = true;
+      payBtn.innerHTML = `
+        <span class="material-symbols-outlined text-[20px] animate-spin">progress_activity</span>
+        <span>Memproses Pembayaran...</span>
+      `;
+      setTimeout(() => {
+        payBtn.innerHTML = `
+          <span class="material-symbols-outlined text-[20px]">check</span>
+          <span>Pembayaran Berhasil!</span>
+        `;
+        payBtn.classList.remove('bg-primary');
+        payBtn.classList.add('bg-[#15803d]');
+      }, 1400);
+    });
+  }
+</script></main><script src="router.js"></script></body></html>

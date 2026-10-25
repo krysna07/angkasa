@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-tertiary-container":"#8e8cb5","surface-container-high":"#ebe5ff","inverse-on-surface":"#f4eeff","on-primary":"#ffffff","primary-container":"#2a2545","secondary-fixed-dim":"#c4c0ff","surface-tint":"#605a7d","outline":"#79767e","error-container":"#ffdad6","outline-variant":"#c9c5ce","on-error-container":"#93000a","on-secondary":"#ffffff","on-secondary-fixed":"#130661","primary-fixed":"#e6deff","secondary-container":"#aba7ff","tertiary-fixed":"#e3dfff","surface-container-lowest":"#ffffff","surface-bright":"#fcf8ff","on-tertiary":"#ffffff","on-tertiary-fixed-variant":"#444367","tertiary-container":"#262548","surface-container":"#f1ebff","primary":"#15102f","on-tertiary-fixed":"#191739","inverse-surface":"#312d47","on-primary-fixed":"#1c1736","surface-container-low":"#f7f1ff","on-surface":"#1b1830","on-primary-container":"#938cb2","surface-dim":"#dcd6f7","surface":"#fcf8ff","secondary-fixed":"#e3dfff","inverse-primary":"#c9c1ea","secondary":"#5854a6","on-primary-fixed-variant":"#484264","on-secondary-fixed-variant":"#403c8d","on-secondary-container":"#3d3889","primary-fixed-dim":"#c9c1ea","on-error":"#ffffff","surface-container-highest":"#e5deff","tertiary":"#121032","background":"#fcf8ff","surface-variant":"#e5deff","on-surface-variant":"#48464d","on-background":"#1b1830","error":"#ba1a1a","tertiary-fixed-dim":"#c5c2ee"},"borderRadius":{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},"spacing":{"space-md":"1rem","space-sm":"0.5rem","space-lg":"1.5rem","space-xl":"2.5rem","gutter-mobile":"1rem","gutter":"1.5rem","space-xs":"0.25rem","margin-mobile":"1.25rem","margin":"3rem"},"fontFamily":{"body-lg":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"],"title-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"]},"fontSize":{"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"500"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"500"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"display-lg":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"300"}],"title-md":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"display-lg-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"300"}],"title-lg":["20px",{"lineHeight":"28px","letterSpacing":"-0.005em","fontWeight":"600"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.015em","fontWeight":"400"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-60 bg-surface-container-lowest shadow-[0_10px_30px_-10px_rgba(42,37,69,0.06)] z-50 flex flex-col justify-between p-space-md"><div class="flex flex-col gap-space-lg"><div class="flex items-center gap-space-sm px-space-sm pt-space-xs"><div class="w-9 h-9 rounded-full bg-surface-container-highest flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[20px]">auto_awesome</span></div><div class="flex flex-col"><span class="font-title-lg text-title-lg font-bold tracking-tight text-primary leading-none">Angkasa</span><span class="font-label-sm text-label-sm tracking-wider text-outline uppercase mt-1">Admin Panel</span></div></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-label-lg shadow-[0_8px_24px_-4px_rgba(42,37,69,0.35)]"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="ringkasan" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Ringkasan</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="preset" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span>Preset</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="aset" href="#"><span class="material-symbols-outlined text-[20px]">photo_library</span><span>Aset (Frame &amp; Stiker)</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="riwayat-sesi" href="#"><span class="material-symbols-outlined text-[20px]">history</span><span>Riwayat Sesi</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="pengaturan" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>Pengaturan</span></a></nav></div><div class="pt-space-md border-t border-surface-container-highest/60 flex items-center justify-between px-space-xs"><div class="flex items-center gap-space-sm"><div class="relative flex items-center justify-center"><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-emerald-500 ring-2 ring-surface-container-lowest"></span></div><div class="flex flex-col"><span class="font-label-lg text-label-lg text-on-surface leading-tight">Admin Booth</span><span class="font-label-sm text-label-sm text-outline">Terminal 01</span></div></div><button class="w-8 h-8 rounded-full flex items-center justify-center text-outline hover:text-error hover:bg-surface-container-high transition-colors" title="Keluar" type="button"><span class="material-symbols-outlined text-[20px]">logout</span></button></div></aside><div class="pl-60"><header class="fixed top-0 left-60 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-sm"><div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md"><span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span><span>Kiosk Aktif: Booth Senopati-01</span></div></div><div class="flex items-center gap-space-md"><button class="relative w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 bg-error rounded-full ring-2 ring-surface-container-lowest"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span class="font-label-lg text-label-lg text-on-surface hidden sm:inline">Operator</span></div></div></header><main class="w-full pt-16 min-h-screen bg-background relative px-space-lg py-space-lg"><div class="fixed inset-0 pointer-events-none bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(171,167,255,0.15),rgba(255,255,255,0))] -z-10"></div><div class="flex flex-col w-full">
+<!-- Floating Toast Notification Banner -->
+<aside aria-live="polite" class="fixed top-20 right-8 z-50 flex items-center justify-between gap-space-md py-space-sm pl-space-sm pr-space-md bg-[#E8F8F0] text-on-surface rounded-full shadow-[0_16px_36px_-6px_rgba(63,163,122,0.22),0_4px_16px_-2px_rgba(42,37,69,0.06)] transform transition-all duration-500 ease-out translate-y-0 opacity-100 max-w-md" id="toast-notification">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-full bg-[#3FA37A] flex items-center justify-center text-on-primary shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<div class="flex flex-col min-w-0 pr-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-primary leading-tight">Preset berhasil disimpan</span>
+<span class="w-1.5 h-1.5 rounded-full bg-[#3FA37A] shrink-0"></span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Klasik 4 Pose telah diperbarui</span>
+</div>
+</div>
+<button aria-label="Tutup pemberitahuan" class="w-7 h-7 rounded-full flex items-center justify-center text-outline hover:text-primary hover:bg-surface-container-lowest/80 transition-colors shrink-0" onclick="dismissToast()" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</aside>
+<!-- Header & Context Actions -->
+<section class="flex flex-col gap-space-lg w-full mb-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-2 mb-space-xs">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">Katalog Layanan Kiosk</span>
+<span class="text-outline-variant font-label-sm text-label-sm">•</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Aktif 3 Layout</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+          Kelola <span class="text-secondary-container font-medium text-secondary">Preset</span> Foto
+        </h1>
+</div>
+<!-- Quick Metrics Summary Pills -->
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container-lowest rounded-full shadow-[0_4px_16px_-4px_rgba(42,37,69,0.06)]">
+<span class="material-symbols-outlined text-[18px] text-secondary">style</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Total Cetak Hari Ini:</span>
+<span class="font-title-md text-title-md text-primary ml-1">142</span>
+</div>
+<div class="flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container-lowest rounded-full shadow-[0_4px_16px_-4px_rgba(42,37,69,0.06)]">
+<span class="material-symbols-outlined text-[18px] text-[#3FA37A]">price_check</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Pendapatan:</span>
+<span class="font-title-md text-title-md text-primary ml-1">Rp 4.15jt</span>
+</div>
+</div>
+</div>
+<!-- Search, Filters, and New Preset Action Bar -->
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md bg-surface-container-lowest p-space-sm rounded-full shadow-[0_10px_30px_-10px_rgba(42,37,69,0.05)]">
+<div class="flex items-center gap-space-sm flex-1 min-w-0">
+<!-- Search Input -->
+<div class="relative flex-1 max-w-md">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline text-[20px] pointer-events-none">search</span>
+<input class="w-full h-11 pl-11 pr-4 bg-surface-container-low text-on-surface rounded-full font-body-md text-body-md outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/30 transition-all placeholder:text-outline" placeholder="Cari nama preset atau rasio cetak..." type="text"/>
+</div>
+<!-- Filter Pill Chips -->
+<div class="flex items-center gap-1.5 overflow-x-auto py-1">
+<button class="px-4 py-2 rounded-full font-label-md text-label-md bg-secondary text-on-primary shadow-sm hover:opacity-95 transition-all whitespace-nowrap" type="button">
+            Semua (3)
+          </button>
+<button class="px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all whitespace-nowrap flex items-center gap-1.5" type="button">
+<span class="w-2 h-2 rounded-full bg-[#3FA37A]"></span>
+<span>Aktif (3)</span>
+</button>
+<button class="px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all whitespace-nowrap" type="button">
+            Nonaktif (0)
+          </button>
+</div>
+</div>
+<!-- Primary Action CTA -->
+<div class="flex items-center gap-space-xs self-end lg:self-auto">
+<button class="h-11 px-6 rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg shadow-[0_8px_24px_-4px_rgba(42,37,69,0.35)] hover:bg-primary transition-all flex items-center gap-2 group whitespace-nowrap" type="button">
+<span class="material-symbols-outlined text-[20px] transition-transform group-hover:rotate-90 duration-300">add</span>
+<span>Tambah Preset</span>
+</button>
+</div>
+</div>
+</section>
+<!-- 3-Column Bento/Grid Layout -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg w-full items-start">
+<!-- CARD 1: Klasik 4 Pose (Recently Updated - Glowing Ring Highlight) -->
+<article class="relative flex flex-col bg-surface-container-lowest rounded-[28px] p-space-md shadow-[0_16px_40px_-10px_rgba(142,138,224,0.35),0_0_24px_rgba(171,167,255,0.25)] transition-all hover:-translate-y-1 duration-300">
+<!-- Glow ambient pulse badge -->
+<div class="absolute -top-3.5 left-6 bg-[#3FA37A] text-on-primary font-label-sm text-label-sm px-3.5 py-1 rounded-full shadow-md flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest animate-ping"></span>
+<span>Baru Saja Diperbarui</span>
+</div>
+<!-- Photo Strip Preview Canvas Stage -->
+<div class="relative w-full bg-surface-container-low rounded-[22px] p-space-md flex justify-center items-center overflow-hidden min-h-[360px]">
+<!-- Ambient decorative backdrop shape -->
+<div class="absolute -top-12 -right-12 w-48 h-48 bg-secondary-fixed/40 rounded-full blur-2xl pointer-events-none"></div>
+<!-- Washi Tape Decal -->
+<div class="absolute top-2 left-1/2 -translate-x-1/2 w-20 h-4 bg-secondary-fixed-dim/70 backdrop-blur-sm -rotate-2 rounded-sm shadow-sm z-10 pointer-events-none"></div>
+<!-- Photobooth Strip Component: 4 poses vertical -->
+<div class="relative bg-surface-container-lowest rounded-[18px] p-2.5 pb-6 shadow-[0_12px_28px_-6px_rgba(42,37,69,0.18)] flex flex-col items-center w-40 gap-2 transform rotate-1 hover:rotate-0 transition-transform duration-300">
+<div class="w-full h-18 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-18 object-cover" data-alt="Close-up polaroid style portrait of four cheerful Indonesian university friends smiling together indoors under warm soft aesthetic photo booth lighting, natural film grain texture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrJZs2i9RwxbkLZcMwVS5HluCH2j4PbbB4eVT74dBKLmPBOFDuivEq5YTICxJLA0B8OtVy2lfuURP4TxZjbAfD0KTbegO14-2kEF-4TKDfDDTa5hRU03tI0-LS0QQwJVemV-FhclvbBXCrLBKyhOmzH-oWxwElP0x6IC9vhuJW1mL0Dbun6E2gSpsOSHIjXouoJQs0fFD8CBRBew4JpFIV_-3t27iwRYcBYECkH-hEk3VHDPJOp0JyKQ"/>
+</div>
+<div class="w-full h-18 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-18 object-cover" data-alt="Playful candid pose of young Indonesian best friends winking and making peace signs inside a modern pastel studio photobooth, warm soft lighting and aesthetic tone." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqJeG5adcpJMKyPF6n8FyNynr-JAOVsb_gAjbU_FKFq6mMSjjcjGqpHaj_rLmvgcu7II6IWfdFR62Rl8ITPI4IhOyv3-YoFVGuwiHYcyF6v-FkDInEHNaRKQT-VHOGX78VZRi26VBbqLWOsmexns_zlu8dUtiy0q4-OshSOWL1J0ssLKOiibLsTHO28bMzl040ziGX0YKtWOayf-SK9DkKhoEIXhV4gDcI7WyXzTTmfEpjuRl0kbqr5Q"/>
+</div>
+<div class="w-full h-18 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-18 object-cover" data-alt="Laughing group of young Indonesian friends hugging tightly inside modern photobooth strip, aesthetic muted pastel colors and authentic joyful expressions." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwTtudfqo77oZxp6WgGRPF0hFvVLKMDrQuk4fdCyBgYJlGY9TE-ilnbT3o20wdKivRPvJ8Ug_iR-5xlVydvkVz1kBzYFxSteTaM3Qe0oD9bXwJVThrlmGstsuhKQOwBXmRu6wdiubzmcLAxwHgDWjoYYZ2FMG21dCDZdU5fvcEs74vZhFFlXgAYwZcrgyw49YFOtIZP9tUEBaGep8yYnHjWZw8UR-R8PN8xgjAyp36dHbaTbICBhM9hA"/>
+</div>
+<div class="w-full h-18 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-18 object-cover" data-alt="Four stylish Indonesian friends making funny meme faces inside modern self-service photobooth, clean crisp lighting and soft lavender ambient background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3y2mzhRRGUsQu0pJaAh_7zMU9OFI1k9io0fulpR0Xg4oGOV3rH4IjoT4BwSexLA_4QN6dtOy4lT4-EHemvTerjvrYjNBmvzRmwF_YgEMX-SuD_E-y_ZmBwjUeljNtTMBRi70zF9TBj5FivDyfzRQu1FQX1nPxHVkMTixZls9cVS6s1lLo-n_sVx1JXiTapG64heWMzadtDivXK6mk-ExX3oboz-a6JIbrPc-ousxIzWf5kRq8lqfKGw"/>
+</div>
+<div class="flex flex-col items-center justify-center pt-1.5 w-full">
+<span class="font-label-sm text-[10px] tracking-widest text-primary font-bold uppercase">ANGKASA STUDIO</span>
+<span class="font-label-sm text-[8px] text-outline tracking-wider">SENOPATI • 2025</span>
+</div>
+</div>
+</div>
+<!-- Card Metadata Content -->
+<div class="flex flex-col gap-space-sm pt-space-md">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#E8F8F0] text-[#3FA37A] font-label-md text-label-md font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#3FA37A]"></span>
+            Aktif
+          </span>
+<span class="font-label-sm text-label-sm text-outline">Layout: Strip 2x6"</span>
+</div>
+<div class="flex items-baseline justify-between">
+<h2 class="font-title-lg text-title-lg text-primary">Klasik 4 Pose</h2>
+<span class="font-headline-md text-headline-md text-secondary font-bold">Rp 25.000</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md py-1">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-medium">4 Pose</span>
+<span class="text-outline-variant">•</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-medium">2x Cetak Fisik</span>
+<span class="text-outline-variant">•</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-medium">GIF Live</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+          Format cetak strip ganda paling favorit. Menampilkan 4 foto bertingkat dengan border washi pastel khas Angkasa.
+        </p>
+<!-- Action Row -->
+<div class="flex items-center gap-space-sm pt-space-xs mt-space-xs">
+<button class="flex-1 h-11 rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg shadow-[0_4px_16px_-2px_rgba(42,37,69,0.25)] hover:bg-primary transition-all flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+<span>Ubah Preset</span>
+</button>
+<button class="w-11 h-11 rounded-full bg-surface-container text-outline hover:text-error hover:bg-error-container/40 transition-colors flex items-center justify-center shrink-0" title="Hapus Preset" type="button">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</div>
+</article>
+<!-- CARD 2: Wedding 3 Pose -->
+<article class="flex flex-col bg-surface-container-lowest rounded-[28px] p-space-md shadow-[0_10px_30px_-10px_rgba(42,37,69,0.06),0_4px_12px_-2px_rgba(142,138,224,0.08)] transition-all hover:-translate-y-1 duration-300">
+<!-- Photo Strip Preview Canvas Stage -->
+<div class="relative w-full bg-surface-container-low rounded-[22px] p-space-md flex justify-center items-center overflow-hidden min-h-[360px]">
+<!-- Ambient decorative backdrop shape -->
+<div class="absolute -bottom-10 -left-10 w-44 h-44 bg-surface-container-high rounded-full blur-2xl pointer-events-none"></div>
+<!-- Washi Tape Decal -->
+<div class="absolute top-2 left-1/2 -translate-x-1/2 w-20 h-4 bg-[#E3DFFF]/80 backdrop-blur-sm rotate-1 rounded-sm shadow-sm z-10 pointer-events-none"></div>
+<!-- Photobooth Strip Component: 3 poses elegant -->
+<div class="relative bg-surface-container-lowest rounded-[18px] p-3 pb-6 shadow-[0_12px_28px_-6px_rgba(42,37,69,0.14)] flex flex-col items-center w-44 gap-2.5 transform -rotate-1 hover:rotate-0 transition-transform duration-300">
+<div class="w-full h-22 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-22 object-cover" data-alt="Elegant Indonesian bride and groom in white modern minimalist wedding attire laughing lovingly in portrait studio photobooth, ethereal clean glow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgg5lcseRl1QD2r0zlGTOkIUSaoKelMnYX9KIjzlotMGtdOs1_xTcEYlWAvuJoCyyZ9l2_HaqAc8WIzETsYJgJF5NqeLPNYfRX1EWTRPtLcHT32e9VfpN69FxMAmyiBjHdkxxQPAhh45sNpx9cMaRLvaGYoGVXV4STPuCip5lSLw4vlbA0Slx10UyQ_Y7HCIAnEYkRtmKWTp1q5XDk4lacERKjDDPmvIQJbVGnOFQv8iD_E6AyPzdSEw"/>
+</div>
+<div class="w-full h-22 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-22 object-cover" data-alt="Indonesian wedding couple holding simple white floral bouquet together, gentle smiles, modern romantic boutique photography lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcRb2Kk-Xi4NaGNwXd9_OnlqRUVv0rH6xsCdq2wPRLyuDaKw7npYATU2CU4zu3dvcUQCEnXoZBZwztOxztcTnRVGUpEzXB7hSp4qEFkbHGK4PmHJ9TK6JkSOgaSYDQaZ4fLUOijo30z5D7Zrl3dk4VQGeV6yQ0lLr6we_o9mVcuqMqc0h2EekmfOK_ldyr4Gfif9_bfy5Kz5n4URc54MtmVimyn6_VS5qjyIiM3PtKwg_v4924C5mHxw"/>
+</div>
+<div class="w-full h-22 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-22 object-cover" data-alt="Close shot of smiling wedding couple showing minimalist gold wedding rings to camera, soft ambient aesthetic lighting in booth." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBamoC6_EYM5aOJx_UQMyM6SKx7gEuUEVZ0UbY6u_m7jy9T87HjIFrrn9TYoRCD0I7gehpnnFtHkUmA2oF77_pjDhv5Pmv7Pt497scw693s8ch8S2Xap1C-S7gzAZw0TMxf-cdl7meLIU2Hqsymw7XpAen8yVxY8vN2dkASSrnY2DKTDjY0m6CDGhG9cxxDdyKiTufRcwG3e5eLs17hzspGmok8JRULvMhkHg1bU7w3SrY095YhFPIZ3A"/>
+</div>
+<div class="flex flex-col items-center justify-center pt-2 w-full">
+<span class="font-label-sm text-[10px] tracking-widest text-primary font-bold uppercase">EVER AFTER • ANGKASA</span>
+<span class="font-label-sm text-[8px] text-outline tracking-wider">LIMITED EDITION</span>
+</div>
+</div>
+</div>
+<!-- Card Metadata Content -->
+<div class="flex flex-col gap-space-sm pt-space-md">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#E8F8F0] text-[#3FA37A] font-label-md text-label-md font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#3FA37A]"></span>
+            Aktif
+          </span>
+<span class="font-label-sm text-label-sm text-outline">Layout: Elegan Strip 4x6"</span>
+</div>
+<div class="flex items-baseline justify-between">
+<h2 class="font-title-lg text-title-lg text-primary">Wedding 3 Pose</h2>
+<span class="font-headline-md text-headline-md text-primary font-bold">Rp 30.000</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md py-1">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-medium">3 Pose</span>
+<span class="text-outline-variant">•</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-medium">Elegan Strip</span>
+<span class="text-outline-variant">•</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-medium">Foil Frame</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+          Dirancang khusus untuk suvenir resepsi pernikahan dan anniversary dengan filter soft warmth and glow eksklusif.
+        </p>
+<!-- Action Row -->
+<div class="flex items-center gap-space-sm pt-space-xs mt-space-xs">
+<button class="flex-1 h-11 rounded-full bg-surface-container-high text-primary font-label-lg text-label-lg hover:bg-secondary-fixed transition-all flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+<span>Ubah Preset</span>
+</button>
+<button class="w-11 h-11 rounded-full bg-surface-container text-outline hover:text-error hover:bg-error-container/40 transition-colors flex items-center justify-center shrink-0" title="Hapus Preset" type="button">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</div>
+</article>
+<!-- CARD 3: Ulang Tahun 6 Pose (Bento 2x3 Grid Strip) -->
+<article class="flex flex-col bg-surface-container-lowest rounded-[28px] p-space-md shadow-[0_10px_30px_-10px_rgba(42,37,69,0.06),0_4px_12px_-2px_rgba(142,138,224,0.08)] transition-all hover:-translate-y-1 duration-300">
+<!-- Photo Strip Preview Canvas Stage -->
+<div class="relative w-full bg-surface-container-low rounded-[22px] p-space-md flex justify-center items-center overflow-hidden min-h-[360px]">
+<!-- Ambient decorative backdrop shape -->
+<div class="absolute -top-10 -left-10 w-44 h-44 bg-secondary-fixed-dim/30 rounded-full blur-2xl pointer-events-none"></div>
+<!-- Washi Tape Decal -->
+<div class="absolute top-2 left-1/2 -translate-x-1/2 w-20 h-4 bg-surface-container-highest/80 backdrop-blur-sm -rotate-3 rounded-sm shadow-sm z-10 pointer-events-none"></div>
+<!-- Photobooth Grid Component: 2x3 Grid Card -->
+<div class="relative bg-surface-container-lowest rounded-[18px] p-2.5 pb-5 shadow-[0_12px_28px_-6px_rgba(42,37,69,0.14)] flex flex-col items-center w-52 gap-2 transform rotate-1 hover:rotate-0 transition-transform duration-300">
+<div class="grid grid-cols-2 gap-1.5 w-full">
+<div class="h-16 rounded-md overflow-hidden bg-surface-container">
+<img class="w-full h-16 object-cover" data-alt="Indonesian birthday girl wearing paper party hat holding cupcake with single glowing candle in photobooth, vibrant festive pastel vibe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDT7hAdVl7gLTMoA8gLEOXDF5rJoFJCeELvjDgGi-5uOchxv4h30kiHLAVdYKbXGOFyrOfvY_D8xHcqC5aRHClCB93VjH16w7Yj1CPuz8vktcjLO6IIjPa0xsgyz4UQL9w49qualrwqaOWXQsd1PuhmmxWhx9gxACf1av_MMa-caE_QQVmnkdhjl28RCVyw06-cD2-cd2wmYoLDzUUQ2LfXZA0aHtOKwNPsgUo_PgBX0ugEGa7pllSNEg"/>
+</div>
+<div class="h-16 rounded-md overflow-hidden bg-surface-container">
+<img class="w-full h-16 object-cover" data-alt="Group of friends throwing colorful paper confetti in photobooth, genuine expressions of joy and laughter in modern studio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAysAMUgFOV3EerUvm-QCO7u5-qIvosHUtbw4b9D6ItrmKPWwEPDR8lC3JDXvU8DxNzLXRiCyp1lVml3wcU2Gn6VxvLa-ulvhOeSxHKkyzJSRKPaaV-bCA2cP-Z7LLYd4gYerrXrnQLLsZaLVKxH0ecRgQpqSq_V1ROjokRaRRXFMqv11jVW7DsHh3jEQSzS9hliV98L3RU6PQ1lJMm-FNoRMCvGDtyuR-6nFCwzb96qgeBRKvpXdXVzg"/>
+</div>
+<div class="h-16 rounded-md overflow-hidden bg-surface-container">
+<img class="w-full h-16 object-cover" data-alt="Two Indonesian teenagers holding pastel metallic birthday balloons smiling at camera in self-service booth." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSBl84P1d__o5qk_EEJBIACKJkQPujDo-mZAiHMWNz3kBFgV1JKPiBnu0FfwxdhiRjoRij0CXRXu8grLay9u7-DvmOIazkW5LYxfnXt3u9HC43Mizwfsj5HG_SwJCLXIpaQSLY3go3LV0qg8KK1EAiP2MivLH75sK9-FYZYy5Eml_NoMRAEkhXWARzGJIKNzdwWt54-W0VbCEt-tmw40aCp9oFfTb7H58kxoUEddrhpB0fpL2kSwa4KA"/>
+</div>
+<div class="h-16 rounded-md overflow-hidden bg-surface-container">
+<img class="w-full h-16 object-cover" data-alt="Close joyful candid shot of birthday girl blowing party horn with friends laughing in background inside booth." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxfNDbGMuHyKdy-MjnK16syQWGo-FZXHs5GQ2XAfKLWAAkN4rTSCNQtsC2aJ_vEXBg1if83z97rGdyJuBHBVJqf19OE_vR_H0ztpqzGUT3MR_LezylKazR4Z9rqlG6c6GwTc4_WgGxBz9vLUXtrwDKg19oraQShWdKKNgkxADGFD8XBx9mkRHSeDahdcyX1zyuJgx7XHFR1EjK8IsiMCOdOmn1_0R6IZq4Rjbg4P8kbc1Jqn_car6YzQ"/>
+</div>
+<div class="h-16 rounded-md overflow-hidden bg-surface-container">
+<img class="w-full h-16 object-cover" data-alt="Indonesian friends striking high-fashion funny poses in party sunglasses, cool pastel aesthetic tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwLHflhcDgjJDJ3sYgp_SDPI2toD6A2yRHeissbpjQd9ZSq6An5HAOa_GPouNhZsa5srACMED4nSIkVDcUp5SdFnz1-5iyopA3IlGix5qgFaw5JzSsuqUK_nxvkwgrxL6O4xrP0ZLDtz4By5IT8I9Nj0Em5f_KRxiSIe0p623wCT4Sla7A4Te3bZR5ey9o54LQXJRbE2NDDzEkpRkRVIp6BGaCAFy_7Q0a7TDKjn6uqn_RA2hfBRYk1Q"/>
+</div>
+<div class="h-16 rounded-md overflow-hidden bg-surface-container">
+<img class="w-full h-16 object-cover" data-alt="Group photo polaroid snap of best friends hugging tightly celebrating 21st birthday in clean modern photobooth." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrs0YcuWoewmZ7dHD8D7DZo8fS8mRNpJtV4d7kCMR9DhbdvyPOKU5oQ-0wK30HkqDP9Z44pCmwvHQl1Ftnn3jqfobxncR9iUmoiYy0X0SewXQ6cw6Z765GJXZcotSalJf-CoF3IyF39e5AY6DDn81s5aW06OF0qCeJfQ9izhZ7tk9Jsjvr32PQzBkJa5zZshr430oMqPCs8taUheX4JHGguJQjDg9_nDAqvBTCBAsC2gvLH-4PPN4NBQ"/>
+</div>
+</div>
+<div class="flex items-center justify-between w-full pt-1 px-1">
+<span class="font-label-sm text-[9px] tracking-wider text-primary font-bold uppercase">PARTY BENTO</span>
+<span class="font-label-sm text-[8px] text-outline">6-FRAME MINI</span>
+</div>
+</div>
+</div>
+<!-- Card Metadata Content -->
+<div class="flex flex-col gap-space-sm pt-space-md">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#E8F8F0] text-[#3FA37A] font-label-md text-label-md font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#3FA37A]"></span>
+            Aktif
+          </span>
+<span class="font-label-sm text-label-sm text-outline">Layout: Grid Strip 4x6"</span>
+</div>
+<div class="flex items-baseline justify-between">
+<h2 class="font-title-lg text-title-lg text-primary">Ulang Tahun 6 Pose</h2>
+<span class="font-headline-md text-headline-md text-primary font-bold">Rp 35.000</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md py-1">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-medium">6 Pose</span>
+<span class="text-outline-variant">•</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-medium">Bento Grid</span>
+<span class="text-outline-variant">•</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-medium">Stiker Pack</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+          Grid 6 pose penuh energi untuk rombongan ramai, pesta ulang tahun, dan perayaan kelulusan seru bareng sahabat.
+        </p>
+<!-- Action Row -->
+<div class="flex items-center gap-space-sm pt-space-xs mt-space-xs">
+<button class="flex-1 h-11 rounded-full bg-surface-container-high text-primary font-label-lg text-label-lg hover:bg-secondary-fixed transition-all flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+<span>Ubah Preset</span>
+</button>
+<button class="w-11 h-11 rounded-full bg-surface-container text-outline hover:text-error hover:bg-error-container/40 transition-colors flex items-center justify-center shrink-0" title="Hapus Preset" type="button">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</div>
+</article>
+</section>
+<!-- Bottom Helper Section / Operational Tips Banner -->
+<section class="mt-space-xl p-space-lg rounded-[28px] bg-surface-container-low flex flex-col md:flex-row items-center justify-between gap-space-md shadow-[0_4px_20px_-6px_rgba(42,37,69,0.05)]">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[24px]">sync</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary">Sinkronisasi Kiosk Otomatis</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Setiap perubahan preset akan tersinkron ke Kiosk Senopati-01 dalam waktu 5 detik tanpa perlu me-restart terminal.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-lowest font-label-md text-label-md text-on-surface-variant shadow-sm">
+<span class="w-2 h-2 rounded-full bg-[#3FA37A]"></span>
+<span>Versi Firmware: v2.4.12-kiosk</span>
+</span>
+</div>
+</section>
+<script>
+    function dismissToast() {
+      const toast = document.getElementById('toast-notification');
+      if (toast) {
+        toast.classList.add('translate-y-[-20px]', 'opacity-0');
+        setTimeout(() => {
+          toast.remove();
+        }, 500);
+      }
+    }
+
+    // Auto-dismiss after 6.5 seconds with graceful animation
+    setTimeout(() => {
+      dismissToast();
+    }, 6500);
+  </script>
+</div></main></div><script src="router.js"></script></body></html>

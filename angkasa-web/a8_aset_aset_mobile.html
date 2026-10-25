@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "error-container": "#ffdad6", "tertiary": "#121032", "on-primary-container": "#938cb2", "on-primary-fixed": "#1c1736", "surface-container-highest": "#e5deff", "primary-fixed": "#e6deff", "on-error": "#ffffff", "outline-variant": "#c9c5ce", "on-secondary": "#ffffff", "surface-bright": "#fcf8ff", "on-tertiary-fixed-variant": "#444367", "on-surface": "#1b1830", "background": "#fcf8ff", "inverse-on-surface": "#f4eeff", "on-surface-variant": "#48464d", "on-secondary-fixed": "#130661", "secondary-fixed-dim": "#c4c0ff", "surface-container": "#f1ebff", "on-secondary-fixed-variant": "#403c8d", "primary-container": "#2a2545", "tertiary-container": "#262548", "on-background": "#1b1830", "error": "#ba1a1a", "on-secondary-container": "#3d3889", "on-error-container": "#93000a", "on-tertiary-fixed": "#191739", "inverse-primary": "#c9c1ea", "secondary-container": "#aba7ff", "secondary": "#5854a6", "on-tertiary": "#ffffff", "surface": "#fcf8ff", "primary-fixed-dim": "#c9c1ea", "outline": "#79767e", "surface-variant": "#e5deff", "on-primary": "#ffffff", "on-primary-fixed-variant": "#484264", "tertiary-fixed": "#e3dfff", "surface-container-high": "#ebe5ff", "surface-dim": "#dcd6f7", "on-tertiary-container": "#8e8cb5", "surface-tint": "#605a7d", "surface-container-lowest": "#ffffff", "tertiary-fixed-dim": "#c5c2ee", "inverse-surface": "#312d47", "surface-container-low": "#f7f1ff", "primary": "#15102f", "secondary-fixed": "#e3dfff" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "space-md": "1rem", "margin": "3rem", "space-xl": "2.5rem", "space-sm": "0.5rem", "gutter-mobile": "1rem", "space-lg": "1.5rem", "margin-mobile": "1.25rem", "gutter": "1.5rem", "space-xs": "0.25rem" }, fontFamily: { "headline-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"] }, fontSize: { "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "500"}], "body-lg": ["16px", {"lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400"}], "body-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400"}], "display-lg-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "300"}], "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "400"}], "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500"}], "headline-lg-mobile": ["26px", {"lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "400"}], "display-lg": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "300"}], "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}], "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500"}], "title-lg": ["20px", {"lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "600"}], "title-md": ["16px", {"lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600"}] } } } }</script><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior:none;background-color:#fcf8ff;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen antialiased"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[20px]">photo_camera</span></div><div class="flex flex-col"><span class="font-title-md text-title-md text-on-surface leading-none tracking-tight">Angkasa</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight mt-0.5">Admin Studio</span></div></div><div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high"><span class="w-2 h-2 rounded-full bg-[#3FA37A] animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface font-medium">Senopati-01</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full px-gutter-mobile space-y-space-md">
+<div class="flex flex-col space-y-space-xs pt-space-xs">
+<div class="flex items-center justify-between">
+<div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-semibold tracking-tight">Kelola Aset</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Katalog frame foto &amp; stiker digital kiosk</p>
+</div>
+<button aria-label="Cari Aset" class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface shadow-sm active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</button>
+</div>
+</div>
+<div class="flex items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex items-center p-1 bg-surface-container rounded-full shadow-inner" id="filter-tabs">
+<button class="tab-btn px-4 py-2 rounded-full font-label-md text-label-md transition-all duration-200 bg-primary-container text-on-primary shadow-sm flex items-center gap-1.5" data-filter="frame" type="button">
+<span class="material-symbols-outlined text-[16px]">crop_portrait</span>
+<span>Frame (12)</span>
+</button>
+<button class="tab-btn px-4 py-2 rounded-full font-label-md text-label-md transition-all duration-200 text-on-surface-variant hover:text-on-surface flex items-center gap-1.5" data-filter="stiker" type="button">
+<span class="material-symbols-outlined text-[16px]">sentiment_satisfied</span>
+<span>Stiker (24)</span>
+</button>
+</div>
+<button class="h-10 px-4 rounded-full bg-primary-container text-on-primary font-label-md text-label-md flex items-center gap-1.5 shadow-md active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">add_photo_alternate</span>
+<span>Unggah</span>
+</button>
+</div>
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">tune</span>
+<span>Status: <strong class="text-on-surface font-semibold">Semua Aktif</strong></span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">6 Item Ditampilkan</span>
+</div>
+<div class="grid grid-cols-2 gap-3" id="asset-grid">
+<div class="asset-card asset-frame flex flex-col bg-surface-container-lowest rounded-[20px] p-2.5 shadow-[0_10px_30px_-10px_rgba(42,37,69,0.06),0_4px_12px_-2px_rgba(142,138,224,0.08)] transition-transform active:scale-[0.99] relative overflow-hidden">
+<div class="relative w-full aspect-[3/4] rounded-[14px] bg-surface-container-low overflow-hidden flex items-center justify-center p-2">
+<div class="absolute -top-1 left-1/2 -translate-x-1/2 w-10 h-3 bg-secondary-container/60 rotate-[-2deg] rounded-sm pointer-events-none shadow-sm z-10"></div>
+<img class="w-full h-full object-cover rounded-lg shadow-inner" data-alt="Vertical soft pastel lavender photobooth filmstrip frame 2x6, minimalist Korean studio aesthetic with soft grain and delicate aesthetic lines, illuminated in clean studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCm2jFvhlkegY2GGH6GTXVtOWrxQVVvYyUdq479dnda9EHaoCzhtSd1aZ-yi7qAkRfDLbufaxaxSdGXKy22Q4wdQXUOYTT2xLAkB4myi2VEZLsZeJ4q9VpM3DkYbKgKZxd3GqtK614RU3jNqs7V0KAeSZnWYnOVcNNa03JHL0IWcBx0CFErt6llk_8wacxkXb9QskOZFrd9yUU3X_5j1dy3BaHWFyHJB68IWKUisA8q7Nc-ji_nC3VQvQ"/>
+<span class="absolute top-2 right-2 px-2 py-0.5 rounded-full bg-primary-container/70 backdrop-blur-md text-on-primary font-label-sm text-label-sm">840 KB</span>
+</div>
+<div class="flex flex-col mt-2.5 px-1 pb-1">
+<div class="flex items-start justify-between gap-1">
+<div class="min-w-0 flex-1">
+<h2 class="font-title-md text-title-md text-on-surface truncate">Pastel Lavender</h2>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Strip 2x6 vertikal</p>
+</div>
+<button aria-label="Menu Aset" class="w-7 h-7 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+<div class="flex items-center justify-between mt-2 pt-1.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-[#3FA37A]"></span>
+            Frame
+          </span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Aktif</span>
+</div>
+</div>
+</div>
+<div class="asset-card asset-frame flex flex-col bg-surface-container-lowest rounded-[20px] p-2.5 shadow-[0_10px_30px_-10px_rgba(42,37,69,0.06),0_4px_12px_-2px_rgba(142,138,224,0.08)] transition-transform active:scale-[0.99] relative overflow-hidden">
+<div class="relative w-full aspect-[3/4] rounded-[14px] bg-surface-container-low overflow-hidden flex items-center justify-center p-2">
+<div class="absolute -top-1 left-1/2 -translate-x-1/2 w-10 h-3 bg-primary-fixed-dim/60 rotate-[2deg] rounded-sm pointer-events-none shadow-sm z-10"></div>
+<img class="w-full h-full object-cover rounded-lg shadow-inner" data-alt="Retro neon pastel border frame 4x6 for modern photobooth, soft glowing chromatic gradient edges with rounded corners on crisp paper texture, soft lavender and cyan ambient tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB49SgNG5k1Dp4yxwIZbCcaJMEPSCtl1NfP64yfNmXEGgtx8sD1fED2-ehobQnlMc6jJSB5nxynDMmcfgb5ejEb3VjEPhVc9l5dKxWsPbLgYeNIh8X2HfL1KbpSpHctcW1KHs6YYwflwGpB5gzV40UmLNnCUpgCjN57IpEl7yfNwBLNKT9Kdr1oPmGXBnW9YnQQ_LDBu9vNy5uFVwxgh3_nTeuam3dZ0urU4g9MZj3xSo8lb65UBNgAYw"/>
+<span class="absolute top-2 right-2 px-2 py-0.5 rounded-full bg-primary-container/70 backdrop-blur-md text-on-primary font-label-sm text-label-sm">1.2 MB</span>
+</div>
+<div class="flex flex-col mt-2.5 px-1 pb-1">
+<div class="flex items-start justify-between gap-1">
+<div class="min-w-0 flex-1">
+<h2 class="font-title-md text-title-md text-on-surface truncate">Retro Neon Border</h2>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Frame 4x6 lebar</p>
+</div>
+<button aria-label="Menu Aset" class="w-7 h-7 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+<div class="flex items-center justify-between mt-2 pt-1.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-[#3FA37A]"></span>
+            Frame
+          </span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Aktif</span>
+</div>
+</div>
+</div>
+<div class="asset-card asset-stiker flex flex-col bg-surface-container-lowest rounded-[20px] p-2.5 shadow-[0_10px_30px_-10px_rgba(42,37,69,0.06),0_4px_12px_-2px_rgba(142,138,224,0.08)] transition-transform active:scale-[0.99] relative overflow-hidden">
+<div class="relative w-full aspect-[3/4] rounded-[14px] bg-[linear-gradient(45deg,#f1ebff_25%,transparent_25%),linear-gradient(-45deg,#f1ebff_25%,transparent_25%),linear-gradient(45deg,transparent_75%,#f1ebff_75%),linear-gradient(-45deg,transparent_75%,#f1ebff_75%)] bg-[size:16px_16px] bg-[position:0_0,0_8px,8px_-8px,-8px_0] overflow-hidden flex items-center justify-center p-3">
+<img class="w-3/4 h-3/4 object-contain drop-shadow-[0_8px_16px_rgba(88,84,166,0.25)]" data-alt="Charming Y2K shiny sparkle star transparent sticker PNG graphic, ethereal lilac and iridescent highlights, glossy metallic sheen, cute high-resolution photobooth accessory." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0gqLVgkt44gL1g-VpLoA11LdLlQJHiEUYe2ntDhvaYMoZdf6-JUecjik0i-SG_UbTVCDZ8X5uxHok-Exfe0bGLY2QsRhBcsHjOEqyLbudXtZDdd4xROpe8J3htAgtFNc8ULw0h94rTQqT0XCV14PVabU-PLScGPW1ctFgsU1YTAWcQ_OSDSX19-HBvkzFW_LUpGQ4-PrDEH_2Vl_hExZ7UMpTkGk5WVE_D53gmNaANcCB-bz-JptMZA"/>
+<span class="absolute top-2 right-2 px-2 py-0.5 rounded-full bg-primary-container/70 backdrop-blur-md text-on-primary font-label-sm text-label-sm">320 KB</span>
+</div>
+<div class="flex flex-col mt-2.5 px-1 pb-1">
+<div class="flex items-start justify-between gap-1">
+<div class="min-w-0 flex-1">
+<h2 class="font-title-md text-title-md text-on-surface truncate">Sparkle Star Y2K</h2>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Stiker PNG transparan</p>
+</div>
+<button aria-label="Menu Aset" class="w-7 h-7 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+<div class="flex items-center justify-between mt-2 pt-1.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-[#3FA37A]"></span>
+            Stiker
+          </span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Aktif</span>
+</div>
+</div>
+</div>
+<div class="asset-card asset-stiker flex flex-col bg-surface-container-lowest rounded-[20px] p-2.5 shadow-[0_10px_30px_-10px_rgba(42,37,69,0.06),0_4px_12px_-2px_rgba(142,138,224,0.08)] transition-transform active:scale-[0.99] relative overflow-hidden">
+<div class="relative w-full aspect-[3/4] rounded-[14px] bg-[linear-gradient(45deg,#f1ebff_25%,transparent_25%),linear-gradient(-45deg,#f1ebff_25%,transparent_25%),linear-gradient(45deg,transparent_75%,#f1ebff_75%),linear-gradient(-45deg,transparent_75%,#f1ebff_75%)] bg-[size:16px_16px] bg-[position:0_0,0_8px,8px_-8px,-8px_0] overflow-hidden flex items-center justify-center p-3">
+<img class="w-3/4 h-3/4 object-contain drop-shadow-[0_8px_16px_rgba(88,84,166,0.25)]" data-alt="Sweet aesthetic cute pink coquette ribbon bow sticker PNG, satin fabric texture, soft blush pink tones with realistic folds, transparent sticker isolated asset for kiosk photo editing." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtkCZrHkRMVZEB6XW-7s4GOrMFe5m7otjvH5MNc_N4JZFTraP-TwLibuCROP_g9Y4OjCaDoNe0ZgD8zKSJkDHTpMZWiIQSgRzE5mXzZGx93pmtFuRGeAwsw3sgm0Nn82bfCdX2ALq050S7lkUuBJejJRPvhGyvN7N8OzyrVDLAiywzVeAxVzXgZcBm5a5aeAtgD2D2LLagaXh9bpJsYTEBPxIzQ8T5odBYVBN9vg4uIFK1WX4hGoupdA"/>
+<span class="absolute top-2 right-2 px-2 py-0.5 rounded-full bg-primary-container/70 backdrop-blur-md text-on-primary font-label-sm text-label-sm">450 KB</span>
+</div>
+<div class="flex flex-col mt-2.5 px-1 pb-1">
+<div class="flex items-start justify-between gap-1">
+<div class="min-w-0 flex-1">
+<h2 class="font-title-md text-title-md text-on-surface truncate">Cute Ribbon Pink</h2>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Stiker PNG transparan</p>
+</div>
+<button aria-label="Menu Aset" class="w-7 h-7 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+<div class="flex items-center justify-between mt-2 pt-1.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-[#3FA37A]"></span>
+            Stiker
+          </span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Aktif</span>
+</div>
+</div>
+</div>
+<div class="asset-card asset-frame flex flex-col bg-surface-container-lowest rounded-[20px] p-2.5 shadow-[0_10px_30px_-10px_rgba(42,37,69,0.06),0_4px_12px_-2px_rgba(142,138,224,0.08)] transition-transform active:scale-[0.99] relative overflow-hidden">
+<div class="relative w-full aspect-[3/4] rounded-[14px] bg-surface-container-low overflow-hidden flex items-center justify-center p-2">
+<div class="absolute -top-1 left-1/2 -translate-x-1/2 w-10 h-3 bg-secondary-fixed-dim/60 rotate-[-1deg] rounded-sm pointer-events-none shadow-sm z-10"></div>
+<img class="w-full h-full object-cover rounded-lg shadow-inner" data-alt="Vintage 35mm analogue film border strip 2x6 frame template, authentic sprocket holes and subtle sepia grain texture, moody artistic film aesthetics for photo kiosk." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnubAJgCHt7FmPejAEBX-hHsEvg0euT7gVzPMeYpQbX_2kyAfvUXWbBDmCI2JZm5xnFaY7Z-EnMEBqpVh4QnMNMgRltJAV1mPrNPcfHFEiQhqTM6hnMHozitpuXhWsdps6b3DbeHS5KLpfp0oztWj18JFybo03hZSuwyHArC9QJb01R9xIdnGm2LVmzqXC9vA2CfJmbRvMgROC9JkF1Qp9sc5u0tU1WkKjVV7l12EEJwZHO_ZGuGbuEA"/>
+<span class="absolute top-2 right-2 px-2 py-0.5 rounded-full bg-primary-container/70 backdrop-blur-md text-on-primary font-label-sm text-label-sm">960 KB</span>
+</div>
+<div class="flex flex-col mt-2.5 px-1 pb-1">
+<div class="flex items-start justify-between gap-1">
+<div class="min-w-0 flex-1">
+<h2 class="font-title-md text-title-md text-on-surface truncate">Vintage Film</h2>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Strip 2x6 analog</p>
+</div>
+<button aria-label="Menu Aset" class="w-7 h-7 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+<div class="flex items-center justify-between mt-2 pt-1.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-[#3FA37A]"></span>
+            Frame
+          </span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Aktif</span>
+</div>
+</div>
+</div>
+<div class="asset-card asset-stiker flex flex-col bg-surface-container-lowest rounded-[20px] p-2.5 shadow-[0_10px_30px_-10px_rgba(42,37,69,0.06),0_4px_12px_-2px_rgba(142,138,224,0.08)] transition-transform active:scale-[0.99] relative overflow-hidden">
+<div class="relative w-full aspect-[3/4] rounded-[14px] bg-[linear-gradient(45deg,#f1ebff_25%,transparent_25%),linear-gradient(-45deg,#f1ebff_25%,transparent_25%),linear-gradient(45deg,transparent_75%,#f1ebff_75%),linear-gradient(-45deg,transparent_75%,#f1ebff_75%)] bg-[size:16px_16px] bg-[position:0_0,0_8px,8px_-8px,-8px_0] overflow-hidden flex items-center justify-center p-3">
+<img class="w-3/4 h-3/4 object-contain drop-shadow-[0_8px_16px_rgba(88,84,166,0.25)]" data-alt="Hand drawn lovely heart doodle sticker in pastel purple crayon sketch style, soft textured whimsical contours, transparent PNG asset ready for photobooth overlay." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCevR46PMekDYHW1V8dakIsqjfauQMDg_xq0PUr-a2BtAqYjl00qzHRDXMPzxxYEx4rE3saTsnwre0N5xqy5ToJe8pyi0FP4-HJFOktz9V1uEbg_2-i7C07rIfIcWnV5oSvYKJnyWHcA3aQw7IRe2kQqu23uchZE5e0bqsRbawk21ym66wrIPFvTdq_N917hx6nQl7ArR2GJmUxW-DLMvgefRvwsa9XCd0J8o8WbOo_jYxnsvvuvcyjkQ"/>
+<span class="absolute top-2 right-2 px-2 py-0.5 rounded-full bg-primary-container/70 backdrop-blur-md text-on-primary font-label-sm text-label-sm">280 KB</span>
+</div>
+<div class="flex flex-col mt-2.5 px-1 pb-1">
+<div class="flex items-start justify-between gap-1">
+<div class="min-w-0 flex-1">
+<h2 class="font-title-md text-title-md text-on-surface truncate">Love Heart Doodle</h2>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Stiker PNG transparan</p>
+</div>
+<button aria-label="Menu Aset" class="w-7 h-7 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+<div class="flex items-center justify-between mt-2 pt-1.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-[#3FA37A]"></span>
+            Stiker
+          </span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Aktif</span>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-sm pb-space-lg flex flex-col items-center justify-center text-center space-y-2">
+<div class="w-12 h-1 rounded-full bg-surface-container-highest"></div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Penyimpanan Terpakai: <span class="font-semibold text-on-surface">34.8 MB</span> dari 2.0 GB</p>
+</div>
+</div>
+<script>
+  (function() {
+    const tabs = document.querySelectorAll('#filter-tabs .tab-btn');
+    const cards = document.querySelectorAll('#asset-grid .asset-card');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const filterType = tab.getAttribute('data-filter');
+
+        tabs.forEach(t => {
+          t.className = 'tab-btn px-4 py-2 rounded-full font-label-md text-label-md transition-all duration-200 text-on-surface-variant hover:text-on-surface flex items-center gap-1.5';
+        });
+
+        tab.className = 'tab-btn px-4 py-2 rounded-full font-label-md text-label-md transition-all duration-200 bg-primary-container text-on-primary shadow-sm flex items-center gap-1.5';
+
+        cards.forEach(card => {
+          if (card.classList.contains(`asset-${filterType}`)) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      });
+    });
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/85 backdrop-blur-xl shadow-[0_-4px_16px_rgba(42,37,69,0.05)]" data-active-classes="text-secondary font-bold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant transition-colors" data-path="ringkasan" href="#"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="font-label-sm text-label-sm mt-0.5">Ringkasan</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant transition-colors" data-path="preset" href="#"><span class="material-symbols-outlined text-[22px]">auto_awesome</span><span class="font-label-sm text-label-sm mt-0.5">Preset</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] transition-colors text-secondary font-bold" data-path="aset" href="#"><span class="material-symbols-outlined text-[22px]">photo_library</span><span class="font-label-sm text-label-sm mt-0.5">Aset</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant transition-colors" data-path="riwayat" href="#"><span class="material-symbols-outlined text-[22px]">history</span><span class="font-label-sm text-label-sm mt-0.5">Riwayat</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant transition-colors" data-path="pengaturan" href="#"><span class="material-symbols-outlined text-[22px]">settings</span><span class="font-label-sm text-label-sm mt-0.5">Pengaturan</span></a></div></nav><script src="router.js"></script></body></html>

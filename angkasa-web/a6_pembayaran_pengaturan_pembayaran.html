@@ -1,0 +1,385 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-secondary-fixed-variant": "#403c8d", "outline": "#79767e", "on-tertiary-fixed-variant": "#444367", "on-tertiary-container": "#8e8cb5", "on-error-container": "#93000a", "on-tertiary": "#ffffff", "background": "#fcf8ff", "on-primary-fixed-variant": "#484264", "surface-dim": "#dcd6f7", "on-primary": "#ffffff", "secondary-fixed": "#e3dfff", "error-container": "#ffdad6", "on-surface": "#1b1830", "primary-fixed-dim": "#c9c1ea", "surface-container-lowest": "#ffffff", "on-primary-container": "#938cb2", "inverse-on-surface": "#f4eeff", "on-surface-variant": "#48464d", "on-background": "#1b1830", "tertiary-fixed": "#e3dfff", "surface-container-low": "#f7f1ff", "secondary-container": "#aba7ff", "primary-fixed": "#e6deff", "error": "#ba1a1a", "on-error": "#ffffff", "secondary-fixed-dim": "#c4c0ff", "on-secondary": "#ffffff", "on-secondary-fixed": "#130661", "surface-bright": "#fcf8ff", "outline-variant": "#c9c5ce", "secondary": "#5854a6", "inverse-primary": "#c9c1ea", "surface-container": "#f1ebff", "surface": "#fcf8ff", "primary-container": "#2a2545", "on-primary-fixed": "#1c1736", "surface-container-highest": "#e5deff", "surface-variant": "#e5deff", "primary": "#15102f", "tertiary-fixed-dim": "#c5c2ee", "tertiary": "#121032", "on-secondary-container": "#3d3889", "inverse-surface": "#312d47", "on-tertiary-fixed": "#191739", "surface-container-high": "#ebe5ff", "tertiary-container": "#262548", "surface-tint": "#605a7d" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "gutter": "1.5rem", "space-xl": "2.5rem", "gutter-mobile": "1rem", "margin-mobile": "1.25rem", "space-md": "1rem", "margin": "3rem" }, fontFamily: { "body-md": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"] }, fontSize: { "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "300" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "title-lg": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "400" }], "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "300" }] } } } };</script></head><body class="bg-background font-body-md text-body-md text-on-surface min-h-screen antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><aside class="fixed left-0 top-0 h-full w-60 bg-surface-container-lowest z-40 flex flex-col justify-between p-space-md shadow-[0_10px_30px_-10px_rgba(42,37,69,0.06)]"><div class="flex flex-col"><div class="flex items-center gap-space-sm px-space-sm py-space-md mb-space-md"><div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-secondary"><span class="material-symbols-outlined text-[22px]">auto_awesome</span></div><div class="flex flex-col"><span class="font-title-md text-title-md text-on-surface tracking-tight leading-none">Angkasa</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mt-1">PHOTOBOOTH</span></div></div><nav class="flex flex-col gap-1.5" data-active-classes="bg-primary-container text-on-primary font-label-lg shadow-[0_8px_24px_-4px_rgba(42,37,69,0.28)]"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="ringkasan" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span>Ringkasan</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="preset" href="#"><span class="material-symbols-outlined text-[20px]">deployed_code</span><span>Preset</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="aset" href="#"><span class="material-symbols-outlined text-[20px]">photo_library</span><span>Aset (Frame &amp; Stiker)</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="riwayat-sesi" href="#"><span class="material-symbols-outlined text-[20px]">history</span><span>Riwayat Sesi</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full transition-all bg-primary-container text-on-primary font-label-lg shadow-[0_8px_24px_-4px_rgba(42,37,69,0.28)]" data-path="pengaturan" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>Pengaturan</span></a></nav></div><div class="flex items-center justify-between p-space-sm rounded-full bg-surface-container-low"><div class="flex items-center gap-space-sm min-w-0"><div class="relative flex-shrink-0"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-[#3FA37A] ring-2 ring-surface-container-lowest"></span></div><div class="flex flex-col min-w-0 pr-space-xs"><span class="font-label-md text-label-md text-on-surface truncate leading-tight">Admin Booth</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Aktif</span></div></div><button aria-label="Keluar" class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[18px]">logout</span></button></div></aside><div class="pl-60"><header class="fixed top-0 left-60 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-30 flex items-center justify-between px-space-xl"><div class="flex items-center w-80 relative"><span class="material-symbols-outlined absolute left-space-md text-[20px] text-on-surface-variant pointer-events-none">search</span><input class="w-full pl-11 pr-space-md py-space-xs h-10 rounded-full bg-surface-container-low font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:ring-2 focus:ring-secondary/30 transition-all" placeholder="Cari konfigurasi, voucher, ID sesi..." type="search"></div><div class="flex items-center gap-space-md"><button aria-label="Notifikasi" class="relative w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-secondary-container"></span></button><div class="flex items-center gap-space-sm pl-space-xs pr-space-md py-space-xs rounded-full bg-surface-container-low"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span class="font-label-md text-label-md text-on-surface">Admin Booth</span></div></div></header><main class="relative pt-16 min-h-screen bg-[#F5F5F7] bg-[radial-gradient(ellipse_80%_60%_at_50%_0%,rgba(142,138,224,0.12),transparent_70%)] px-space-xl py-space-lg"><div class="max-w-6xl mx-auto pb-28"><div class="flex flex-col w-full">
+<div class="flex flex-col gap-space-lg">
+<!-- Header Block -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md mb-1">
+<span>Konfigurasi Kios</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface font-label-lg text-label-lg">Pengaturan</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight leading-none">
+          Pengaturan <span class="text-on-tertiary-container font-headline-lg text-headline-lg">Pembayaran</span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-xl">
+          Konfigurasi gateway pembayaran QRIS, e-wallet, dan sinkronisasi webhook sandbox.
+        </p>
+</div>
+<!-- Navigation Tabs -->
+<div class="inline-flex p-1.5 rounded-full bg-surface-container-low shadow-sm self-start md:self-auto">
+<a class="px-space-md py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-1.5" href="#booth">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+          Booth
+        </a>
+<a class="px-space-lg py-1.5 rounded-full font-label-md text-label-md bg-primary-container text-on-primary shadow-[0_4px_16px_-2px_rgba(42,37,69,0.25)] flex items-center gap-1.5 transition-all" href="#pembayaran">
+<span class="material-symbols-outlined text-[18px]">account_balance_wallet</span>
+          Pembayaran
+        </a>
+<a class="px-space-md py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-1.5" href="#akun">
+<span class="material-symbols-outlined text-[18px]">shield_person</span>
+          Akun
+        </a>
+</div>
+</div>
+<!-- Live Status Banner / Toast Alert -->
+<div class="flex items-center justify-between gap-space-md p-space-md rounded-2xl bg-surface-container-lowest shadow-[0_10px_30px_-10px_rgba(42,37,69,0.06),0_4px_12px_-2px_rgba(142,138,224,0.08)] transition-all" id="statusToast">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-full bg-[#3FA37A]/15 text-[#3FA37A] flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">check_circle</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-title-md text-title-md text-on-surface">Koneksi berhasil</span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#3FA37A]/10 text-[#3FA37A] font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-[#3FA37A] animate-pulse"></span>
+              Ping: 42ms
+            </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant truncate">
+            Gateway siap menerima transaksi pelanggan secara otomatis di kios Angkasa.
+          </p>
+</div>
+</div>
+<button aria-label="Tutup notifikasi" class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors flex-shrink-0" onclick="document.getElementById('statusToast').style.display='none'">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Main Grid Configuration -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left Column: Credentials & Webhook (8 Cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Card: Kredensial Gateway -->
+<div class="p-space-xl rounded-3xl bg-surface-container-lowest shadow-[0_10px_30px_-10px_rgba(42,37,69,0.06),0_4px_12px_-2px_rgba(142,138,224,0.08)] relative overflow-hidden">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md pb-space-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-tertiary-container uppercase tracking-widest font-semibold">Keamanan &amp; Otorisasi</span>
+<h2 class="font-headline-md text-headline-md text-on-surface mt-0.5">Kredensial Gateway Pembayaran</h2>
+</div>
+<!-- Mode Sandbox Badge & Toggle -->
+<div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-1.5 rounded-full self-start sm:self-auto">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#3FA37A]/15 text-[#3FA37A] font-label-sm text-label-sm" id="envBadge">
+<span class="w-2 h-2 rounded-full bg-[#3FA37A]"></span>
+                Sandbox (Pengujian)
+              </span>
+<label class="relative inline-flex items-center cursor-pointer ml-1">
+<input class="sr-only peer" id="envToggle" onchange="toggleEnvMode(this)" type="checkbox">
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Live</span>
+</div>
+</div>
+<!-- Credentials Fields Form -->
+<div class="flex flex-col gap-space-md">
+<!-- Merchant ID -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface flex items-center justify-between">
+<span>Merchant ID</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Didapat dari dasbor penyedia</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-space-md text-[20px] text-on-surface-variant">storefront</span>
+<input class="w-full pl-11 pr-24 py-3 h-[52px] rounded-full bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none" readonly="" type="text" value="G93600123984">
+<button class="absolute right-2 px-space-md py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container hover:bg-surface-container-highest text-on-surface transition-all flex items-center gap-1" onclick="copyToClipboard('G93600123984', this)" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>Salin</span>
+</button>
+</div>
+</div>
+<!-- Server Key -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface flex items-center justify-between">
+<span>Server Key (Secret)</span>
+<span class="text-error font-label-sm text-label-sm">Jangan bagikan ke publik</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-space-md text-[20px] text-on-surface-variant">key</span>
+<input class="w-full pl-11 pr-28 py-3 h-[52px] rounded-full bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none tracking-wider" id="serverKeyInput" readonly="" type="password" value="SB-Mid-server-8f92jKLa893MnQ014Zz98">
+<div class="absolute right-2 flex items-center gap-1">
+<button class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors" onclick="toggleSecretVisibility('serverKeyInput', this)" title="Lihat/Sembunyikan" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="px-space-sm py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container hover:bg-surface-container-highest text-on-surface transition-all flex items-center gap-1" onclick="copyToClipboard('SB-Mid-server-8f92jKLa893MnQ014Zz98', this)" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>Salin</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Client Key -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface">Client Key</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-space-md text-[20px] text-on-surface-variant">terminal</span>
+<input class="w-full pl-11 pr-24 py-3 h-[52px] rounded-full bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none" id="clientKeyInput" readonly="" type="text" value="SB-Mid-client-WpL03910KmXas982">
+<button class="absolute right-2 px-space-md py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container hover:bg-surface-container-highest text-on-surface transition-all flex items-center gap-1" onclick="copyToClipboard('SB-Mid-client-WpL03910KmXas982', this)" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>Salin</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Bottom Action within card: Test Connection -->
+<div class="mt-space-lg pt-space-md flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>Terakhir disinkronkan 14 menit lalu</span>
+</div>
+<button class="px-space-lg py-2.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-lg text-label-lg transition-all flex items-center justify-center gap-2" id="btnTestPing" onclick="simulatePingTest()" type="button">
+<span class="material-symbols-outlined text-[18px]" id="pingIcon">sync</span>
+<span id="pingText">Tes Koneksi</span>
+</button>
+</div>
+</div>
+<!-- Card: Webhook & Callback -->
+<div class="p-space-xl rounded-3xl bg-surface-container-lowest shadow-[0_10px_30px_-10px_rgba(42,37,69,0.06),0_4px_12px_-2px_rgba(142,138,224,0.08)]">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-tertiary-container uppercase tracking-widest font-semibold">Notifikasi Transaksi Realtime</span>
+<h2 class="font-headline-md text-headline-md text-on-surface mt-0.5">Integrasi Webhook &amp; Callback</h2>
+</div>
+<span class="p-2 rounded-full bg-surface-container-low text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">webhook</span>
+</span>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Webhook URL -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface">Endpoint Webhook URL</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-space-md text-[20px] text-on-surface-variant">link</span>
+<input class="w-full pl-11 pr-32 py-3 h-[52px] rounded-full bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none" id="webhookInput" readonly="" type="text" value="https://api.angkasastudio.id/v1/payments/webhook">
+<button class="absolute right-2 px-space-md py-1.5 rounded-full font-label-md text-label-md bg-secondary-fixed text-on-secondary-fixed hover:bg-secondary-fixed-dim transition-all flex items-center gap-1.5" onclick="copyToClipboard('https://api.angkasastudio.id/v1/payments/webhook', this)" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>Salin Tautan</span>
+</button>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant px-space-xs mt-1">
+                URL ini menerima notifikasi instan ketika pembayaran QRIS berhasil diselesaikan di smartphone pelanggan.
+              </p>
+</div>
+<!-- Secret Webhook Key -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface">Secret Webhook Key</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-space-md text-[20px] text-on-surface-variant">verified_user</span>
+<input class="w-full pl-11 pr-24 py-3 h-[52px] rounded-full bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none tracking-widest" id="secretKeyInput" readonly="" type="password" value="whsec_09xfaB981bca66744002">
+<button class="absolute right-2 px-space-md py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container hover:bg-surface-container-highest text-on-surface transition-all flex items-center gap-1" onclick="copyToClipboard('whsec_09xfaB981bca66744002', this)" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>Salin</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Metode Pembayaran Aktif & Analytics Card (4 Cols) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Metode Pembayaran Card -->
+<div class="p-space-lg rounded-3xl bg-surface-container-lowest shadow-[0_10px_30px_-10px_rgba(42,37,69,0.06),0_4px_12px_-2px_rgba(142,138,224,0.08)]">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-tertiary-container uppercase tracking-widest font-semibold">Kanal Transaksi</span>
+<h2 class="font-title-lg text-title-lg text-on-surface mt-0.5">Metode Pembayaran</h2>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high font-label-sm text-label-sm text-on-surface font-semibold">
+              4 Aktif
+            </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+            Pilih kanal pembayaran resmi yang dapat dipilih pengguna saat memesan cetakan foto di layar kios.
+          </p>
+<!-- Payment Methods List -->
+<div class="flex flex-col gap-space-sm">
+<!-- QRIS (Aktif) -->
+<div class="flex items-center justify-between p-space-md rounded-2xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-xl bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">qr_code_scanner</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface leading-tight">QRIS</span>
+<span class="font-label-sm text-label-sm text-[#3FA37A] font-semibold">Semua Bank &amp; Dompet Digital</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer flex-shrink-0">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+<!-- GoPay (Aktif) -->
+<div class="flex items-center justify-between p-space-md rounded-2xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-xl bg-surface-container-lowest flex items-center justify-center text-secondary shadow-sm flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">wallet</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface leading-tight">GoPay</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pembayaran Cepat</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer flex-shrink-0">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+<!-- OVO (Aktif) -->
+<div class="flex items-center justify-between p-space-md rounded-2xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-xl bg-surface-container-lowest flex items-center justify-center text-secondary shadow-sm flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">account_balance_wallet</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface leading-tight">OVO</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Notifikasi push e-wallet</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer flex-shrink-0">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+<!-- DANA (Aktif) -->
+<div class="flex items-center justify-between p-space-md rounded-2xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-xl bg-surface-container-lowest flex items-center justify-center text-secondary shadow-sm flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">payments</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface leading-tight">DANA</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Dompet Digital</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer flex-shrink-0">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+<!-- Kartu Debit/Kredit (Nonaktif) -->
+<div class="flex items-center justify-between p-space-md rounded-2xl bg-surface-container-low opacity-75 hover:opacity-100 transition-all">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-on-surface-variant flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">credit_card</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface leading-tight">Kartu Debit / Kredit</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">EDC Kiosk Eksternal</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer flex-shrink-0">
+<input class="sr-only peer" type="checkbox">
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+</div>
+</div>
+<!-- Visual Analytics / Snapshot Widget -->
+<div class="p-space-lg rounded-3xl bg-surface-container-lowest shadow-[0_10px_30px_-10px_rgba(42,37,69,0.06)] flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">Tingkat Keberhasilan QRIS</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-[#3FA37A]/15 text-[#3FA37A] font-semibold">99.4%</span>
+</div>
+<!-- Inline Sparkline / Flowchart Visualization -->
+<div class="w-full flex items-end gap-1.5 h-16 pt-2">
+<div class="flex-1 bg-surface-container-high rounded-t-md h-[40%] hover:bg-secondary transition-all" title="09:00 - 100%"></div>
+<div class="flex-1 bg-surface-container-high rounded-t-md h-[65%] hover:bg-secondary transition-all" title="11:00 - 98%"></div>
+<div class="flex-1 bg-surface-container-high rounded-t-md h-[55%] hover:bg-secondary transition-all" title="13:00 - 99%"></div>
+<div class="flex-1 bg-surface-container-high rounded-t-md h-[85%] hover:bg-secondary transition-all" title="15:00 - 100%"></div>
+<div class="flex-1 bg-surface-container-high rounded-t-md h-[70%] hover:bg-secondary transition-all" title="17:00 - 100%"></div>
+<div class="flex-1 bg-primary-container rounded-t-md h-[95%] hover:bg-primary transition-all" title="19:00 - 99.4%"></div>
+<div class="flex-1 bg-surface-container-high rounded-t-md h-[60%] hover:bg-secondary transition-all" title="21:00 - 100%"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm border-t-0 pt-1">
+<span>Rata-rata verifikasi: <strong>2.8 detik</strong></span>
+<span>24 Jam Terakhir</span>
+</div>
+</div>
+<!-- Hardware Kiosk Illustration Placeholder -->
+<div class="p-space-md rounded-3xl bg-surface-container-low flex items-center gap-space-md">
+<div class="w-16 h-16 rounded-2xl bg-surface-container-lowest flex items-center justify-center overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Close up modern minimalist photo booth terminal screen with luminous purple QRIS payment display and tactile buttons, soft studio photography, Plus Jakarta aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDXZZ1LmBQ4TJcCOVu_2CNB3HeFqiDS0BmBf88aTAHENyno9gzhnyjdvZtHOWJG_xt5PC0r-S493sqre78b-TmiIJvvSasA228PjVZDucqUzIzDyxaU11ArM1nEU4RWg5nsHxLlHmL9u-jVePBGZvZm3s44AP3WJ4WCcZXNw3QPs5OUbkXcP0XNT5d_bUITH3B3-trKW04phSaBD7S-sTM_00sTboGDZlLqdWQ45LRQ6u7AbhnazWO3w">
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Booth Angkasa #01</span>
+<span class="font-body-md text-body-md text-on-surface-variant text-xs">Grand Indonesia Mall, Jakarta</span>
+<span class="inline-flex items-center gap-1 text-[#3FA37A] font-label-sm text-label-sm mt-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-[#3FA37A]"></span>
+              Mesin Terhubung
+            </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Inline Script for dynamic feedback -->
+<script>
+    function copyToClipboard(text, btnElement) {
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(text).then(() => {
+          const originalHTML = btnElement.innerHTML;
+          btnElement.innerHTML = `<span class="material-symbols-outlined text-[16px] text-[#3FA37A]">check</span><span class="text-[#3FA37A]">Tersalin</span>`;
+          setTimeout(() => {
+            btnElement.innerHTML = originalHTML;
+          }, 1800);
+        });
+      }
+    }
+
+    function toggleSecretVisibility(inputId, btn) {
+      const input = document.getElementById(inputId);
+      const icon = btn.querySelector('.material-symbols-outlined');
+      if (input.type === 'password') {
+        input.type = 'text';
+        icon.textContent = 'visibility_off';
+      } else {
+        input.type = 'password';
+        icon.textContent = 'visibility';
+      }
+    }
+
+    function toggleEnvMode(checkbox) {
+      const badge = document.getElementById('envBadge');
+      if (checkbox.checked) {
+        badge.innerHTML = `<span class="w-2 h-2 rounded-full bg-secondary-container"></span>Mode Produksi (Live)`;
+        badge.className = 'inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary/15 text-secondary font-label-sm text-label-sm font-semibold';
+      } else {
+        badge.innerHTML = `<span class="w-2 h-2 rounded-full bg-[#3FA37A]"></span>Mode Sandbox (Pengujian)`;
+        badge.className = 'inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#3FA37A]/15 text-[#3FA37A] font-label-sm text-label-sm';
+      }
+    }
+
+    function simulatePingTest() {
+      const icon = document.getElementById('pingIcon');
+      const text = document.getElementById('pingText');
+      const btn = document.getElementById('btnTestPing');
+      
+      icon.classList.add('animate-spin');
+      text.textContent = 'Memeriksa...';
+      btn.disabled = true;
+
+      setTimeout(() => {
+        icon.classList.remove('animate-spin');
+        icon.textContent = 'check';
+        icon.classList.add('text-[#3FA37A]');
+        text.textContent = 'Terhubung (38ms)';
+        
+        setTimeout(() => {
+          icon.textContent = 'sync';
+          icon.classList.remove('text-[#3FA37A]');
+          text.textContent = 'Tes Koneksi';
+          btn.disabled = false;
+        }, 2500);
+      }, 900);
+    }
+  </script>
+</div></div></main><div class="fixed bottom-6 left-60 right-0 z-30 pointer-events-none flex justify-center px-space-xl"><div class="pointer-events-auto flex items-center justify-between gap-space-xl px-space-lg py-space-md rounded-full bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_16px_40px_-8px_rgba(42,37,69,0.12),0_0_20px_rgba(142,138,224,0.15)] max-w-3xl w-full"><div class="flex items-center gap-space-sm text-on-surface"><span class="material-symbols-outlined text-secondary text-[20px]">info</span><span class="font-body-md text-body-md text-on-surface">Ada perubahan yang belum disimpan</span></div><div class="flex items-center gap-space-sm"><button class="px-space-lg py-2.5 rounded-full font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" type="button">Batal</button><button class="px-space-xl py-2.5 rounded-full font-label-lg text-label-lg bg-primary-container text-on-primary shadow-[0_8px_24px_-4px_rgba(42,37,69,0.35)] hover:bg-primary transition-all" type="button">Simpan Perubahan</button></div></div></div></div><script src="router.js"></script></body></html>

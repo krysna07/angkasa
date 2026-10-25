@@ -1,0 +1,349 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface": "#fcf8ff", "on-tertiary-fixed": "#191739", "outline": "#79767e", "outline-variant": "#c9c5ce", "surface-variant": "#e5deff", "on-secondary-fixed": "#130661", "surface-container-lowest": "#ffffff", "on-error": "#ffffff", "tertiary": "#121032", "on-surface": "#1b1830", "surface-dim": "#dcd6f7", "on-background": "#1b1830", "error": "#ba1a1a", "secondary-container": "#aba7ff", "tertiary-container": "#262548", "inverse-surface": "#312d47", "primary-container": "#2a2545", "surface-container-high": "#ebe5ff", "secondary": "#5854a6", "on-secondary-fixed-variant": "#403c8d", "primary": "#15102f", "surface-container-low": "#f7f1ff", "on-primary-fixed-variant": "#484264", "secondary-fixed-dim": "#c4c0ff", "primary-fixed": "#e6deff", "on-primary-container": "#938cb2", "surface-tint": "#605a7d", "surface-container-highest": "#e5deff", "on-secondary-container": "#3d3889", "surface-container": "#f1ebff", "tertiary-fixed-dim": "#c5c2ee", "on-primary": "#ffffff", "surface-bright": "#fcf8ff", "on-tertiary-fixed-variant": "#444367", "error-container": "#ffdad6", "secondary-fixed": "#e3dfff", "on-tertiary-container": "#8e8cb5", "on-surface-variant": "#48464d", "on-primary-fixed": "#1c1736", "on-tertiary": "#ffffff", "background": "#fcf8ff", "inverse-on-surface": "#f4eeff", "tertiary-fixed": "#e3dfff", "on-error-container": "#93000a", "primary-fixed-dim": "#c9c1ea", "on-secondary": "#ffffff", "inverse-primary": "#c9c1ea" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "gutter-mobile": "1rem", "gutter": "1.5rem", "space-xs": "0.25rem", "space-md": "1rem", "space-sm": "0.5rem", "margin": "3rem", "margin-mobile": "1.25rem", "space-xl": "2.5rem", "space-lg": "1.5rem" }, "fontFamily": { "body-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"] }, "fontSize": { "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "400" }], "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "title-lg": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "400" }], "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "300" }], "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "300" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-[240px] bg-surface-container-lowest z-50 flex flex-col justify-between p-space-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col gap-space-lg"><div class="flex items-center gap-space-sm px-space-sm py-space-xs"><div class="w-8 h-8 rounded-full bg-surface-variant flex items-center justify-center text-secondary"><span class="material-symbols-outlined text-[20px]">auto_awesome</span></div><div class="flex flex-col"><span class="font-title-md text-title-md text-on-surface font-bold leading-tight">Angkasa</span><span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase">Photobooth</span></div></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-bold shadow-md"><a class="flex items-center gap-space-sm px-space-md py-3 rounded-full text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="ringkasan" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-label-lg text-label-lg">Ringkasan</span></a><a class="flex items-center gap-space-sm px-space-md py-3 rounded-full text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="preset" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-label-lg text-label-lg">Preset</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-3 rounded-full transition-all bg-primary-container text-on-primary font-bold shadow-md" data-path="aset" href="#"><span class="material-symbols-outlined text-[20px]">collections</span><span class="font-label-lg text-label-lg">Aset (Frame &amp; Stiker)</span></a><a class="flex items-center gap-space-sm px-space-md py-3 rounded-full text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="riwayat-sesi" href="#"><span class="material-symbols-outlined text-[20px]">history</span><span class="font-label-lg text-label-lg">Riwayat Sesi</span></a><a class="flex items-center gap-space-sm px-space-md py-3 rounded-full text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="pengaturan" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-label-lg text-label-lg">Pengaturan</span></a></nav></div><div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low"><div class="flex items-center gap-space-sm"><div class="relative"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-[#3FA37A] ring-2 ring-surface-container-lowest"></span></div><div class="flex flex-col"><span class="font-label-md text-label-md font-semibold text-on-surface">Admin Booth</span><span class="font-label-sm text-label-sm text-on-surface-variant">Online</span></div></div><button class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-error transition-colors" title="Keluar" type="button"><span class="material-symbols-outlined text-[20px]">logout</span></button></div></aside><div class="pl-[240px]"><header class="fixed top-0 left-[240px] right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-space-lg flex items-center justify-between"><div class="relative w-96"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span><input class="w-full h-10 pl-10 pr-4 rounded-full bg-surface-container-lowest border border-outline-variant/40 text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary/30 transition-all" placeholder="Cari preset, sesi, atau stiker..." type="search"></div><div class="flex items-center gap-space-md"><button class="relative w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-space-sm pl-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span class="font-label-md text-label-md font-semibold text-on-surface hidden sm:inline-block">Admin Booth</span></div></div></header><main class="relative pt-16 min-h-screen bg-surface w-full px-space-lg py-space-lg"><div class="flex flex-col w-full gap-space-lg">
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<h1 class="font-headline-lg text-headline-lg font-bold tracking-tight text-on-surface">
+        Manajemen <span class="text-secondary">Aset</span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+        Kelola template bingkai cetak (frame) dan stiker dekorasi untuk pengunjung kiosk photobooth.
+      </p>
+</div>
+<div class="flex items-center flex-wrap gap-space-sm">
+<div class="relative min-w-[240px]">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span>
+<input class="w-full h-11 pl-10 pr-4 rounded-full bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-md text-body-md shadow-sm focus:outline-none focus:ring-2 focus:ring-secondary/30 transition-all" placeholder="Cari stiker..." type="search">
+</div>
+<div class="relative">
+<select class="appearance-none h-11 pl-4 pr-10 rounded-full bg-surface-container-lowest text-on-surface font-label-lg text-label-lg shadow-sm cursor-pointer focus:outline-none focus:ring-2 focus:ring-secondary/30 transition-all">
+<option value="all">Kategori: Semua</option>
+<option value="ekspresi">Ekspresi &amp; Teks</option>
+<option value="karakter">Karakter Lucu</option>
+<option value="pesta">Pesta &amp; Ulang Tahun</option>
+<option value="musiman">Musiman &amp; Liburan</option>
+<option value="ornamen">Ornamen Estetik</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">expand_more</span>
+</div>
+<a class="inline-flex items-center gap-space-xs px-6 h-11 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-md hover:bg-primary-container hover:shadow-lg transition-all" href="a4m_edit_modal_edit_aset.html">
+<span class="material-symbols-outlined text-[20px]">add</span>
+<span>+ Unggah</span>
+</a>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-1.5 rounded-full bg-surface-container-high w-fit shadow-inner">
+<a class="flex items-center gap-space-xs px-5 py-2 rounded-full text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container-lowest hover:text-on-surface transition-all" href="a4_frame_aset_frame.html">
+<span class="material-symbols-outlined text-[18px]">crop_portrait</span>
+<span>Frame Bingkai</span>
+</a>
+<a class="flex items-center gap-space-xs px-5 py-2 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-sm" href="a4_stiker_aset_stiker.html">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">sticker</span>
+<span>Stiker Dekorasi</span>
+</a>
+</div>
+<div class="flex items-center gap-2 overflow-x-auto pb-1 -mx-1 px-1">
+<button class="whitespace-nowrap px-4 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-sm" type="button">
+      Semua (48)
+    </button>
+<button class="whitespace-nowrap px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md shadow-sm transition-all" type="button">
+      Ekspresi &amp; Teks (14)
+    </button>
+<button class="whitespace-nowrap px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md shadow-sm transition-all" type="button">
+      Karakter Lucu (12)
+    </button>
+<button class="whitespace-nowrap px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md shadow-sm transition-all" type="button">
+      Pesta &amp; Ulang Tahun (10)
+    </button>
+<button class="whitespace-nowrap px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md shadow-sm transition-all" type="button">
+      Musiman &amp; Liburan (6)
+    </button>
+<button class="whitespace-nowrap px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md shadow-sm transition-all" type="button">
+      Ornamen Estetik (6)
+    </button>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-space-md">
+<!-- Card 1 -->
+<div class="group flex flex-col justify-between p-4 rounded-lg bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-300">
+<div class="relative w-full aspect-square rounded-[20px] bg-surface-container-low overflow-hidden flex items-center justify-center p-6 bg-[radial-gradient(#aba7ff_0.75px,transparent_0.75px)] [background-size:12px_12px]">
+<img class="w-full h-full object-contain filter drop-shadow-md group-hover:scale-105 transition-transform duration-300" data-alt="A whimsical digital sticker illustration of sparkling golden celestial stars and glimmering light flares with soft metallic highlights on clean transparent-styled background with warm ambient aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtjcIMNLY4VVGVxvqBntMrAkIKYLZMjANGD5vN1Wws1l6MdGpcvEBuNJgutbsqFlRiOzNxMgBUZk9ApI9FQ0DIlgJ6NSahKG086iI9sqedKtwY3dOyRxenHi_5cam-8DRXgVT0-2NNYdu_ejPeV2JKzwFT76eHUzLYOEYgsTWdLWShHnMrbZE9NcX2-QywlS-WAO_zD9gDt1op_SJKwQSb8i1w1v_ylzYMRNin8h9saa5Sqxf7raQ64g">
+<div class="absolute top-3 left-3">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-label-sm font-label-sm bg-surface-variant/90 text-on-secondary-fixed backdrop-blur-md">
+            Ornamen Estetik
+          </span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-4 mt-2">
+<div class="flex flex-col min-w-0 pr-2">
+<h3 class="font-title-md text-title-md text-on-surface truncate">Sparkle Bintang Emas</h3>
+<span class="font-label-sm text-label-sm text-[#3FA37A] font-medium flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-[#3FA37A]"></span> Aktif
+          </span>
+</div>
+<div class="flex items-center gap-1 shrink-0">
+<label class="relative inline-flex items-center cursor-pointer mr-1">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface-container-lowest after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<a class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" href="a4m_edit_modal_edit_aset.html">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</a>
+<a class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-error-container hover:text-error transition-colors" href="a4_hapus_dialog_hapus_aset.html">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group flex flex-col justify-between p-4 rounded-lg bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-300">
+<div class="relative w-full aspect-square rounded-[20px] bg-surface-container-low overflow-hidden flex items-center justify-center p-6 bg-[radial-gradient(#aba7ff_0.75px,transparent_0.75px)] [background-size:12px_12px]">
+<img class="w-full h-full object-contain filter drop-shadow-md group-hover:scale-105 transition-transform duration-300" data-alt="Retro chic Y2K sunglasses sticker illustration with tinted lilac purple lenses, chrome silver rims and star accents, glossy photobooth prop sticker style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2u0NCCz74OJVB5o2YsU_aE7txYq3AHZnSbieQLNFsRDbAupltBEfAFl9hTK60uvC14HT_b3OkMCEYYfKPzhPl1Ssx4f96hKdjQ3HHrOx_6xjXXHQwSVAhwVZ0Sl4tnJwQvDncuDNkediRxIgkTWjtZtGhyyHOW09gK0HYel6XMZg4FslZhsQ-RP7h8bC6gJiEy2e3eRvk0IimPjd_bAO6zB4OVlx1mUIK3JmMJSh9VzhQweGGDPrrzA">
+<div class="absolute top-3 left-3">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-label-sm font-label-sm bg-surface-variant/90 text-on-secondary-fixed backdrop-blur-md">
+            Pesta &amp; Ulang Tahun
+          </span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-4 mt-2">
+<div class="flex flex-col min-w-0 pr-2">
+<h3 class="font-title-md text-title-md text-on-surface truncate">Kacamata Pesta Y2K</h3>
+<span class="font-label-sm text-label-sm text-[#3FA37A] font-medium flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-[#3FA37A]"></span> Aktif
+          </span>
+</div>
+<div class="flex items-center gap-1 shrink-0">
+<label class="relative inline-flex items-center cursor-pointer mr-1">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface-container-lowest after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<a class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" href="a4m_edit_modal_edit_aset.html">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</a>
+<a class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-error-container hover:text-error transition-colors" href="a4_hapus_dialog_hapus_aset.html">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group flex flex-col justify-between p-4 rounded-lg bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-300">
+<div class="relative w-full aspect-square rounded-[20px] bg-surface-container-low overflow-hidden flex items-center justify-center p-6 bg-[radial-gradient(#aba7ff_0.75px,transparent_0.75px)] [background-size:12px_12px]">
+<img class="w-full h-full object-contain filter drop-shadow-md group-hover:scale-105 transition-transform duration-300" data-alt="Trendy 3D typographic sticker displaying the phrase Best Day Ever in curvy bubbly letters with gentle pastel gradient coloring and a white kiss-cut sticker border outline." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6Yxkt6ocm_TtZkduAEPBxDHG-RLmKd4xAtOJLqqTgoYaTgGxPmjLhxfzKgHFPHJw7qGNEBVE7eHOjJ5cgucSXnrc5RFDiH_fc9_t-Psrh0WK9ttbcjmiHoC-bRyVK6R6oN0vqaypRHsOqlbnuCbPSx-x-fbKB5pJS68lncGbYWvCYjpoyi1sGWV15oZqxDEH7HDQ6rta88hLPxn68rByVhpdv8GoCFDqyDi0mAge9gbSjiuL6PLy9VA">
+<div class="absolute top-3 left-3">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-label-sm font-label-sm bg-surface-variant/90 text-on-secondary-fixed backdrop-blur-md">
+            Ekspresi &amp; Teks
+          </span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-4 mt-2">
+<div class="flex flex-col min-w-0 pr-2">
+<h3 class="font-title-md text-title-md text-on-surface truncate">Best Day Ever</h3>
+<span class="font-label-sm text-label-sm text-[#3FA37A] font-medium flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-[#3FA37A]"></span> Aktif
+          </span>
+</div>
+<div class="flex items-center gap-1 shrink-0">
+<label class="relative inline-flex items-center cursor-pointer mr-1">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface-container-lowest after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<a class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" href="a4m_edit_modal_edit_aset.html">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</a>
+<a class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-error-container hover:text-error transition-colors" href="a4_hapus_dialog_hapus_aset.html">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group flex flex-col justify-between p-4 rounded-lg bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-300">
+<div class="relative w-full aspect-square rounded-[20px] bg-surface-container-low overflow-hidden flex items-center justify-center p-6 bg-[radial-gradient(#aba7ff_0.75px,transparent_0.75px)] [background-size:12px_12px]">
+<img class="w-full h-full object-contain filter drop-shadow-md group-hover:scale-105 transition-transform duration-300" data-alt="Delicate coquette pink satin ribbon bow sticker graphic with soft folds and silk highlights, whimsical Gen-Z photobooth aesthetic sticker." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZmGcd_FI9DmLhHnmTUzQpuJnCEQnTSy7FjFO6Worz-u1CQ63_98mqUhxb663aQzbKbyeOdv1RunQ2lZPI3ZBg-bl69UpxsfadE539YQVtZeoXIjGOvQnwRGD9TTvJeL8LS3oluyxww37yK7LUOqOz9WWN68HR5c0TM0oQeh1RQriVOG5-Inb23ZrFFqCuW3WgKsYqnNJ8Iq6kj6OdAKjuuVp8yv-fvoCxLd6SysEudCNqKh3XcjJcyw">
+<div class="absolute top-3 left-3">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-label-sm font-label-sm bg-surface-variant/90 text-on-secondary-fixed backdrop-blur-md">
+            Karakter Lucu
+          </span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-4 mt-2">
+<div class="flex flex-col min-w-0 pr-2">
+<h3 class="font-title-md text-title-md text-on-surface truncate">Pita Lucu Coquette</h3>
+<span class="font-label-sm text-label-sm text-[#3FA37A] font-medium flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-[#3FA37A]"></span> Aktif
+          </span>
+</div>
+<div class="flex items-center gap-1 shrink-0">
+<label class="relative inline-flex items-center cursor-pointer mr-1">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface-container-lowest after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<a class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" href="a4m_edit_modal_edit_aset.html">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</a>
+<a class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-error-container hover:text-error transition-colors" href="a4_hapus_dialog_hapus_aset.html">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="group flex flex-col justify-between p-4 rounded-lg bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-300">
+<div class="relative w-full aspect-square rounded-[20px] bg-surface-container-low overflow-hidden flex items-center justify-center p-6 bg-[radial-gradient(#aba7ff_0.75px,transparent_0.75px)] [background-size:12px_12px]">
+<img class="w-full h-full object-contain filter drop-shadow-md group-hover:scale-105 transition-transform duration-300" data-alt="Chibi kawaii white bunny sticker with cute rosy cheeks, big sparkle eyes and tiny paw gesture, soft vector illustration style with clean sticker border." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_ZKkiEqibPEexV5bSlXhHflyz3DRhzcRMxFDVb3g82pVaOD3D0qrCtO4FyWi7Bu0468bMEAqDcLD4k8D3d27mKWpSnDae9lSM6gxB9trDY7xRBVYligSXZP9p1hRzYOYj_Csu9eQzPR6RPsmiRounn7F2pvM6pMDwaVZuJadpqqTri0REdYnLEaJk_uWh2AskPOZ0tD4UmWXKuTwIPlukrN40thVwHqNaIe8i7WG6NkwCEOkNLq76Cg">
+<div class="absolute top-3 left-3">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-label-sm font-label-sm bg-surface-variant/90 text-on-secondary-fixed backdrop-blur-md">
+            Karakter Lucu
+          </span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-4 mt-2">
+<div class="flex flex-col min-w-0 pr-2">
+<h3 class="font-title-md text-title-md text-on-surface truncate">Kelinci Gemoy</h3>
+<span class="font-label-sm text-label-sm text-[#3FA37A] font-medium flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-[#3FA37A]"></span> Aktif
+          </span>
+</div>
+<div class="flex items-center gap-1 shrink-0">
+<label class="relative inline-flex items-center cursor-pointer mr-1">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface-container-lowest after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<a class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" href="a4m_edit_modal_edit_aset.html">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</a>
+<a class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-error-container hover:text-error transition-colors" href="a4_hapus_dialog_hapus_aset.html">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="group flex flex-col justify-between p-4 rounded-lg bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-300">
+<div class="relative w-full aspect-square rounded-[20px] bg-surface-container-low overflow-hidden flex items-center justify-center p-6 bg-[radial-gradient(#aba7ff_0.75px,transparent_0.75px)] [background-size:12px_12px]">
+<img class="w-full h-full object-contain filter drop-shadow-md group-hover:scale-105 transition-transform duration-300" data-alt="Academic graduation mortarboard cap sticker illustration with dangling golden silk tassel and embossed Class of 2025 typography on celebratory dark indigo felt." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMKpqol0Tqu5uVPrqFFrSei0bpnpX5cNXSycm1PULHn9zh11KXi6GbURfRnHhgwwCqRAziVKTBmapusIA3wh9naYIvVPnzPhXcjTt6UUBne-5pHH5bn-ba0gN9uEnYtrFG1D5-U9RYkpqsg-zUKbd_ZIhtTzF4jLtoMwhb3mCkdCke9vNGG59zxihf8ND3_e7q0AxA_cufzztNJ6tPF1GZM-vR9XfC2pCrfDqE1MBgErx4zAUhZa3d8A">
+<div class="absolute top-3 left-3">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-label-sm font-label-sm bg-surface-variant/90 text-on-secondary-fixed backdrop-blur-md">
+            Musiman &amp; Liburan
+          </span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-4 mt-2">
+<div class="flex flex-col min-w-0 pr-2">
+<h3 class="font-title-md text-title-md text-on-surface truncate">Topi Wisuda 2025</h3>
+<span class="font-label-sm text-label-sm text-[#3FA37A] font-medium flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-[#3FA37A]"></span> Aktif
+          </span>
+</div>
+<div class="flex items-center gap-1 shrink-0">
+<label class="relative inline-flex items-center cursor-pointer mr-1">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface-container-lowest after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<a class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" href="a4m_edit_modal_edit_aset.html">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</a>
+<a class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-error-container hover:text-error transition-colors" href="a4_hapus_dialog_hapus_aset.html">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Card 7 -->
+<div class="group flex flex-col justify-between p-4 rounded-lg bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-300">
+<div class="relative w-full aspect-square rounded-[20px] bg-surface-container-low overflow-hidden flex items-center justify-center p-6 bg-[radial-gradient(#aba7ff_0.75px,transparent_0.75px)] [background-size:12px_12px]">
+<img class="w-full h-full object-contain filter drop-shadow-md group-hover:scale-105 transition-transform duration-300" data-alt="Luminous neon pink heart sign sticker graphic with subtle outer glow reflections, modern pop art sticker style for photo fun." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcv-ALZHdGeAEYSlyM10dw5jTqpFd2V-7x_qCRSb7rxTUPpCjOUryWwMBBiEwomWKpLbUKbJ6BP7YjEvJO0bbdntOn37hRhE4BpZQ9gtSFRHGkT0mzfJ_PRLW2zVo0UOvrhxHY3ze6HF3An_QzezqmSutVqIDxPCjQiX17qguVk3LaR2arZGCM_cLa1UKakToBWPaaRv8C_Tht1knSmnbYAaAoXucgAXYlTOT7Z-qaF3mRq5KJj3fjeA">
+<div class="absolute top-3 left-3">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-label-sm font-label-sm bg-surface-variant/90 text-on-secondary-fixed backdrop-blur-md">
+            Ekspresi &amp; Teks
+          </span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-4 mt-2">
+<div class="flex flex-col min-w-0 pr-2">
+<h3 class="font-title-md text-title-md text-on-surface truncate">Love Heart Pinky</h3>
+<span class="font-label-sm text-label-sm text-[#3FA37A] font-medium flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-[#3FA37A]"></span> Aktif
+          </span>
+</div>
+<div class="flex items-center gap-1 shrink-0">
+<label class="relative inline-flex items-center cursor-pointer mr-1">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface-container-lowest after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<a class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" href="a4m_edit_modal_edit_aset.html">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</a>
+<a class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-error-container hover:text-error transition-colors" href="a4_hapus_dialog_hapus_aset.html">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Card 8 (Nonaktif) -->
+<div class="group flex flex-col justify-between p-4 rounded-lg bg-surface-container-lowest/80 opacity-90 shadow-sm hover:shadow-md transition-all duration-300">
+<div class="relative w-full aspect-square rounded-[20px] bg-surface-container-low overflow-hidden flex items-center justify-center p-6 bg-[radial-gradient(#aba7ff_0.75px,transparent_0.75px)] [background-size:12px_12px]">
+<img class="w-full h-full object-contain filter drop-shadow-md grayscale-[0.35] group-hover:scale-105 transition-transform duration-300" data-alt="Celebratory birthday cake sticker illustration with vanilla frosting, pastel rainbow sprinkles and a single lit candle glowing warmly, playful cartoon sticker design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_ldbD7DN8IcqL92p8mtmTvnnzLZW9mD_Fo_mGYBYtNxQxlDyWLII6kHwy5bz09oOxC-kralcJ4fdFhg4pT7QYp6wB1Qvc06_dmIFsabvshopw3lj4NraZxfArjg3Yp_n2QdwFhmms1yyHnkPj7I_vO6brXlHeR5pZTFKq1p396zH2Ur7HhtVQVcvSjWSbOgqu9spUfsnliIugnr71gUh--Fawr4GwYEAiPIZx9aHl_KJkpe4Op51mdA">
+<div class="absolute top-3 left-3">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-label-sm font-label-sm bg-surface-variant/90 text-on-secondary-fixed backdrop-blur-md">
+            Pesta &amp; Ulang Tahun
+          </span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-4 mt-2">
+<div class="flex flex-col min-w-0 pr-2">
+<h3 class="font-title-md text-title-md text-on-surface truncate">Kue Ulang Tahun</h3>
+<span class="font-label-sm text-label-sm text-outline font-medium flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span> Nonaktif
+          </span>
+</div>
+<div class="flex items-center gap-1 shrink-0">
+<label class="relative inline-flex items-center cursor-pointer mr-1">
+<input class="sr-only peer" type="checkbox">
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface-container-lowest after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<a class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" href="a4m_edit_modal_edit_aset.html">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</a>
+<a class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-error-container hover:text-error transition-colors" href="a4_hapus_dialog_hapus_aset.html">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm p-4 rounded-xl bg-surface-container-lowest shadow-sm mt-space-sm">
+<div class="flex items-center gap-2">
+<span class="font-body-md text-body-md text-on-surface-variant">
+        Menampilkan <span class="font-semibold text-on-surface">8</span> dari <span class="font-semibold text-on-surface">48</span> stiker
+      </span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-md text-label-md text-[#3FA37A] font-semibold bg-[#DDE6F7] px-2.5 py-0.5 rounded-full">
+        7 Aktif
+      </span>
+<span class="font-label-md text-label-md text-on-surface-variant bg-surface-container px-2.5 py-0.5 rounded-full">
+        1 Nonaktif
+      </span>
+</div>
+<div class="flex items-center gap-1.5">
+<button class="w-9 h-9 rounded-full flex items-center justify-center text-outline cursor-not-allowed bg-surface-container-low transition-colors" disabled="" type="button">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+</button>
+<button class="w-9 h-9 rounded-full flex items-center justify-center bg-primary text-on-primary font-label-md text-label-md shadow-sm" type="button">
+        1
+      </button>
+<button class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container font-label-md text-label-md transition-colors" type="button">
+        2
+      </button>
+<button class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container font-label-md text-label-md transition-colors" type="button">
+        3
+      </button>
+<span class="px-1 text-on-surface-variant font-label-md text-label-md">...</span>
+<button class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container font-label-md text-label-md transition-colors" type="button">
+        6
+      </button>
+<button class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div></main></div><script src="router.js"></script></body></html>

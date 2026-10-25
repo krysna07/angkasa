@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><title>Angkasa Photobooth Admin</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"outline":"#79767e","secondary-container":"#aba7ff","secondary-fixed":"#e3dfff","secondary":"#5854a6","primary-fixed-dim":"#c9c1ea","on-tertiary-container":"#8e8cb5","tertiary":"#121032","on-tertiary-fixed":"#191739","inverse-primary":"#c9c1ea","background":"#fcf8ff","on-background":"#1b1830","on-primary":"#ffffff","primary":"#15102f","primary-container":"#2a2545","surface-tint":"#605a7d","tertiary-container":"#262548","tertiary-fixed":"#e3dfff","surface-bright":"#fcf8ff","surface-dim":"#dcd6f7","surface-variant":"#e5deff","on-secondary":"#ffffff","surface-container-low":"#f7f1ff","on-error-container":"#93000a","inverse-on-surface":"#f4eeff","on-error":"#ffffff","on-tertiary-fixed-variant":"#444367","error":"#ba1a1a","primary-fixed":"#e6deff","error-container":"#ffdad6","on-secondary-fixed-variant":"#403c8d","on-surface-variant":"#48464d","on-primary-fixed":"#1c1736","on-primary-fixed-variant":"#484264","outline-variant":"#c9c5ce","on-secondary-fixed":"#130661","surface-container":"#f1ebff","on-secondary-container":"#3d3889","on-primary-container":"#938cb2","on-surface":"#1b1830","inverse-surface":"#312d47","surface":"#fcf8ff","surface-container-high":"#ebe5ff","tertiary-fixed-dim":"#c5c2ee","surface-container-highest":"#e5deff","on-tertiary":"#ffffff","surface-container-lowest":"#ffffff","secondary-fixed-dim":"#c4c0ff"},borderRadius:{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},spacing:{"space-md":"1rem","space-sm":"0.5rem","margin-mobile":"1.25rem","space-xs":"0.25rem","margin":"3rem","space-xl":"2.5rem","space-lg":"1.5rem","gutter":"1.5rem","gutter-mobile":"1rem"},fontFamily:{"body-lg":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"title-lg":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"]},fontSize:{"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"500"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"400"}],"display-lg":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"300"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"display-lg-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"300"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"500"}],"title-lg":["20px",{"lineHeight":"28px","letterSpacing":"-0.005em","fontWeight":"600"}],"title-md":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.015em","fontWeight":"400"}]}}}}</script></head><body class="bg-surface text-on-surface font-body-md text-body-md min-h-screen relative selection:bg-secondary-fixed selection:text-on-secondary-fixed"><div class="fixed inset-0 pointer-events-none bg-[radial-gradient(ellipse_70%_50%_at_15%_10%,rgba(171,167,255,0.12),transparent_70%)]"></div><aside class="fixed left-4 top-4 bottom-4 w-60 bg-surface-container-lowest rounded-lg shadow-[0_10px_30px_-10px_rgba(42,37,69,0.06),0_4px_12px_-2px_rgba(142,138,224,0.08)] z-50 flex flex-col justify-between p-space-md"><div class="flex flex-col gap-space-lg"><div class="flex items-center gap-space-sm px-space-xs py-space-xs"><div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[20px]">auto_awesome</span></div><div class="flex flex-col"><span class="font-title-md text-title-md text-primary tracking-tight">Angkasa</span><span class="font-label-sm text-label-sm text-outline tracking-wider uppercase">Admin Panel</span></div></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-label-lg rounded-full shadow-[0_8px_24px_-4px_rgba(42,37,69,0.35)]"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full text-on-surface-variant font-label-lg text-label-lg transition-all hover:bg-surface-container-low hover:text-on-surface" data-path="ringkasan" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span>Ringkasan</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full text-on-surface-variant font-label-lg text-label-lg transition-all hover:bg-surface-container-low hover:text-on-surface" data-path="preset" href="#"><span class="material-symbols-outlined text-[20px]">style</span><span>Preset</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full text-on-surface-variant font-label-lg text-label-lg transition-all hover:bg-surface-container-low hover:text-on-surface" data-path="aset" href="#"><span class="material-symbols-outlined text-[20px]">perm_media</span><span>Aset</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full text-on-surface-variant font-label-lg text-label-lg transition-all hover:bg-surface-container-low hover:text-on-surface" data-path="riwayat-sesi" href="#"><span class="material-symbols-outlined text-[20px]">history</span><span>Riwayat Sesi</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full text-on-surface-variant font-label-lg text-label-lg transition-all hover:bg-surface-container-low hover:text-on-surface" data-path="pengaturan" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span>Pengaturan</span></a></nav></div><div class="flex items-center justify-between p-space-xs rounded-full bg-surface-container-low"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface leading-tight">Admin Booth</span><span class="font-label-sm text-label-sm text-outline leading-none">Terminal 01</span></div></div><a class="w-8 h-8 rounded-full flex items-center justify-center text-outline hover:text-error hover:bg-error-container/30 transition-colors" data-path="keluar" href="#" title="Keluar"><span class="material-symbols-outlined text-[20px]">logout</span></a></div></aside><div class="pl-[264px] min-h-screen flex flex-col"><header class="fixed top-0 left-[264px] right-0 h-20 bg-surface/85 backdrop-blur-xl z-40 px-margin flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="flex items-center gap-space-md"><div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container text-secondary font-label-md text-label-md shadow-[0_2px_8px_rgba(171,167,255,0.2)]"><span class="w-2 h-2 rounded-full bg-[#3FA37A] animate-pulse"></span><span>Kiosk Aktif: Booth Senopati-01</span></div></div><div class="flex items-center gap-space-md"><a class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all shadow-[0_4px_12px_-2px_rgba(142,138,224,0.08)] relative" data-path="notifikasi" href="#" title="Notifikasi"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></a><a class="flex items-center gap-space-sm pl-space-xs pr-space-md py-space-xs rounded-full bg-surface-container-lowest hover:bg-surface-container-low transition-all shadow-[0_4px_12px_-2px_rgba(142,138,224,0.08)]" data-path="profil" href="#"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span class="font-label-md text-label-md text-on-surface">Operator</span></a></div></header><main class="w-full pt-20 px-margin pb-space-xl flex-1"><div class="flex flex-col w-full relative">
+<!-- Subtle Ambient Decorative Glows Behind Dashboard Content -->
+<div class="absolute -top-12 -left-10 w-96 h-96 rounded-full bg-secondary-fixed/40 blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-1/3 -right-20 w-[420px] h-[420px] rounded-full bg-surface-container-high/60 blur-3xl pointer-events-none -z-10"></div>
+<!-- Main Ambient Underlay (Background Dashboard Canvas: A2 Ringkasan) -->
+<div class="flex flex-col w-full gap-space-lg select-none">
+<!-- Top Welcome & Location Header Strip -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Halo, Admin Angkasa 👋</h1>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest text-secondary font-label-md text-label-md shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">calendar_today</span>
+            19 Okt 2025
+          </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex items-center gap-2">
+<span>Operasional Kiosk Sentral:</span>
+<span class="font-label-md text-label-md text-primary bg-secondary-fixed/40 px-2.5 py-0.5 rounded-full">Booth #01 • Grand Atrium</span>
+<span class="inline-flex items-center gap-1 text-[#3FA37A] font-label-sm text-label-sm bg-surface-container-lowest px-2 py-0.5 rounded-full shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-[#3FA37A]"></span>
+            Normal (99.8%)
+          </span>
+</p>
+</div>
+<!-- Action Button -->
+<div class="flex items-center gap-space-sm">
+<button class="inline-flex items-center gap-space-sm px-space-lg py-3 rounded-full bg-surface-container-lowest text-primary font-label-lg text-label-lg shadow-sm hover:shadow-md transition-all">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Unduh Laporan</span>
+</button>
+</div>
+</div>
+<!-- Stat Metric Cards (Level 1 Elevation) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Card 1 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-[0_10px_30px_-10px_rgba(42,37,69,0.06),0_4px_12px_-2px_rgba(142,138,224,0.08)] flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Jumlah Sesi</span>
+<div class="w-9 h-9 rounded-full bg-secondary-fixed/50 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">photo_camera</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-lg text-display-lg text-primary tracking-tight font-medium">142</span>
+<span class="font-label-lg text-label-lg text-outline">Sesi</span>
+</div>
+<div class="mt-space-sm flex items-center gap-1.5 font-label-sm text-label-sm text-[#3FA37A]">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+<span>+14% dibanding hari kemarin</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-[0_10px_30px_-10px_rgba(42,37,69,0.06),0_4px_12px_-2px_rgba(142,138,224,0.08)] flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Pendapatan Bruto</span>
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">payments</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-title-lg text-title-lg text-secondary">Rp</span>
+<span class="font-headline-lg text-headline-lg text-primary font-bold">3.825.000</span>
+</div>
+<div class="mt-space-sm flex items-center gap-1.5 font-label-sm text-label-sm text-[#3FA37A]">
+<span class="material-symbols-outlined text-[16px]">arrow_upward</span>
+<span>Rata-rata Rp 26.900/sesi</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-[0_10px_30px_-10px_rgba(42,37,69,0.06),0_4px_12px_-2px_rgba(142,138,224,0.08)] flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Sesi Selesai (Cetak)</span>
+<div class="w-9 h-9 rounded-full bg-secondary-fixed/50 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">print</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-lg text-display-lg text-primary tracking-tight font-medium">138</span>
+<span class="font-title-md text-title-md text-[#3FA37A] font-semibold">(97.2%)</span>
+</div>
+<div class="mt-space-sm flex items-center gap-1.5 font-label-sm text-label-sm text-outline">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>4 dibatalkan / gagal bayar</span>
+</div>
+</div>
+</div>
+<!-- Middle Split: Chart Section & Preset Terpopuler -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Chart Module (8 Cols) -->
+<div class="lg:col-span-8 p-space-lg rounded-2xl bg-surface-container-lowest shadow-[0_10px_30px_-10px_rgba(42,37,69,0.06),0_4px_12px_-2px_rgba(142,138,224,0.08)] flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex flex-col">
+<h3 class="font-title-lg text-title-lg text-primary">Statistik Sesi &amp; Pendapatan</h3>
+<span class="font-label-sm text-label-sm text-outline">Jam sibuk 14:00 - 20:00 WIB</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 font-label-sm text-label-sm text-secondary bg-surface-container px-3 py-1 rounded-full">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Hari ini
+            </span>
+</div>
+</div>
+<!-- Inline Spark / Bar Data Visualization (SVG under 2KB) -->
+<div class="w-full h-44 flex items-end">
+<svg class="w-full h-full text-secondary" fill="none" preserveaspectratio="none" viewbox="0 0 600 160">
+<defs>
+<lineargradient id="chartGlow" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="currentColor" stop-opacity="0.25"></stop>
+<stop offset="100%" stop-color="currentColor" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<path d="M0,130 C40,110 80,125 120,80 C160,35 200,90 240,65 C280,40 320,10 360,25 C400,40 440,20 480,45 C520,70 560,30 600,15 L600,160 L0,160 Z" fill="url(#chartGlow)"></path>
+<path d="M0,130 C40,110 80,125 120,80 C160,35 200,90 240,65 C280,40 320,10 360,25 C400,40 440,20 480,45 C520,70 560,30 600,15" stroke="currentColor" stroke-linecap="round" stroke-width="3"></path>
+<!-- Bar hints at bottom -->
+<rect fill="#aba7ff" fill-opacity="0.2" height="50" rx="6" width="12" x="75" y="110"></rect>
+<rect fill="#aba7ff" fill-opacity="0.3" height="75" rx="6" width="12" x="195" y="85"></rect>
+<rect fill="#5854a6" fill-opacity="0.4" height="115" rx="6" width="12" x="315" y="45"></rect>
+<rect fill="#aba7ff" fill-opacity="0.3" height="105" rx="6" width="12" x="435" y="55"></rect>
+<rect fill="#2a2545" fill-opacity="0.4" height="130" rx="6" width="12" x="555" y="30"></rect>
+</svg>
+</div>
+<div class="flex justify-between items-center pt-space-sm text-outline font-label-sm text-label-sm">
+<span>10:00</span>
+<span>12:00</span>
+<span>14:00</span>
+<span>16:00</span>
+<span>18:00</span>
+<span>20:00</span>
+<span>22:00</span>
+</div>
+</div>
+<!-- Preset Terpopuler (4 Cols) with Organic Photobooth Cards -->
+<div class="lg:col-span-4 p-space-lg rounded-2xl bg-surface-container-lowest shadow-[0_10px_30px_-10px_rgba(42,37,69,0.06),0_4px_12px_-2px_rgba(142,138,224,0.08)] flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<h3 class="font-title-lg text-title-lg text-primary">Preset Favorit</h3>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-fixed/50 px-2 py-0.5 rounded-full">Top 3</span>
+</div>
+<div class="flex flex-col gap-space-sm my-space-sm">
+<!-- Item 1 -->
+<div class="flex items-center justify-between p-space-xs rounded-xl hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-14 rounded-lg overflow-hidden relative shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Aesthetic Korean photobooth strip print sample featuring soft warm lighting with pastel borders and two smiling friends holding hands in calm studio aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-g1y17eAJQNfpUt3GjZecGyeWPPwDHHqH5Jzx-PIrAMoacG5rOhgmXbLondWEHLZqzZY1iaxpuHDNPCuaXdAU39FKAgDYlhBmDSAa44ThYKaLNVQFxmOB0dYj2s8YiQK87gAhyKthumIpU4XGpNSI9cXPq9o8Rxqmvj41Dl1_ZIqZjcc31iLFo2bu5BIaEDKmo3YKtiPuh1gEbfP5C6c4POo4RtVSP1FLX8FuM8njQVRsgmI90gQKPw"/>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary font-semibold">Pastel Dream 4P</span>
+<span class="font-label-sm text-label-sm text-outline">68 sesi dicetak</span>
+</div>
+</div>
+<span class="font-label-lg text-label-lg text-secondary">48%</span>
+</div>
+<!-- Item 2 -->
+<div class="flex items-center justify-between p-space-xs rounded-xl hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-14 rounded-lg overflow-hidden relative shadow-sm">
+<img class="w-full h-full object-cover" data-alt="High contrast black and white analogue photo strip template on rich polar white cardstock with minimalist typography and retro film grain." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDv05m38mwkIxiJbJXDY07_PxGasvwTG1raxA5FDRglyhTWNb0pCwHEe-4KKqVr9DWea-MAmiDkraZNZn8ySGVBgAxLEY9UbiulFKdh8hL581b6ttGkI-z0CM9eXi8hjMLZOtO0aANjrYBHKFsbVJEeJKb_yEFvRlDU0ccmPb_PvnElLZysUsVe5FGoTOzs5DQPkpnIy1YTh8Vi0wLx6u4X7E-378SqDuemEODGBeX08Ofkz22-ErqB4w"/>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary font-semibold">Mono Analog Noir</span>
+<span class="font-label-sm text-label-sm text-outline">44 sesi dicetak</span>
+</div>
+</div>
+<span class="font-label-lg text-label-lg text-secondary">31%</span>
+</div>
+<!-- Item 3 -->
+<div class="flex items-center justify-between p-space-xs rounded-xl hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-14 rounded-lg overflow-hidden relative shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Cyber violet themed double photo strip with subtle iridescent gradient borders and sticker stamps captured in cozy indoor photobooth lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpI4_8Cy2BeSzZ_q7GDW-JML5eYQq3GAXbXvWTIOuMiYTzLJtWe-Z3wB5TWJJGC7xbM3ypW1mOEbGKKoImwz8ck-go1dpTEdlB_V1TRAFXuf3EFU9goJ8RXtDvpXBIkT5c8QxSZFlPXByVNRsYF5cSAOgzZWLzPNdHlTK15Dv2kNL9VLG5hzhRHrH_EPRBou0QtK2YXoKsQvQBrLp7UrLJEUHTLuu_26rTo2BuBHtbGnOPArm5FIBWhw"/>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary font-semibold">Cosmic Violet Y2K</span>
+<span class="font-label-sm text-label-sm text-outline">30 sesi dicetak</span>
+</div>
+</div>
+<span class="font-label-lg text-label-lg text-secondary">21%</span>
+</div>
+</div>
+<button class="w-full py-2.5 rounded-full bg-surface-container-high text-primary font-label-md text-label-md hover:bg-secondary-fixed transition-colors">
+          Kelola Semua Preset
+        </button>
+</div>
+</div>
+<!-- Bottom: Recent Sessions Table Component -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-[0_10px_30px_-10px_rgba(42,37,69,0.06),0_4px_12px_-2px_rgba(142,138,224,0.08)] flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-title-lg text-title-lg text-primary">Riwayat Sesi Terkini</h3>
+<p class="font-label-sm text-label-sm text-outline">Pembaruan real-time dari Kiosk Grand Atrium</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-outline">Total 142 Catatan</span>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-md text-body-md">
+<thead>
+<tr class="text-outline font-label-sm text-label-sm uppercase tracking-wider">
+<th class="pb-3 font-semibold">ID Sesi / Waktu</th>
+<th class="pb-3 font-semibold">Tipe Template</th>
+<th class="pb-3 font-semibold">Metode Bayar</th>
+<th class="pb-3 font-semibold">Nominal</th>
+<th class="pb-3 font-semibold">Status</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface">
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="py-3.5">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary font-semibold">SES-0042</span>
+<span class="font-label-sm text-label-sm text-outline">16:42 WIB</span>
+</div>
+</td>
+<td class="py-3.5">
+<span class="px-3 py-1 rounded-full bg-surface-container text-secondary font-label-md text-label-md">Pastel Dream (4 Pose)</span>
+</td>
+<td class="py-3.5">QRIS Dinamis (GoPay)</td>
+<td class="py-3.5 font-semibold text-primary">Rp 25.000</td>
+<td class="py-3.5">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-[#3FA37A] font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#3FA37A]"></span> Selesai &amp; Cetak
+                </span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="py-3.5">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary font-semibold">SES-0041</span>
+<span class="font-label-sm text-label-sm text-outline">16:29 WIB</span>
+</div>
+</td>
+<td class="py-3.5">
+<span class="px-3 py-1 rounded-full bg-surface-container text-secondary font-label-md text-label-md">Mono Noir (2 Strip)</span>
+</td>
+<td class="py-3.5">QRIS Dinamis (BCA)</td>
+<td class="py-3.5 font-semibold text-primary">Rp 30.000</td>
+<td class="py-3.5">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-[#E0A93B] font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#E0A93B]"></span> Waktu Habis
+                </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Soft Dimming Overlay & Backdrop Scrim for Active Notification Dropdown Focus -->
+<div class="fixed inset-0 bg-[#1b1830]/25 backdrop-blur-[2.5px] z-40 transition-opacity duration-300" id="dropdown-scrim"></div>
+<!-- FLOATING NOTIFICATION DROPDOWN (Level 3 Elevation) -->
+<!-- Anchored directly beneath the Notification Bell in the App Shell Header (approx right: 72px, top: 4px from header bottom) -->
+<div class="fixed top-20 right-16 z-50 w-[390px] max-w-[calc(100vw-32px)] bg-surface-container-lowest rounded-2xl shadow-[0_24px_60px_-12px_rgba(42,37,69,0.22),0_4px_16px_rgba(142,138,224,0.12)] overflow-hidden transition-all duration-200 animate-in fade-in zoom-in-95" id="notification-dropdown">
+<!-- Dropdown Header -->
+<div class="p-space-md pb-3 flex items-center justify-between bg-surface-container-lowest">
+<div class="flex items-center gap-2">
+<h2 class="font-title-lg text-title-lg text-primary font-bold tracking-tight">Notifikasi</h2>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-primary font-label-sm text-label-sm font-semibold">
+          3 Baru
+        </span>
+</div>
+<button class="font-label-sm text-label-sm text-secondary hover:text-primary transition-colors underline-offset-2 hover:underline" id="mark-all-read-btn">
+        Tandai semua dibaca
+      </button>
+</div>
+<!-- Notification Items List (Exact 4 Items) -->
+<div class="flex flex-col max-h-[440px] overflow-y-auto divide-y-0 px-2 pb-2">
+<!-- Item 1: Pembayaran Lunas -->
+<a class="group relative flex items-start gap-3 p-3 rounded-xl transition-all duration-150 hover:bg-surface-container-low/80 bg-surface-container-lowest" href="#">
+<!-- Icon Container -->
+<div class="w-10 h-10 shrink-0 rounded-full bg-[#3FA37A]/15 text-[#3FA37A] flex items-center justify-center mt-0.5">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<!-- Content -->
+<div class="flex flex-col flex-1 min-w-0 pr-4">
+<div class="flex items-center justify-between gap-1">
+<span class="font-title-md text-title-md text-primary font-semibold leading-snug truncate">
+              Pembayaran INV-20251019-0042 lunas
+            </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-1 mt-0.5 text-xs">
+            Paket Klasik 4 Pose • Rp 25.000 via QRIS
+          </p>
+<span class="font-label-sm text-label-sm text-outline mt-1.5 flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">schedule</span>
+            2 menit lalu
+          </span>
+</div>
+<!-- Unread Indicator Dot -->
+<div class="absolute right-3.5 top-5 w-2.5 h-2.5 rounded-full bg-[#3FA37A] ring-4 ring-surface-container-lowest"></div>
+</a>
+<!-- Item 2: Sesi Kedaluwarsa -->
+<a class="group relative flex items-start gap-3 p-3 rounded-xl transition-all duration-150 hover:bg-surface-container-low/80 bg-surface-container-lowest" href="#">
+<!-- Icon Container -->
+<div class="w-10 h-10 shrink-0 rounded-full bg-[#E0A93B]/15 text-[#E0A93B] flex items-center justify-center mt-0.5">
+<span class="material-symbols-outlined text-[20px]">timer</span>
+</div>
+<!-- Content -->
+<div class="flex flex-col flex-1 min-w-0 pr-4">
+<div class="flex items-center justify-between gap-1">
+<span class="font-title-md text-title-md text-primary font-semibold leading-snug truncate">
+              Sesi SES-0041 kedaluwarsa
+            </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-1 mt-0.5 text-xs">
+            Batas waktu dekorasi di bilik booth habis
+          </p>
+<span class="font-label-sm text-label-sm text-outline mt-1.5 flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">schedule</span>
+            15 menit lalu
+          </span>
+</div>
+<!-- Unread Indicator Dot -->
+<div class="absolute right-3.5 top-5 w-2.5 h-2.5 rounded-full bg-secondary ring-4 ring-surface-container-lowest"></div>
+</a>
+<!-- Item 3: Booth Online -->
+<a class="group relative flex items-start gap-3 p-3 rounded-xl transition-all duration-150 hover:bg-surface-container-low/80 bg-surface-container-lowest" href="#">
+<!-- Icon Container -->
+<div class="w-10 h-10 shrink-0 rounded-full bg-secondary-fixed text-secondary flex items-center justify-center mt-0.5">
+<span class="material-symbols-outlined text-[20px]">wifi_tethering</span>
+</div>
+<!-- Content -->
+<div class="flex flex-col flex-1 min-w-0 pr-4">
+<div class="flex items-center justify-between gap-1">
+<span class="font-title-md text-title-md text-primary font-semibold leading-snug truncate">
+              Booth #01 online
+            </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-1 mt-0.5 text-xs">
+            Kiosk Grand Atrium terhubung ke server cloud
+          </p>
+<span class="font-label-sm text-label-sm text-outline mt-1.5 flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">schedule</span>
+            45 menit lalu
+          </span>
+</div>
+<!-- Unread Indicator Dot -->
+<div class="absolute right-3.5 top-5 w-2.5 h-2.5 rounded-full bg-secondary ring-4 ring-surface-container-lowest"></div>
+</a>
+<!-- Item 4: Pembayaran Gagal (Read) -->
+<a class="group relative flex items-start gap-3 p-3 rounded-xl transition-all duration-150 hover:bg-surface-container-low/80 opacity-75 hover:opacity-100 bg-surface-container-lowest" href="#">
+<!-- Icon Container -->
+<div class="w-10 h-10 shrink-0 rounded-full bg-[#D6544F]/15 text-[#D6544F] flex items-center justify-center mt-0.5">
+<span class="material-symbols-outlined text-[20px]">cancel</span>
+</div>
+<!-- Content -->
+<div class="flex flex-col flex-1 min-w-0 pr-4">
+<div class="flex items-center justify-between gap-1">
+<span class="font-title-md text-title-md text-primary font-medium leading-snug truncate">
+              Pembayaran INV-20251019-0040 gagal
+            </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-1 mt-0.5 text-xs">
+            Transaksi e-wallet ditolak atau waktu habis
+          </p>
+<span class="font-label-sm text-label-sm text-outline mt-1.5 flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">schedule</span>
+            1 jam lalu
+          </span>
+</div>
+<!-- No unread dot -->
+</a>
+</div>
+<!-- Dropdown Clean Footer -->
+<div class="p-3 bg-surface-container-low/70 flex items-center justify-center">
+<a class="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary font-semibold hover:text-secondary transition-colors py-1 px-4 rounded-full hover:bg-surface-container-lowest" href="#">
+<span>Lihat Semua Notifikasi</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Micro-interactions Script -->
+<script>
+    (function() {
+      const scrim = document.getElementById('dropdown-scrim');
+      const dropdown = document.getElementById('notification-dropdown');
+      const markAllBtn = document.getElementById('mark-all-read-btn');
+
+      // Click on background scrim hides the active dropdown
+      if (scrim && dropdown) {
+        scrim.addEventListener('click', function() {
+          dropdown.style.opacity = '0';
+          dropdown.style.transform = 'translateY(-8px) scale(0.98)';
+          scrim.style.opacity = '0';
+          setTimeout(() => {
+            dropdown.style.display = 'none';
+            scrim.style.display = 'none';
+          }, 200);
+        });
+      }
+
+      // Mark all read interactive click
+      if (markAllBtn) {
+        markAllBtn.addEventListener('click', function(e) {
+          e.preventDefault();
+          const unreadDots = dropdown.querySelectorAll('.rounded-full.bg-\\[\\#3FA37A\\], .rounded-full.bg-secondary');
+          unreadDots.forEach(dot => {
+            if (dot.classList.contains('w-2.5')) {
+              dot.style.display = 'none';
+            }
+          });
+          const badge = dropdown.querySelector('span.bg-secondary-fixed');
+          if (badge) {
+            badge.textContent = '0 Baru';
+            badge.className = 'px-2.5 py-0.5 rounded-full bg-surface-container text-outline font-label-sm text-label-sm';
+          }
+          markAllBtn.textContent = 'Sudah dibaca';
+          markAllBtn.classList.add('pointer-events-none', 'text-outline');
+        });
+      }
+    })();
+  </script>
+</div></main></div><script src="router.js"></script></body></html>

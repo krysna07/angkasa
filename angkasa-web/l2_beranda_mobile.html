@@ -1,0 +1,658 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "outline-variant": "#c9c5ce", "outline": "#79767e", "on-primary-fixed": "#1c1736", "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#444367", "primary-fixed-dim": "#c9c1ea", "on-tertiary-container": "#8e8cb5", "on-tertiary-fixed": "#191739", "tertiary-fixed-dim": "#c5c2ee", "on-secondary-fixed-variant": "#403c8d", "surface-container": "#f1ebff", "on-background": "#1b1830", "surface-bright": "#fcf8ff", "tertiary-fixed": "#e3dfff", "on-surface-variant": "#48464d", "surface-container-lowest": "#ffffff", "tertiary": "#121032", "on-error": "#ffffff", "surface-container-high": "#ebe5ff", "on-primary-container": "#938cb2", "surface-tint": "#605a7d", "surface-dim": "#dcd6f7", "on-primary": "#ffffff", "on-secondary": "#ffffff", "on-tertiary": "#ffffff", "on-secondary-fixed": "#130661", "surface-container-low": "#f7f1ff", "secondary-fixed": "#e3dfff", "on-primary-fixed-variant": "#484264", "primary-fixed": "#e6deff", "inverse-primary": "#c9c1ea", "secondary-fixed-dim": "#c4c0ff", "primary": "#15102f", "tertiary-container": "#262548", "surface-container-highest": "#e5deff", "inverse-surface": "#312d47", "primary-container": "#2a2545", "surface": "#fcf8ff", "background": "#fcf8ff", "secondary-container": "#aba7ff", "inverse-on-surface": "#f4eeff", "on-surface": "#1b1830", "on-secondary-container": "#3d3889", "on-error-container": "#93000a", "secondary": "#5854a6", "surface-variant": "#e5deff", "error": "#ba1a1a" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "margin": "3rem", "space-xs": "0.25rem", "gutter": "1.5rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "gutter-mobile": "1rem", "margin-mobile": "1.25rem", "space-md": "1rem", "space-sm": "0.5rem" }, fontFamily: { "headline-md": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"] }, fontSize: { "headline-md": ["24px", { lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "500" }], "display-lg": ["56px", { lineHeight: "64px", letterSpacing: "-0.03em", fontWeight: "300" }], "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "400" }], "title-lg": ["20px", { lineHeight: "28px", letterSpacing: "-0.005em", fontWeight: "600" }], "display-lg-mobile": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "300" }], "headline-lg-mobile": ["26px", { lineHeight: "34px", letterSpacing: "-0.015em", fontWeight: "400" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "500" }], "body-lg": ["16px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "400" }], "title-md": ["16px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "600" }], "body-md": ["14px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" }], "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.03em", fontWeight: "500" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#fcf8ff;color:#1b1830;font-family:'Plus Jakarta Sans',sans-serif;-webkit-font-smoothing:antialiased;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface text-on-surface font-body-md text-body-md min-h-screen flex flex-col relative selection:bg-secondary-container selection:text-on-secondary-container"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter-mobile flex items-center justify-between"><a class="flex items-center gap-space-xs min-h-[44px] min-w-[44px] text-on-surface" data-path="landing-page" href="#"><span class="material-symbols-outlined text-secondary text-[24px]">auto_awesome</span><span class="font-title-lg text-title-lg tracking-tight text-primary">Angkasa</span></a><div class="flex items-center gap-space-xs"><button aria-label="Menu Utama" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[24px]">menu</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface flex-grow"><div class="flex flex-col w-full px-gutter-mobile gap-space-xl pb-12 overflow-hidden">
+<!-- 1. Hero Section -->
+<section class="relative w-full rounded-lg bg-gradient-to-b from-surface-container via-surface-container-low to-surface-container-highest p-space-md shadow-sm overflow-hidden flex flex-col items-center text-center">
+<!-- Ambient glowing backdrop effect -->
+<div class="absolute -top-16 -right-16 w-52 h-52 bg-secondary-fixed/50 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-16 -left-16 w-52 h-52 bg-surface-container-high/60 rounded-full blur-2xl pointer-events-none"></div>
+<!-- Badge -->
+<div class="relative z-10 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest shadow-sm mb-space-md">
+<span class="material-symbols-outlined text-secondary text-[16px]">auto_awesome</span>
+<span class="font-label-sm text-label-sm text-primary">Pengalaman Photobooth Generasi Baru</span>
+</div>
+<!-- Headline -->
+<h1 class="relative z-10 font-headline-lg-mobile text-headline-lg-mobile text-primary tracking-tight mb-space-sm font-medium">
+      Abadikan Momenmu, <br><span class="text-secondary font-semibold">Dekorasi Sepuasnya.</span>
+</h1>
+<!-- Subtitle -->
+<p class="relative z-10 font-body-md text-body-md text-on-surface-variant max-w-[340px] mb-space-lg leading-relaxed">
+      Photobooth modern dengan sinkronisasi instan: foto di booth, hias bebas dari ponselmu, bayar digital tanpa antre, dan simpan hasilnya seketika.
+    </p>
+<!-- CTAs Stacked -->
+<div class="relative z-10 w-full flex flex-col gap-space-sm mb-space-xl">
+<a class="w-full h-[52px] rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-space-xs shadow-md active:scale-[0.98] transition-all" data-path="frame-selection" href="#">
+<span>Mulai Sesi Foto</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="w-full h-[50px] rounded-full bg-surface-container-lowest text-primary font-label-lg text-label-lg flex items-center justify-center gap-space-xs shadow-sm active:scale-[0.98] transition-all" href="#cara-kerja">
+<span>Lihat Cara Kerja</span>
+</a>
+</div>
+<!-- Hero Visual: Stacked Tilted Photostrips -->
+<div class="relative w-full max-w-[320px] h-[340px] flex items-center justify-center mt-2">
+<!-- Back Strip (Tilted Left) -->
+<div class="absolute -left-1 top-4 w-[160px] bg-surface-container-lowest rounded-2xl p-2.5 shadow-md -rotate-6 transition-transform">
+<!-- Pastel Washi Tape -->
+<div class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-14 h-4 bg-secondary-fixed/90 backdrop-blur-sm -rotate-2 rounded-sm pointer-events-none shadow-xs"></div>
+<div class="flex flex-col gap-2">
+<img class="w-full h-[100px] object-cover rounded-xl" data-alt="Close up warm portrait of two Indonesian female friends laughing together inside a retro pastel photobooth with warm lavender ambient lights, high resolution realistic candid photo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPuO2kXFWUFi0igsvk_RgR3k8pIYxS-EOW1Q4iC_urIbXmfq7CQm6wpQ0c5eDTUXXPHYnaGi_lkvzf1bNRhqM1noZ9Gdq7Q9WLvwdZSniGEnt8UUrt7Otpx-5HPG_uJHxBDfYlB4v405V07_ezPgVILjYgNxn7CT5szz_k12vUMgl4yXZABUBeRm5MLMf4zXxtlPzaKFp1cR3H1eT_1nbuE2bDtEwQS2QmbrfYiml-UBXSX5iw4NmKmw">
+<img class="w-full h-[100px] object-cover rounded-xl" data-alt="Two Indonesian best friends posing playfully with peace signs in a bright minimal studio photobooth, soft periwinkle backdrop tone, candid and aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfOur3q2Q4KLo1USHL7L77RfTap4co6RGPiR6aiAxBo_fRMxeu9Ew2zEEfsjun7-OLLUvmEv_Sc-zD4sYug3DKD-8wG5ZmQS93Z27m8x9pe4qRraOtop2PF9MmokTxZCiyZ3Mq6GCi2xGCCn-wMau-hCDngtXSdMqhPTwhoUnGT3Ex0iplbQ8uMtvuKjIo3TWlSSH13GVk0FC_bR_u5r3hfeGaPmEGNGRn2lnej4gh9zzwnOIx89iE1Q">
+<div class="flex items-center justify-between px-1 pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">#041</span>
+<span class="material-symbols-outlined text-secondary text-[14px]">favorite</span>
+</div>
+</div>
+</div>
+<!-- Front Strip (Tilted Right) -->
+<div class="absolute right-0 top-0 w-[170px] bg-surface-container-lowest rounded-2xl p-2.5 shadow-xl rotate-4 z-10">
+<!-- Pastel Washi Tape -->
+<div class="absolute -top-3 left-1/2 -translate-x-1/2 w-16 h-5 bg-secondary-container/80 backdrop-blur-sm rotate-3 rounded-sm pointer-events-none shadow-xs"></div>
+<div class="flex flex-col gap-2">
+<img class="w-full h-[105px] object-cover rounded-xl" data-alt="Aesthetic aesthetic Gen-Z Indonesian couple wearing stylish outfits smiling joyfully into the camera inside a modern photobooth studio with soft diffused lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASda0lHF01xjg3uhnSi9tPPZ8CDy0Oxm8cSFHfbiesMjjFtf94LMyQoxZLQBeiOZjMq1NSJZwCvINKnOEXKqPISKF98aU6-hF0DvipJv66hOtgNwWPxX2kmeAiPb2Ta92XMJcrDm7KLXsJ3aiROlFdZkY6KQMm6Bk2aaJ6yR-cXCW1vNTtLHRnoAGDBdVmqxdne0woXhAZtT627oWlkaSXWnrZRCfqXNfzIyX6glta1pM2xzttl0pG0g">
+<img class="w-full h-[105px] object-cover rounded-xl" data-alt="Playful candid moment of cute young woman holding sunglasses, smiling radiantly in a high quality modern photobooth setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBipZi0UG0AhWZhJ3vPj-EwtBwGGIEgfxun6U4x0WFsAA8oiulZMPOJ83v3GY9AfM2zH3lI3oCFYhbVGwxUKDw9IRYrMN6uYWZslf5U3bFuNs8moEFPo9Q7JiUgf5EvCUgLZacZV_99zLJ2MJr25zrhVzBxutBIXIAMn9LSzWiyN5dVPVHyLrdOmNEH2MWITONI75DE-4L9UhzbXMN2KDd7iW7lhIplMExUt5KX3z8IUKnVVvHp5SRA6g">
+<div class="flex items-center justify-between px-1 pt-1">
+<span class="font-label-sm text-label-sm font-semibold tracking-wider text-primary">ANGKASA</span>
+<span class="font-label-sm text-label-sm text-outline font-mono">#042</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. Section: KONSEP INOVATIF -->
+<section class="flex flex-col gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[16px]">lightbulb</span>
+<span class="font-label-md text-label-md uppercase tracking-wider font-semibold">Konsep Inovatif</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary tracking-tight font-medium">
+        Bukan Sekadar Photobooth Biasa.
+      </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Gabungan teknologi kiosk canggih dan kemudahan perangkat pribadi untuk pengalaman berkreasi tanpa batas.
+      </p>
+<a class="inline-flex items-center gap-1 font-label-lg text-label-lg text-secondary font-medium mt-1" href="#cara-kerja">
+<span>Pelajari lebih lanjut</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- 3 Stacked Feature Cards -->
+<div class="flex flex-col gap-space-sm mt-1">
+<!-- Card 1 (Lavender soft gradient) -->
+<div class="bg-gradient-to-br from-surface-container via-surface-container-high to-surface-container-highest p-space-md rounded-2xl flex flex-col gap-space-sm shadow-sm">
+<div class="w-11 h-11 rounded-full bg-surface-container-lowest flex items-center justify-center text-secondary shadow-sm">
+<span class="material-symbols-outlined text-[22px]">draw</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-title-lg text-title-lg text-primary">Dekorasi dari ponselmu</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Scan QR langsung di booth, tambahkan stiker lucu, frame eksklusif, dan coretan tangan tanpa berebut layar kiosk.
+          </p>
+</div>
+</div>
+<!-- Card 2 (Dark Indigo) -->
+<div class="bg-primary-container text-on-primary p-space-md rounded-2xl flex flex-col gap-space-sm shadow-md">
+<div class="w-11 h-11 rounded-full bg-primary flex items-center justify-center text-secondary-fixed shadow-sm">
+<span class="material-symbols-outlined text-[22px]">sync</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-title-lg text-title-lg text-on-primary">Tersinkron realtime</h3>
+<p class="font-body-md text-body-md text-on-primary-container leading-relaxed">
+            WebSocket berkecepatan tinggi menampilkan hasil editan ponselmu langsung pada layar booth tanpa jeda sedetik pun.
+          </p>
+</div>
+</div>
+<!-- Card 3 (Dark Indigo) -->
+<div class="bg-primary p-space-md rounded-2xl flex flex-col gap-space-sm shadow-md text-on-primary">
+<div class="w-11 h-11 rounded-full bg-primary-container flex items-center justify-center text-secondary-fixed shadow-sm">
+<span class="material-symbols-outlined text-[22px]">receipt_long</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-title-lg text-title-lg text-on-primary">Bayar tanpa ribet</h3>
+<p class="font-body-md text-body-md text-on-primary-container leading-relaxed">
+            Transaksi digital QRIS dan e-wallet otomatis. Hasil foto cetak keluar dan file HD terkirim ke ponsel seketika.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Section: Cara Kerja (Vertical Timeline) -->
+<section class="flex flex-col gap-space-md" id="cara-kerja">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[16px]">timeline</span>
+<span class="font-label-md text-label-md uppercase tracking-wider font-semibold">Alur Sederhana</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary tracking-tight font-medium">
+        5 Langkah Mudah, <span class="text-secondary font-semibold">Langsung Bawa Pulang.</span>
+</h2>
+</div>
+<!-- Vertical Timeline -->
+<div class="relative flex flex-col pl-4 mt-2">
+<!-- Continuous Line Background -->
+<div class="absolute left-7 top-4 bottom-8 w-0.5 bg-surface-container-highest"></div>
+<!-- Step 01 -->
+<div class="relative flex items-start gap-space-md pb-7">
+<div class="relative z-10 w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-label-sm font-semibold shadow-sm shrink-0">
+          01
+        </div>
+<div class="flex flex-col pt-0.5">
+<h3 class="font-title-md text-title-md text-primary">Pilih paket</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Strip template 3, 4, atau 6 pose sesuai selera acaramu di layar kiosk booth.
+          </p>
+</div>
+</div>
+<!-- Step 02 -->
+<div class="relative flex items-start gap-space-md pb-7">
+<div class="relative z-10 w-7 h-7 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-sm text-label-sm font-semibold shadow-sm shrink-0">
+          02
+        </div>
+<div class="flex flex-col pt-0.5">
+<h3 class="font-title-md text-title-md text-primary">Ambil foto</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Bersiap di depan kamera studio profesional dengan hitung mundur otomatis &amp; lighting optimal.
+          </p>
+</div>
+</div>
+<!-- Step 03 -->
+<div class="relative flex items-start gap-space-md pb-7">
+<div class="relative z-10 w-7 h-7 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-label-sm text-label-sm font-semibold shadow-sm shrink-0">
+          03
+        </div>
+<div class="flex flex-col pt-0.5">
+<h3 class="font-title-md text-title-md text-primary">Scan &amp; dekorasi</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Pindai QR di layar booth untuk menyambungkan ponsel dan mulai mendesain strip fotomu.
+          </p>
+</div>
+</div>
+<!-- Step 04 -->
+<div class="relative flex items-start gap-space-md pb-7">
+<div class="relative z-10 w-7 h-7 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-sm text-label-sm font-semibold shadow-sm shrink-0">
+          04
+        </div>
+<div class="flex flex-col pt-0.5">
+<h3 class="font-title-md text-title-md text-primary">Bayar praktis</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Konfirmasi pesanan dan selesaikan pembayaran via QRIS atau dompet digital favoritmu.
+          </p>
+</div>
+</div>
+<!-- Step 05 -->
+<div class="relative flex items-start gap-space-md">
+<div class="relative z-10 w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-label-sm font-semibold shadow-sm shrink-0">
+          05
+        </div>
+<div class="flex flex-col pt-0.5">
+<h3 class="font-title-md text-title-md text-primary">Unduh &amp; cetak</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Ambil cetakan fisik seketika dan unduh file digital resolusi tinggi langsung ke ponsel.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Section: Realtime di Dua Layar -->
+<section class="flex flex-col gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[16px]">devices</span>
+<span class="font-label-md text-label-md uppercase tracking-wider font-semibold">Dual Screen Sync</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary tracking-tight font-medium">
+        Konektivitas Tanpa Batas, <span class="text-secondary font-semibold">Dua Layar Satu Cerita.</span>
+</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Setiap pergeseran stiker dan pilihan warna di ponsel terproyeksi instan di layar monitor kiosk.
+      </p>
+</div>
+<!-- Dual Sync Visual Card -->
+<div class="bg-surface-container rounded-2xl p-space-md flex flex-col gap-space-md shadow-sm">
+<!-- Sync Status Bar -->
+<div class="flex items-center justify-between bg-surface-container-lowest px-3 py-2 rounded-full shadow-xs">
+<div class="flex items-center gap-2">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#3FA37A] opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#3FA37A]"></span>
+</span>
+<span class="font-label-sm text-label-sm font-semibold text-primary">Tersinkronisasi</span>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm font-mono text-secondary font-medium">
+<span class="material-symbols-outlined text-[14px]">bolt</span> &lt; 50ms Realtime
+        </span>
+</div>
+<!-- Side-by-Side Screen Mockup Display -->
+<div class="grid grid-cols-2 gap-2.5">
+<!-- Kiosk Screen Preview -->
+<div class="bg-primary-container text-on-primary rounded-xl p-2.5 flex flex-col justify-between aspect-[3/4] shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-primary-container font-mono">KIOSK #042</span>
+<span class="material-symbols-outlined text-[14px] text-[#3FA37A]">wifi</span>
+</div>
+<div class="bg-primary/60 rounded-lg p-2 flex flex-col items-center justify-center flex-grow my-1">
+<img class="w-full h-24 object-cover rounded-md mb-1.5" data-alt="Kiosk studio display screen showing candid smiling Indonesian best friends with cute virtual stickers applied in real-time" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQ6ulFzv0KRtp_XO4ccPODGVdxn2VY6bH6Yx4GWKprB4-ONi1ZH78nSgmj1OFAp16rvGf2BCsfVotvl8bWqtWkxcWwB26SzbcA8vkzkFy5_BWOD1tM2lqkzcan82UHiAJkexm3TjNB7yN9hbkOrC3Ev9tyWDdOeaeEQFu5WM34iy8SovRKCS2bf9Dw2xpSblWYBT7s0_vFnsLRilea_JUWwIV29KqGqncMWbp-0Kq6UY9Avj8qoxbLgg">
+<span class="font-label-sm text-label-sm text-on-primary-container text-center">Menampilkan Live Canvas</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary-fixed text-center">Layar Kiosk 24"</span>
+</div>
+<!-- Phone Companion Preview -->
+<div class="bg-surface-container-lowest rounded-xl p-2.5 flex flex-col justify-between aspect-[3/4] shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline font-mono">PONSEL KAMU</span>
+<span class="material-symbols-outlined text-[14px] text-secondary">touch_app</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-1.5 flex flex-col items-center justify-center flex-grow my-1">
+<div class="flex gap-1 mb-2">
+<span class="px-2 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm">Stiker</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm">Frame</span>
+</div>
+<div class="grid grid-cols-3 gap-1">
+<span class="w-6 h-6 rounded-md bg-secondary-fixed flex items-center justify-center text-[12px]">✨</span>
+<span class="w-6 h-6 rounded-md bg-surface-container-highest flex items-center justify-center text-[12px]">🎀</span>
+<span class="w-6 h-6 rounded-md bg-secondary-fixed flex items-center justify-center text-[12px]">💖</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary text-center">Kontrol Sentuh</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Section: Paket Foto (Horizontal Swipe) -->
+<section class="flex flex-col gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[16px]">stars</span>
+<span class="font-label-md text-label-md uppercase tracking-wider font-semibold">Pilihan Terfavorit</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary tracking-tight font-medium">
+        Paket Fleksibel untuk <span class="text-secondary font-semibold">Setiap Momen.</span>
+</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Geser kartu untuk melihat seluruh pilihan paket foto.</p>
+</div>
+<!-- Horizontal Swipe Row -->
+<div class="flex gap-3 overflow-x-auto snap-x pb-2 -mx-gutter-mobile px-gutter-mobile scrollbar-none">
+<!-- Card 1: Klasik 4 Pose -->
+<div class="snap-start shrink-0 w-[270px] bg-surface-container-lowest rounded-2xl p-space-md flex flex-col justify-between shadow-sm">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-medium">4 Pose</span>
+<span class="material-symbols-outlined text-outline text-[18px]">photo_camera</span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-primary">Klasik 4 Pose</h3>
+<p class="font-title-md text-title-md text-secondary font-bold mt-0.5">Rp 25.000 <span class="font-body-md text-body-md font-normal text-outline">/ sesi</span></p>
+</div>
+<ul class="flex flex-col gap-2 pt-2">
+<li class="flex items-center gap-2 font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-[#3FA37A] text-[16px]">check_circle</span>
+<span>Strip 2x6 inci vertikal</span>
+</li>
+<li class="flex items-center gap-2 font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-[#3FA37A] text-[16px]">check_circle</span>
+<span>2 lembar cetak fisik lab</span>
+</li>
+<li class="flex items-center gap-2 font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-[#3FA37A] text-[16px]">check_circle</span>
+<span>Softcopy JPEG &amp; GIF</span>
+</li>
+<li class="flex items-center gap-2 font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-[#3FA37A] text-[16px]">check_circle</span>
+<span>Akses galeri 30 hari</span>
+</li>
+</ul>
+</div>
+<button class="w-full mt-5 h-11 rounded-full bg-surface-container-high text-primary font-label-lg text-label-lg active:scale-95 transition-transform">
+          Pilih Paket
+        </button>
+</div>
+<!-- Card 2: Wedding 3 Pose (Featured) -->
+<div class="snap-start shrink-0 w-[270px] bg-gradient-to-b from-surface-container-highest to-surface-container rounded-2xl p-space-md flex flex-col justify-between shadow-md relative">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-primary-container text-on-primary font-semibold">Paling Populer</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-lowest text-primary font-medium">3 Pose</span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-primary">Wedding 3 Pose</h3>
+<p class="font-title-md text-title-md text-primary font-bold mt-0.5">Rp 30.000 <span class="font-body-md text-body-md font-normal text-outline">/ sesi</span></p>
+</div>
+<ul class="flex flex-col gap-2 pt-2">
+<li class="flex items-center gap-2 font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span>Frame resepsi elegan</span>
+</li>
+<li class="flex items-center gap-2 font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span>2 lembar premium glossy</span>
+</li>
+<li class="flex items-center gap-2 font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span>Softcopy resolusi 4K</span>
+</li>
+<li class="flex items-center gap-2 font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span>Stiker tipografi eksklusif</span>
+</li>
+</ul>
+</div>
+<button class="w-full mt-5 h-11 rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg shadow-sm active:scale-95 transition-transform">
+          Pilih Paket
+        </button>
+</div>
+<!-- Card 3: Ulang Tahun 6 Pose -->
+<div class="snap-start shrink-0 w-[270px] bg-surface-container-lowest rounded-2xl p-space-md flex flex-col justify-between shadow-sm">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-medium">6 Pose</span>
+<span class="material-symbols-outlined text-outline text-[18px]">celebration</span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-primary">Ulang Tahun 6 Pose</h3>
+<p class="font-title-md text-title-md text-secondary font-bold mt-0.5">Rp 35.000 <span class="font-body-md text-body-md font-normal text-outline">/ sesi</span></p>
+</div>
+<ul class="flex flex-col gap-2 pt-2">
+<li class="flex items-center gap-2 font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-[#3FA37A] text-[16px]">check_circle</span>
+<span>Kolase 6 pose seru</span>
+</li>
+<li class="flex items-center gap-2 font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-[#3FA37A] text-[16px]">check_circle</span>
+<span>3 lembar cetak fisik</span>
+</li>
+<li class="flex items-center gap-2 font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-[#3FA37A] text-[16px]">check_circle</span>
+<span>Stiker bebas tak terbatas</span>
+</li>
+<li class="flex items-center gap-2 font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-[#3FA37A] text-[16px]">check_circle</span>
+<span>Video timelapse sesi foto</span>
+</li>
+</ul>
+</div>
+<button class="w-full mt-5 h-11 rounded-full bg-surface-container-high text-primary font-label-lg text-label-lg active:scale-95 transition-transform">
+          Pilih Paket
+        </button>
+</div>
+</div>
+</section>
+<!-- 6. Section: Galeri Hasil (2-Column Grid) -->
+<section class="flex flex-col gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[16px]">collections_bookmark</span>
+<span class="font-label-md text-label-md uppercase tracking-wider font-semibold">Inspirasi Foto</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary tracking-tight font-medium">
+        Keseruan Nyata dari <span class="text-secondary font-semibold">Sahabat Angkasa.</span>
+</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Lihat hasil cetak dan kreasi dekorasi asli dari ribuan sesi booth kami.
+      </p>
+</div>
+<!-- 2-Column Grid of 6 decorated cards -->
+<div class="grid grid-cols-2 gap-3">
+<!-- Photo 1 -->
+<div class="bg-surface-container-lowest rounded-2xl p-2.5 shadow-sm flex flex-col gap-2">
+<div class="relative overflow-hidden rounded-xl">
+<img class="w-full h-44 object-cover" data-alt="Vertical photobooth print showing three cheerful Indonesian high school best friends hugging and smiling warmly with cute pastel floral stickers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA73posXgYMamIBpMZpeBRNIH_RC1TqjXnP4wiuxe1e1lS8ZC96mfP9j7MCt_EYYHLdShlc8Q9F9n-JgkaAXU4tQGkSnWTtXqJZeuYGUxGk7SWFChT_EO35h7QMGxQp4PWQFKGgAyob-ROCPfUjWs__CZeN9FHudJTz6lDzW4Cb_Az5tsQy1j-zmzDZBKlUsEN_rZmsOEt7BCwbFrZKuPOybd1oC-vJNuq44VqYirEwJJK8JiKL708d8w">
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-primary/80 backdrop-blur-sm text-on-primary font-label-sm text-label-sm">#Squad</span>
+</div>
+<div class="flex items-center justify-between px-1">
+<span class="font-label-sm text-label-sm font-medium text-primary">Jakarta Selatan</span>
+<span class="material-symbols-outlined text-secondary text-[14px]">favorite</span>
+</div>
+</div>
+<!-- Photo 2 -->
+<div class="bg-surface-container-lowest rounded-2xl p-2.5 shadow-sm flex flex-col gap-2">
+<div class="relative overflow-hidden rounded-xl">
+<img class="w-full h-44 object-cover" data-alt="Lovely photobooth strip of stylish Indonesian young couple smiling sweetly together, heart stickers and warm periwinkle borders" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQskLjNl1nfWoCwEeE3RAI4bX2tCnsKlWOTmCnh_3SRpTdLKfhNoZhG2LikUf0RhOfDCadoh46ODUSQNNTrKRppCf70Nn0mVBoNB7uU-Z78nV5YwjUujRGDheyssfAyPoNsSsE0OiwBkCcSImE-zPPf0NN1_gz4hxmVXie3xf0HSuTztxx9aVhRatFMTkxP30-6fBFvOUlWH4JjpF_P-ZI5fI3clGY-WGajE6Zp5EdjNUMDzCKs2aNVQ">
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-primary/80 backdrop-blur-sm text-on-primary font-label-sm text-label-sm">#SweetMoments</span>
+</div>
+<div class="flex items-center justify-between px-1">
+<span class="font-label-sm text-label-sm font-medium text-primary">Bandung</span>
+<span class="material-symbols-outlined text-secondary text-[14px]">favorite</span>
+</div>
+</div>
+<!-- Photo 3 -->
+<div class="bg-surface-container-lowest rounded-2xl p-2.5 shadow-sm flex flex-col gap-2">
+<div class="relative overflow-hidden rounded-xl">
+<img class="w-full h-44 object-cover" data-alt="Fun birthday celebration inside modern photo booth, group of Indonesian friends wearing party hats with confetti graphic doodles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWVwQ5ikV-PeGc2YBoJOg5GIpYSG3jiC926iwTOEsDyhT556mCvjZuwWvJUrS6xUBUHKkmjt6P5VLhv0XFUQIUJpWmkd47Pa6nG60OSex8x8sWPIBHp6uFVrJyIwTUFMYBdumsq0PbxoZhmMANShKom2qOwmfuBtM2xLyL9Azdbb28R5UckMmbITnDQfHYGqr31EpvYdkg1nUMvbc3RNBxCCPB2otgpM-1RS1JMy8TI0mvY7MnH6je7g">
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-primary/80 backdrop-blur-sm text-on-primary font-label-sm text-label-sm">#BdayParty</span>
+</div>
+<div class="flex items-center justify-between px-1">
+<span class="font-label-sm text-label-sm font-medium text-primary">Surabaya</span>
+<span class="material-symbols-outlined text-secondary text-[14px]">favorite</span>
+</div>
+</div>
+<!-- Photo 4 -->
+<div class="bg-surface-container-lowest rounded-2xl p-2.5 shadow-sm flex flex-col gap-2">
+<div class="relative overflow-hidden rounded-xl">
+<img class="w-full h-44 object-cover" data-alt="Playful candid moments of two college friends laughing out loud with goofy glasses in a clean photobooth setup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFOe_yrN87jhLx5s-LATFLMUMFB2N3Fy_dtt2A_gOSPznHCPV46iWC-pADrAcrGqEBWbpipXO7PLgkFkcYv9AfugmOb3MxI-dt0I7yoZ_U9Kr21CUOj0AhwU6YWX_rRCLeRlH6c5RYi6qjh6dVK6w6d2KSW30p2smsuNgbfTy4jwbiyqMcZCLBcHDmBG_neBRCxQsybmks1F6GRkNNZ8JDWC50BwjfrwPHtUjBntwxYQdwLELqM_DAug">
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-primary/80 backdrop-blur-sm text-on-primary font-label-sm text-label-sm">#FunTimes</span>
+</div>
+<div class="flex items-center justify-between px-1">
+<span class="font-label-sm text-label-sm font-medium text-primary">Yogyakarta</span>
+<span class="material-symbols-outlined text-secondary text-[14px]">favorite</span>
+</div>
+</div>
+<!-- Photo 5 -->
+<div class="bg-surface-container-lowest rounded-2xl p-2.5 shadow-sm flex flex-col gap-2">
+<div class="relative overflow-hidden rounded-xl">
+<img class="w-full h-44 object-cover" data-alt="Confident aesthetic solo portrait of Indonesian woman posing inside a high-key studio photobooth with subtle star stickers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAO5DL6sJ7SEgTt5XRfDz0CCcS8DGW1iBQsWz3e2paHRAm6VjuBwVytFZ2-bj_SGHHsj2Ya1dizYHfq3YAPwuOzioJdbkRoh-ygu7QZYm52WCLBXDs41Jz0dMroMVjzte15KUe80ca5SSi0hrIMsjuT1WqTLNYdUJ5XYj6XbLPUMShoDZKp6mQUE4dcUrgVgFd0eSfIFfVI8ybNOZLmDTxMsIzgtzZpJwZ8TNl9kfMg6vFuqctB2g0lgg">
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-primary/80 backdrop-blur-sm text-on-primary font-label-sm text-label-sm">#SelfLove</span>
+</div>
+<div class="flex items-center justify-between px-1">
+<span class="font-label-sm text-label-sm font-medium text-primary">Tangerang</span>
+<span class="material-symbols-outlined text-secondary text-[14px]">favorite</span>
+</div>
+</div>
+<!-- Photo 6 -->
+<div class="bg-surface-container-lowest rounded-2xl p-2.5 shadow-sm flex flex-col gap-2">
+<div class="relative overflow-hidden rounded-xl">
+<img class="w-full h-44 object-cover" data-alt="Group of siblings on weekend vacation smiling together in a cute photobooth layout with handwritten doodle captions" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCesrjbGHi71JXXQ5GKTnV0Nrf2bUZnlug5brfJf4aLePoQAmfvge96RKkOe3Iqt7EqTffHg_jsnU2K8_UOnAxxFtYpE-JgtVIfPKy4c55UelEUHTU7Oq3xJImXH9a92umgVEHTEhqup1qG_0ao2FAtAmw9GXuNhv1y50vQYLhZchA7kuSOaqgcoHfGBinrMazGwknResQoLyhYo853looqMoWMnYY559BViY7fRbcMEf1np3Zw2RrvQ">
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-primary/80 backdrop-blur-sm text-on-primary font-label-sm text-label-sm">#Vacation</span>
+</div>
+<div class="flex items-center justify-between px-1">
+<span class="font-label-sm text-label-sm font-medium text-primary">Bali</span>
+<span class="material-symbols-outlined text-secondary text-[14px]">favorite</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. Section: Pembayaran Digital Cepat & Aman -->
+<section class="bg-primary-container text-on-primary rounded-2xl p-space-md flex flex-col gap-space-md shadow-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-secondary-fixed">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+<span class="font-label-md text-label-md uppercase tracking-wider font-semibold">Transaksi Digital</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-primary tracking-tight font-medium">
+        Pembayaran Cepat, Praktis, &amp; 100% Aman
+      </h2>
+<p class="font-body-md text-body-md text-on-primary-container leading-relaxed">
+        Struk dan invoice digital otomatis INV-20251019-0042 diterbitkan langsung ke ponselmu tanpa perlu kertas tambahan.
+      </p>
+</div>
+<!-- Official Payment Method Chips Grid -->
+<div class="grid grid-cols-2 gap-2">
+<div class="h-11 rounded-full bg-surface-container-lowest text-primary flex items-center justify-center gap-2 px-3 shadow-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">qr_code_2</span>
+<span class="font-label-md text-label-md font-semibold">QRIS Nasional</span>
+</div>
+<div class="h-11 rounded-full bg-surface-container-lowest text-primary flex items-center justify-center gap-2 px-3 shadow-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">account_balance_wallet</span>
+<span class="font-label-md text-label-md font-semibold">GoPay &amp; OVO</span>
+</div>
+<div class="h-11 rounded-full bg-surface-container-lowest text-primary flex items-center justify-center gap-2 px-3 shadow-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">wallet</span>
+<span class="font-label-md text-label-md font-semibold">DANA &amp; ShopeePay</span>
+</div>
+<div class="h-11 rounded-full bg-surface-container-lowest text-primary flex items-center justify-center gap-2 px-3 shadow-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">credit_card</span>
+<span class="font-label-md text-label-md font-semibold">Debit &amp; Kredit</span>
+</div>
+</div>
+</section>
+<!-- 8. Section: FAQ (Accordion Items) -->
+<section class="flex flex-col gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[16px]">help</span>
+<span class="font-label-md text-label-md uppercase tracking-wider font-semibold">Pertanyaan Umum</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary tracking-tight font-medium">
+        Ada Pertanyaan? <span class="text-secondary font-semibold">Kami Punya Jawabannya.</span>
+</h2>
+</div>
+<div class="flex flex-col gap-2.5">
+<!-- FAQ 1 (Expanded by default) -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex flex-col gap-2 cursor-pointer faq-item">
+<div class="flex items-center justify-between">
+<h3 class="font-title-md text-title-md text-primary font-medium">Perlu mendaftar atau membuat akun?</h3>
+<span class="material-symbols-outlined text-secondary text-[20px] transition-transform faq-icon rotate-180">expand_more</span>
+</div>
+<div class="faq-content">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Tidak perlu sama sekali! Kamu cukup memindai QR code di layar kiosk saat sesi foto dimulai untuk langsung terhubung tanpa unduh aplikasi.
+          </p>
+</div>
+</div>
+<!-- FAQ 2 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex flex-col gap-2 cursor-pointer faq-item">
+<div class="flex items-center justify-between">
+<h3 class="font-title-md text-title-md text-primary font-medium">Berapa lama tautan unduh foto berlaku?</h3>
+<span class="material-symbols-outlined text-outline text-[20px] transition-transform faq-icon">expand_more</span>
+</div>
+<div class="faq-content hidden">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Tautan cloud foto aktif selama 30 hari kalender. Kamu bisa mengunduh file master resolusi penuh dan GIF animasi berkali-kali.
+          </p>
+</div>
+</div>
+<!-- FAQ 3 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex flex-col gap-2 cursor-pointer faq-item">
+<div class="flex items-center justify-between">
+<h3 class="font-title-md text-title-md text-primary font-medium">Apakah hasil foto langsung dicetak fisik?</h3>
+<span class="material-symbols-outlined text-outline text-[20px] transition-transform faq-icon">expand_more</span>
+</div>
+<div class="faq-content hidden">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Ya! Printer lab profesional kami mencetak foto dalam waktu kurang dari 20 detik setelah konfirmasi pembayaran selesai.
+          </p>
+</div>
+</div>
+<!-- FAQ 4 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex flex-col gap-2 cursor-pointer faq-item">
+<div class="flex items-center justify-between">
+<h3 class="font-title-md text-title-md text-primary font-medium">Metode pembayaran apa saja yang didukung?</h3>
+<span class="material-symbols-outlined text-outline text-[20px] transition-transform faq-icon">expand_more</span>
+</div>
+<div class="faq-content hidden">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Kami mendukung seluruh QRIS perbankan nasional, e-wallet (GoPay, OVO, DANA, ShopeePay), serta kartu debit dan kredit nirsentuh.
+          </p>
+</div>
+</div>
+<!-- FAQ 5 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex flex-col gap-2 cursor-pointer faq-item">
+<div class="flex items-center justify-between">
+<h3 class="font-title-md text-title-md text-primary font-medium">Jika koneksi ponsel terputus saat dekorasi?</h3>
+<span class="material-symbols-outlined text-outline text-[20px] transition-transform faq-icon">expand_more</span>
+</div>
+<div class="faq-content hidden">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Sesi kamu tersimpan di server kiosk secara aman. Cukup scan ulang QR code yang tertera di layar untuk melanjutkan dekorasi secara instan.
+          </p>
+</div>
+</div>
+<!-- FAQ 6 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex flex-col gap-2 cursor-pointer faq-item">
+<div class="flex items-center justify-between">
+<h3 class="font-title-md text-title-md text-primary font-medium">Bisa mengulang foto jika kurang puas?</h3>
+<span class="material-symbols-outlined text-outline text-[20px] transition-transform faq-icon">expand_more</span>
+</div>
+<div class="faq-content hidden">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Tentu saja! Setiap paket menyediakan 1 kali kesempatan retake pose secara gratis sebelum melangkah ke proses dekorasi.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 9. Final Call to Action Card -->
+<section class="bg-gradient-to-br from-surface-container via-surface-container-high to-surface-container-highest rounded-2xl p-space-lg flex flex-col items-center text-center gap-space-md shadow-sm">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest text-secondary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[26px]">photo_camera_front</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="font-headline-md text-headline-md text-primary font-medium tracking-tight">
+        Siap Mengabadikan Momen Bersama Kami?
+      </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Kunjungi booth Angkasa terdekat di kotamu atau coba langsung simulasi sesi foto sekarang.
+      </p>
+</div>
+<a class="w-full h-[52px] rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-space-xs shadow-md active:scale-95 transition-transform" data-path="frame-selection" href="#">
+<span>Mulai Foto</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</section>
+<!-- 10. Footer Section -->
+<footer class="flex flex-col gap-space-lg pt-4">
+<!-- Brand Info -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-primary">
+<span class="material-symbols-outlined text-secondary text-[22px]">auto_awesome</span>
+<span class="font-title-lg text-title-lg font-bold">Angkasa</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Photobooth generasi baru yang merayakan setiap tawa, gaya, dan cerita bermakna.
+      </p>
+</div>
+<!-- Categorized Links -->
+<div class="grid grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-2">
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary font-semibold">Layanan</span>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary" href="#">Paket Studio</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary" href="#">Sesi Kiosk</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary" href="#">Galeri Digital</a>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary font-semibold">Bantuan</span>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary" href="#">Hubungi Tim</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary" href="#">Lokasi Booth</a>
+<a class="font-body-md text-body-md text-secondary font-medium" data-path="admin-dashboard" href="#">Masuk Admin →</a>
+</div>
+</div>
+<!-- Copyright -->
+<div class="pt-4 flex flex-col gap-1 text-center">
+<p class="font-label-sm text-label-sm text-outline">
+        © 2025 Angkasa Photobooth. Seluruh hak cipta dilindungi.
+      </p>
+</div>
+</footer>
+</div>
+<!-- Interactive micro-interaction for FAQ accordion -->
+<script>
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.addEventListener('click', () => {
+      const content = item.querySelector('.faq-content');
+      const icon = item.querySelector('.faq-icon');
+      const isHidden = content.classList.contains('hidden');
+      
+      // Close other FAQs
+      document.querySelectorAll('.faq-item').forEach(other => {
+        other.querySelector('.faq-content').classList.add('hidden');
+        other.querySelector('.faq-icon').classList.remove('rotate-180', 'text-secondary');
+        other.querySelector('.faq-icon').classList.add('text-outline');
+      });
+
+      if (isHidden) {
+        content.classList.remove('hidden');
+        icon.classList.add('rotate-180', 'text-secondary');
+        icon.classList.remove('text-outline');
+      }
+    });
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe pointer-events-none" data-active-classes="bg-primary text-on-primary shadow-lg"><div class="p-gutter-mobile flex items-center justify-center pointer-events-auto"><a class="w-full max-w-[390px] h-[52px] rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-space-xs shadow-[0_8px_24px_-4px_rgba(42,37,69,0.35)] active:scale-[0.98] transition-all" data-path="frame-selection" href="#"><span class="material-symbols-outlined text-[20px]">photo_camera</span><span>Mulai Foto</span></a></div></nav><script src="router.js"></script></body></html>

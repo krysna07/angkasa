@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-tertiary-fixed-variant":"#444367","on-error":"#ffffff","on-primary-container":"#938cb2","surface-bright":"#fcf8ff","primary-container":"#2a2545","on-surface-variant":"#48464d","tertiary-container":"#262548","primary-fixed":"#e6deff","secondary":"#5854a6","on-primary":"#ffffff","on-tertiary-container":"#8e8cb5","on-primary-fixed":"#1c1736","outline-variant":"#c9c5ce","on-background":"#1b1830","surface":"#fcf8ff","primary-fixed-dim":"#c9c1ea","inverse-primary":"#c9c1ea","surface-container-highest":"#e5deff","tertiary":"#121032","on-secondary-fixed-variant":"#403c8d","outline":"#79767e","on-secondary":"#ffffff","surface-variant":"#e5deff","secondary-container":"#aba7ff","background":"#fcf8ff","primary":"#15102f","on-tertiary-fixed":"#191739","surface-container-high":"#ebe5ff","surface-container":"#f1ebff","on-secondary-fixed":"#130661","inverse-on-surface":"#f4eeff","inverse-surface":"#312d47","surface-tint":"#605a7d","on-secondary-container":"#3d3889","surface-dim":"#dcd6f7","on-error-container":"#93000a","tertiary-fixed-dim":"#c5c2ee","on-tertiary":"#ffffff","secondary-fixed":"#e3dfff","error":"#ba1a1a","tertiary-fixed":"#e3dfff","surface-container-low":"#f7f1ff","on-primary-fixed-variant":"#484264","surface-container-lowest":"#ffffff","on-surface":"#1b1830","error-container":"#ffdad6","secondary-fixed-dim":"#c4c0ff"},"borderRadius":{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},"spacing":{"margin-mobile":"1.25rem","space-xl":"2.5rem","space-lg":"1.5rem","space-sm":"0.5rem","space-xs":"0.25rem","gutter":"1.5rem","margin":"3rem","gutter-mobile":"1rem","space-md":"1rem"},"fontFamily":{"headline-lg":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"title-lg":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"]},"fontSize":{"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"title-md":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"title-lg":["20px",{"lineHeight":"28px","letterSpacing":"-0.005em","fontWeight":"600"}],"display-lg-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"300"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.015em","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"display-lg":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"300"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"500"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"500"}]}}}</script></head><body class="bg-[#F5F5F7] font-body-md text-body-md text-on-surface min-h-screen relative selection:bg-secondary-container selection:text-on-secondary-container"><div class="fixed inset-0 pointer-events-none overflow-hidden"><div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-surface-container-highest/60 blur-[120px]"></div><div class="absolute top-1/3 -right-32 w-80 h-80 rounded-full bg-secondary-fixed/50 blur-[100px]"></div></div><aside class="fixed left-4 top-4 bottom-4 w-60 bg-surface-container-lowest rounded-lg shadow-[0_10px_30px_-10px_rgba(42,37,69,0.06),0_4px_12px_-2px_rgba(142,138,224,0.08)] z-50 flex flex-col justify-between py-6 px-4"><div class="flex flex-col gap-6"><div class="flex items-center gap-3 px-3"><div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[20px]">auto_awesome</span></div><div class="flex flex-col"><span class="font-title-md text-title-md text-on-surface tracking-tight leading-tight">Angkasa</span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-semibold">Admin Panel</span></div></div><nav class="flex flex-col gap-1.5 mt-2" data-active-classes="bg-primary-container text-on-primary rounded-full shadow-[0_8px_24px_-4px_rgba(42,37,69,0.35)]"><a class="flex items-center gap-3 px-4 py-3 rounded-full text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="ringkasan" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label-lg text-label-lg">Ringkasan</span></a><a class="flex items-center gap-3 px-4 py-3 rounded-full text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="preset" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-label-lg text-label-lg">Preset</span></a><a class="flex items-center gap-3 px-4 py-3 rounded-full text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="aset" href="#"><span class="material-symbols-outlined text-[20px]">photo_library</span><span class="font-label-lg text-label-lg">Aset Frame &amp; Stiker</span></a><a class="flex items-center gap-3 px-4 py-3 rounded-full text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="riwayat-sesi" href="#"><span class="material-symbols-outlined text-[20px]">history</span><span class="font-label-lg text-label-lg">Riwayat Sesi</span></a><a aria-current="page" class="flex items-center gap-3 px-4 py-3 transition-all bg-primary-container text-on-primary rounded-full shadow-[0_8px_24px_-4px_rgba(42,37,69,0.35)]" data-path="pengaturan" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-label-lg text-label-lg">Pengaturan</span></a></nav></div><div class="pt-4 border-t border-surface-container-high/60 flex items-center justify-between px-2"><div class="flex items-center gap-2.5"><div class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-inner"><span class="material-symbols-outlined text-[18px]">admin_panel_settings</span></div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Admin Booth</span><span class="font-label-sm text-label-sm text-outline">Sistem Utama</span></div></div><a class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-error-container hover:text-on-error-container transition-all" data-path="keluar" href="#" title="Keluar"><span class="material-symbols-outlined text-[18px]">logout</span></a></div></aside><div class="pl-[17rem]"><header class="fixed top-0 left-[17rem] right-0 h-20 bg-[#F5F5F7]/85 backdrop-blur-xl z-40 px-gutter flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="flex items-center gap-3"><div class="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-container-lowest shadow-[0_4px_12px_-2px_rgba(142,138,224,0.08)]"><span class="w-2 h-2 rounded-full bg-[#3FA37A] animate-pulse"></span><span class="font-label-md text-label-md text-on-surface font-medium">Kiosk Aktif: <span class="font-semibold text-primary">Booth Senopati-01</span></span></div></div><div class="flex items-center gap-4"><button class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all shadow-[0_2px_8px_rgba(42,37,69,0.04)] relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-secondary"></span></button><div class="flex items-center gap-3 pl-3 border-l border-surface-container-high"><div class="flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Operator Senopati</span><span class="font-label-sm text-label-sm text-outline">Shift Pagi • On Duty</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-20 w-full px-gutter min-h-screen"><div class="flex flex-col w-full pb-16">
+<!-- Interactive Floating Toast Notification (Top Right) -->
+<div class="fixed top-24 right-8 z-50 flex items-start gap-3.5 bg-surface-container-lowest/95 backdrop-blur-xl px-5 py-4 rounded-xl shadow-[0_20px_50px_-10px_rgba(42,37,69,0.18),0_4px_16px_rgba(63,163,122,0.15)] max-w-md transition-all duration-500 ease-out transform translate-y-0 opacity-100 animate-in fade-in slide-in-from-top-4" id="toast-success">
+<div class="w-10 h-10 rounded-full bg-[#3FA37A]/15 flex items-center justify-center flex-shrink-0 text-[#3FA37A] mt-0.5">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="flex flex-col pr-2">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-on-surface font-semibold">Koneksi gateway berhasil</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-semibold bg-[#3FA37A]/20 text-[#3FA37A]">HTTP 200 OK</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm mt-0.5 leading-snug">
+        Midtrans Sandbox Gateway • Response time <span class="font-semibold text-primary">142ms</span> • Status: <span class="text-[#3FA37A] font-semibold">Terverifikasi</span>
+</p>
+</div>
+<button class="text-outline hover:text-on-surface p-1 rounded-full hover:bg-surface-container transition-colors ml-auto -mr-1" onclick="document.getElementById('toast-success').classList.add('opacity-0','translate-y-[-8px]','pointer-events-none');" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Breadcrumbs & Header Section -->
+<div class="flex flex-col gap-2 pt-4 pb-6">
+<div class="flex items-center gap-2 text-outline font-label-md text-label-md">
+<span class="hover:text-primary transition-colors cursor-pointer">Pengaturan</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-secondary font-semibold">Gateway Pembayaran &amp; QRIS</span>
+</div>
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight font-bold">Pengaturan Pembayaran</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Konfigurasi kanal transaksi, kredensial API Midtrans, dan pilihan pembayaran instan untuk mesin kiosk.</p>
+</div>
+<!-- Quick Action / Status Indicator -->
+<div class="flex items-center gap-3 self-start md:self-auto">
+<div class="flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-lowest shadow-[0_4px_16px_rgba(42,37,69,0.04)]">
+<span class="w-2.5 h-2.5 rounded-full bg-[#3FA37A] animate-pulse"></span>
+<span class="font-label-md text-label-md text-on-surface">Mode: <strong class="text-primary font-bold">Sandbox Testing</strong></span>
+</div>
+</div>
+</div>
+</div>
+<!-- Segmented Tabs -->
+<div class="flex items-center gap-2 p-1.5 rounded-full bg-surface-container-high/60 w-fit mb-8 shadow-inner">
+<a class="px-6 py-2.5 rounded-full text-on-surface-variant font-label-lg text-label-lg hover:text-on-surface hover:bg-surface-container-lowest/50 transition-all" href="#">Booth</a>
+<a class="px-6 py-2.5 rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg shadow-[0_6px_20px_-2px_rgba(42,37,69,0.35)] flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-[18px]">payments</span>
+<span>Pembayaran</span>
+</a>
+<a class="px-6 py-2.5 rounded-full text-on-surface-variant font-label-lg text-label-lg hover:text-on-surface hover:bg-surface-container-lowest/50 transition-all" href="#">Akun</a>
+</div>
+<!-- Main Content Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left Column: Primary Config & Diagnostics (7 cols) -->
+<div class="lg:col-span-7 flex flex-col gap-6">
+<!-- Card: Konfigurasi Payment Gateway -->
+<div class="bg-surface-container-lowest rounded-xl p-8 shadow-[0_10px_30px_-10px_rgba(42,37,69,0.06),0_4px_12px_-2px_rgba(142,138,224,0.08)] flex flex-col gap-6 relative overflow-hidden">
+<!-- Ambient Decorative Violet Tint -->
+<div class="absolute -top-24 -right-24 w-56 h-56 rounded-full bg-secondary-fixed/40 blur-[80px] pointer-events-none"></div>
+<div class="flex items-center justify-between pb-4 border-b border-surface-container-high/60">
+<div class="flex items-center gap-3.5">
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-secondary shadow-sm">
+<span class="material-symbols-outlined text-[24px]">account_balance_wallet</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-lg text-title-lg text-on-surface font-semibold">Konfigurasi Gateway</span>
+<span class="font-label-sm text-label-sm text-outline">Midtrans Snap API • V2 Endpoint</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#3FA37A]/15 text-[#3FA37A]">
+<span class="w-2 h-2 rounded-full bg-[#3FA37A]"></span>
+<span class="font-label-sm text-label-sm font-semibold tracking-wide">Terhubung &amp; Aktif</span>
+</div>
+</div>
+<!-- Provider Selection Row -->
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Penyedia Layanan (Provider)</label>
+<div class="flex items-center justify-between px-5 py-3.5 rounded-full bg-surface-container-low text-on-surface">
+<div class="flex items-center gap-3">
+<div class="w-7 h-7 rounded-full bg-primary-container text-on-primary flex items-center justify-center text-[11px] font-bold">M</div>
+<span class="font-body-md text-body-md font-medium">Midtrans Payment Gateway</span>
+</div>
+<span class="px-3 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm font-semibold">Sandbox Mode</span>
+</div>
+</div>
+<!-- Form Credentials -->
+<div class="flex flex-col gap-4">
+<!-- Merchant ID -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center justify-between">
+<span>Merchant ID</span>
+<span class="text-outline text-label-sm font-normal">ID Registrasi Midtrans</span>
+</label>
+<div class="relative flex items-center">
+<input class="w-full h-[52px] px-5 pr-14 rounded-full bg-surface-container-low font-body-md text-body-md text-on-surface font-mono tracking-wider focus:outline-none cursor-default" readonly="" type="text" value="G104829104"/>
+<button class="absolute right-2 w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-high/60 transition-all" title="Salin Merchant ID" type="button">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+</div>
+</div>
+<!-- Client Key -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center justify-between">
+<span>Client Key</span>
+<span class="text-outline text-label-sm font-normal">Aman untuk client-side kiosk</span>
+</label>
+<div class="relative flex items-center">
+<input class="w-full h-[52px] px-5 pr-14 rounded-full bg-surface-container-low font-body-md text-body-md text-on-surface font-mono tracking-tight focus:outline-none cursor-default" readonly="" type="text" value="SB-Mid-client-k7h9j19238aa...2kL9"/>
+<button class="absolute right-2 w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-high/60 transition-all" title="Salin Client Key" type="button">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+</div>
+</div>
+<!-- Server Key -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center justify-between">
+<span>Server Key (Secret)</span>
+<span class="text-outline text-label-sm font-normal">Terenkripsi SHA-512</span>
+</label>
+<div class="relative flex items-center">
+<input class="w-full h-[52px] px-5 pr-14 rounded-full bg-surface-container-low font-body-md text-body-md text-on-surface font-mono tracking-widest focus:outline-none cursor-default" id="server-key-input" readonly="" type="password" value="SB-Mid-server-8291848201948102948291"/>
+<button class="absolute right-2 w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-high/60 transition-all" onclick="const input = document.getElementById('server-key-input'); const icon = document.getElementById('toggle-eye-icon'); if (input.type === 'password') { input.type = 'text'; icon.innerText = 'visibility_off'; } else { input.type = 'password'; icon.innerText = 'visibility'; }" title="Tampilkan / Sembunyikan Key" type="button">
+<span class="material-symbols-outlined text-[18px]" id="toggle-eye-icon">visibility</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Connection Test Block -->
+<div class="pt-4 flex flex-col sm:flex-row items-center justify-between gap-4 bg-surface-container-low/70 p-4 rounded-xl">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-[#3FA37A]/20 flex items-center justify-center text-[#3FA37A] flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Status Ping Terkini</span>
+<span class="font-label-sm text-label-sm text-[#3FA37A] font-medium">142ms latency • Berhasil 10 detik lalu</span>
+</div>
+</div>
+<button class="w-full sm:w-auto px-6 py-2.5 rounded-full bg-surface-container-lowest text-primary font-label-md text-label-md font-semibold hover:bg-surface-container-high transition-all shadow-[0_4px_12px_rgba(42,37,69,0.06)] flex items-center justify-center gap-2 active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">wifi_tethering</span>
+<span>Tes Koneksi Gateway</span>
+</button>
+</div>
+</div>
+<!-- Quick Metrics Insight Mini-Bento -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-[0_8px_20px_-6px_rgba(42,37,69,0.05)] flex flex-col justify-between">
+<div class="flex items-center justify-between text-outline">
+<span class="font-label-sm text-label-sm uppercase font-semibold">Tingkat Sukses</span>
+<span class="material-symbols-outlined text-[18px] text-[#3FA37A]">trending_up</span>
+</div>
+<div class="mt-3">
+<span class="font-headline-md text-headline-md font-bold text-primary">99.8%</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">382 transaksi hari ini</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-[0_8px_20px_-6px_rgba(42,37,69,0.05)] flex flex-col justify-between">
+<div class="flex items-center justify-between text-outline">
+<span class="font-label-sm text-label-sm uppercase font-semibold">Rata-rata Konfirmasi</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">timer</span>
+</div>
+<div class="mt-3">
+<span class="font-headline-md text-headline-md font-bold text-primary">2.4 dtk</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Auto-print aktif</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-[0_8px_20px_-6px_rgba(42,37,69,0.05)] flex flex-col justify-between">
+<div class="flex items-center justify-between text-outline">
+<span class="font-label-sm text-label-sm uppercase font-semibold">Uptime Gateway</span>
+<span class="material-symbols-outlined text-[18px] text-[#3FA37A]">cloud_done</span>
+</div>
+<div class="mt-3">
+<span class="font-headline-md text-headline-md font-bold text-primary">100%</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Jakarta region cluster</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Active Payment Methods & Kiosk Preview (5 cols) -->
+<div class="lg:col-span-5 flex flex-col gap-6">
+<!-- Card: Metode Pembayaran Aktif -->
+<div class="bg-surface-container-lowest rounded-xl p-8 shadow-[0_10px_30px_-10px_rgba(42,37,69,0.06),0_4px_12px_-2px_rgba(142,138,224,0.08)] flex flex-col gap-6">
+<div class="flex items-center justify-between pb-4 border-b border-surface-container-high/60">
+<div class="flex flex-col">
+<span class="font-title-lg text-title-lg text-on-surface font-semibold">Metode Pembayaran</span>
+<span class="font-label-sm text-label-sm text-outline">Ditampilkan di layar sentuh Booth Senopati-01</span>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold">3 Aktif</span>
+</div>
+<!-- Toggles List -->
+<div class="flex flex-col gap-4">
+<!-- Method 1: QRIS Dinamis -->
+<div class="flex items-center justify-between p-4 rounded-xl bg-surface-container-low/70 hover:bg-surface-container-low transition-all">
+<div class="flex items-center gap-3.5">
+<div class="w-11 h-11 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[22px]">qr_code_2</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold leading-tight">QRIS Dinamis</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">GoPay, OVO, DANA, BCA QR</span>
+</div>
+</div>
+<!-- Pill Toggle Switch (ON) -->
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-12 h-7 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-6 after:w-6 after:transition-all after:shadow-sm peer-checked:bg-primary-container"></div>
+</label>
+</div>
+<!-- Method 2: Kartu Debit / Kredit -->
+<div class="flex items-center justify-between p-4 rounded-xl bg-surface-container-low/70 hover:bg-surface-container-low transition-all">
+<div class="flex items-center gap-3.5">
+<div class="w-11 h-11 rounded-full bg-surface-container-lowest flex items-center justify-center text-secondary shadow-sm">
+<span class="material-symbols-outlined text-[22px]">credit_card</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold leading-tight">Kartu Debit / Kredit</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">EDC Kiosk Contactless • Chip</span>
+</div>
+</div>
+<!-- Pill Toggle Switch (ON) -->
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-12 h-7 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-6 after:w-6 after:transition-all after:shadow-sm peer-checked:bg-primary-container"></div>
+</label>
+</div>
+<!-- Method 3: E-Wallet Direct -->
+<div class="flex items-center justify-between p-4 rounded-xl bg-surface-container-low/70 hover:bg-surface-container-low transition-all">
+<div class="flex items-center gap-3.5">
+<div class="w-11 h-11 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary-container shadow-sm">
+<span class="material-symbols-outlined text-[22px]">account_balance</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold leading-tight">E-Wallet Direct</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">ShopeePay, LinkAja Deeplink</span>
+</div>
+</div>
+<!-- Pill Toggle Switch (ON) -->
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-12 h-7 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-6 after:w-6 after:transition-all after:shadow-sm peer-checked:bg-primary-container"></div>
+</label>
+</div>
+</div>
+<!-- Realtime Kiosk UI Preview Strip -->
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Tampilan Kiosk Pengunjung</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">smartphone</span> Live Preview
+            </span>
+</div>
+<!-- Mini Kiosk Screen Simulator Card -->
+<div class="p-3.5 bg-surface-container-lowest rounded-lg shadow-sm flex flex-col gap-2.5">
+<div class="flex items-center justify-between text-outline text-[11px] font-mono">
+<span>Sesi #AK-9201</span>
+<span class="text-secondary font-bold">Rp 35.000</span>
+</div>
+<div class="grid grid-cols-3 gap-2">
+<div class="p-2 rounded-md bg-surface-container-low flex flex-col items-center justify-center gap-1 text-center">
+<span class="material-symbols-outlined text-[18px] text-primary">qr_code</span>
+<span class="text-[10px] font-semibold text-on-surface">QRIS</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-low flex flex-col items-center justify-center gap-1 text-center">
+<span class="material-symbols-outlined text-[18px] text-secondary">credit_card</span>
+<span class="text-[10px] font-semibold text-on-surface">Kartu EDC</span>
+</div>
+<div class="p-2 rounded-md bg-surface-container-low flex flex-col items-center justify-center gap-1 text-center">
+<span class="material-symbols-outlined text-[18px] text-primary-container">account_balance_wallet</span>
+<span class="text-[10px] font-semibold text-on-surface">E-Wallet</span>
+</div>
+</div>
+<div class="flex items-center justify-center gap-1.5 text-[11px] text-outline pt-1">
+<span class="w-1.5 h-1.5 rounded-full bg-[#3FA37A]"></span>
+<span>Hitung mundur sesi 120 detik otomatis</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Security Notice Card -->
+<div class="bg-surface-container-low rounded-xl p-5 flex items-start gap-3.5">
+<span class="material-symbols-outlined text-[20px] text-secondary mt-0.5">verified_user</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold text-sm">Standar Keamanan Transaksi</span>
+<p class="font-body-md text-body-md text-on-surface-variant text-xs mt-0.5 leading-relaxed">
+            Semua pembayaran diproses melalui saluran terenkripsi PCI-DSS Level 1 Midtrans. Data kartu dan credentials tidak pernah disimpan di kiosk lokal.
+          </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Action Bar / Sticky Save Trigger -->
+<div class="mt-10 pt-6 border-t border-surface-container-high/70 flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-2 text-outline font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+<span>Sinkronisasi otomatis ke seluruh kiosk di cluster Senopati</span>
+</div>
+<div class="flex items-center gap-3 w-full sm:w-auto">
+<button class="w-1/2 sm:w-auto px-7 py-3 rounded-full bg-surface-container-lowest text-primary-container font-label-lg text-label-lg font-semibold hover:bg-surface-container-high transition-all shadow-[0_2px_8px_rgba(42,37,69,0.04)] text-center" type="button">
+        Reset Default
+      </button>
+<button class="w-1/2 sm:w-auto px-8 py-3.5 rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg font-semibold hover:bg-primary transition-all shadow-[0_8px_24px_-4px_rgba(42,37,69,0.35)] flex items-center justify-center gap-2 active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px]">check</span>
+<span>Simpan Perubahan</span>
+</button>
+</div>
+</div>
+</div></main></div><script src="router.js"></script></body></html>

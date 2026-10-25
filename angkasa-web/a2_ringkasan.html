@@ -1,0 +1,409 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-container":"#aba7ff","on-tertiary-fixed-variant":"#444367","primary-container":"#2a2545","tertiary-fixed-dim":"#c5c2ee","primary":"#15102f","inverse-primary":"#c9c1ea","surface-container":"#f1ebff","surface-variant":"#e5deff","secondary-fixed-dim":"#c4c0ff","surface-container-low":"#f7f1ff","on-error":"#ffffff","surface":"#fcf8ff","surface-bright":"#fcf8ff","tertiary-container":"#262548","on-tertiary-container":"#8e8cb5","on-tertiary-fixed":"#191739","inverse-surface":"#312d47","on-secondary":"#ffffff","tertiary-fixed":"#e3dfff","on-primary-container":"#938cb2","on-error-container":"#93000a","on-background":"#1b1830","surface-dim":"#dcd6f7","surface-container-highest":"#e5deff","on-secondary-container":"#3d3889","primary-fixed":"#e6deff","on-tertiary":"#ffffff","error-container":"#ffdad6","surface-container-lowest":"#ffffff","secondary-fixed":"#e3dfff","surface-container-high":"#ebe5ff","outline":"#79767e","on-primary-fixed":"#1c1736","on-primary-fixed-variant":"#484264","on-secondary-fixed-variant":"#403c8d","surface-tint":"#605a7d","secondary":"#5854a6","primary-fixed-dim":"#c9c1ea","error":"#ba1a1a","on-secondary-fixed":"#130661","on-surface-variant":"#48464d","inverse-on-surface":"#f4eeff","outline-variant":"#c9c5ce","on-surface":"#1b1830","on-primary":"#ffffff","tertiary":"#121032","background":"#fcf8ff"},borderRadius:{DEFAULT:"1rem",lg:"2rem",xl:"3rem",full:"9999px"},spacing:{"space-md":"1rem",margin:"3rem","margin-mobile":"1.25rem","space-lg":"1.5rem","gutter-mobile":"1rem","space-sm":"0.5rem",gutter:"1.5rem","space-xs":"0.25rem","space-xl":"2.5rem"},fontFamily:{"label-lg":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"title-lg":["Plus Jakarta Sans"]},fontSize:{"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"display-lg":["56px",{lineHeight:"64px",letterSpacing:"-0.03em",fontWeight:"300"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.03em",fontWeight:"500"}],"body-lg":["16px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"400"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"400"}],"headline-lg-mobile":["26px",{lineHeight:"34px",letterSpacing:"-0.015em",fontWeight:"400"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"500"}],"display-lg-mobile":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"300"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"500"}],"body-md":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"400"}],"title-md":["16px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"600"}],"title-lg":["20px",{lineHeight:"28px",letterSpacing:"-0.005em",fontWeight:"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-60 bg-surface-container-lowest z-50 flex flex-col justify-between py-space-lg px-space-md shadow-[0_10px_30px_-10px_rgba(42,37,69,0.06)]"><div class="flex flex-col gap-space-lg"><div class="flex items-center gap-space-sm px-space-sm"><div class="w-9 h-9 rounded-full bg-primary-container flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-[20px]">auto_awesome</span></div><div class="flex flex-col"><span class="font-title-md text-title-md text-on-surface leading-none">Angkasa</span><span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Admin Panel</span></div></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-title-md rounded-full shadow-[0_8px_24px_-4px_rgba(42,37,69,0.25)]"><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm transition-all bg-primary-container text-on-primary font-title-md rounded-full shadow-[0_8px_24px_-4px_rgba(42,37,69,0.25)]" data-path="a2---ringkasan" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label-lg text-label-lg">Ringkasan</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="preset" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-label-lg text-label-lg">Preset</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="aset" href="#"><span class="material-symbols-outlined text-[20px]">photo_library</span><span class="font-label-lg text-label-lg">Aset</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="a7---dialog-sesi-berakhir" href="#"><span class="material-symbols-outlined text-[20px]">cloud_upload</span><span class="font-label-lg text-label-lg">Riwayat Sesi</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="pengaturan" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-label-lg text-label-lg">Pengaturan</span></a></nav></div><div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low"><div class="flex items-center gap-space-sm"><div class="relative"><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-emerald-500 ring-2 ring-surface-container-lowest"></span></div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface leading-tight">Admin Booth</span><span class="font-label-sm text-label-sm text-emerald-600">Online</span></div></div><a class="text-on-surface-variant hover:text-error transition-colors p-1" data-path="a1---login-admin" href="#"><span class="material-symbols-outlined text-[20px]">logout</span></a></div></aside><div class="pl-60 min-h-screen bg-gradient-to-br from-surface via-surface-container-low to-surface-variant/30"><header class="fixed top-0 left-60 right-0 h-16 bg-surface/80 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full h-full px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container-lowest px-space-md py-space-xs rounded-full shadow-[0_2px_8px_rgba(42,37,69,0.04)] text-on-surface-variant"><span class="material-symbols-outlined text-[18px]">calendar_today</span><span class="font-label-md text-label-md text-on-surface">19 Okt 2025</span></div></div><div class="flex items-center gap-space-md"><button class="relative w-9 h-9 rounded-full bg-surface-container-lowest flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors shadow-[0_2px_8px_rgba(42,37,69,0.04)]" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><div class="flex items-center gap-space-xs pl-space-xs pr-space-sm py-space-xs bg-surface-container-lowest rounded-full shadow-[0_2px_8px_rgba(42,37,69,0.04)]"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span class="font-label-md text-label-md text-on-surface pl-1">Admin Booth</span></div></div></div></header><main class="w-full pt-16 px-space-lg pb-space-xl"><div class="flex flex-col w-full gap-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs mb-1">
+<span class="font-headline-lg text-headline-lg text-primary tracking-tight">Halo, Admin Angkasa</span>
+<span class="text-2xl select-none">👋</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Berikut laporan performa sesi foto dan pendapatan kiosk hari ini, Minggu, 19 Okt 2025.</p>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap">
+<div class="flex items-center gap-2 bg-surface-container-lowest px-4 py-2 rounded-full shadow-[0_4px_16px_-4px_rgba(42,37,69,0.06)]">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Status Kiosk:</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Normal (99.8%)</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-lowest px-4 py-2 rounded-full shadow-[0_4px_16px_-4px_rgba(42,37,69,0.06)]">
+<span class="material-symbols-outlined text-[18px] text-secondary">storefront</span>
+<span class="font-label-md text-label-md text-on-surface font-medium">Kiosk #01 • Grand Atrium</span>
+</div>
+<button class="flex items-center gap-2 bg-primary text-on-primary px-5 py-2.5 rounded-full shadow-[0_8px_20px_-4px_rgba(21,16,47,0.3)] hover:opacity-95 transition-all active:scale-[0.98]" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span class="font-label-lg text-label-lg">Unduh Laporan</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="relative overflow-hidden rounded-[24px] bg-gradient-to-br from-surface-container-low via-surface-container to-surface-container-highest p-space-lg shadow-[0_10px_30px_-10px_rgba(42,37,69,0.06)] flex flex-col justify-between min-h-[175px]">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-secondary shadow-sm">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface">Jumlah Sesi</span>
+</div>
+<span class="inline-flex items-center gap-1 bg-emerald-100/80 text-emerald-800 text-label-sm font-label-sm px-2.5 py-1 rounded-full">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+          +18% kemarin
+        </span>
+</div>
+<div class="my-2">
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg font-light text-primary">142</span>
+<span class="font-headline-md text-headline-md text-on-surface-variant font-normal">Sesi</span>
+</div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant pt-2">
+<span>Target harian: 150 sesi</span>
+<span class="text-secondary font-semibold">94.6% tercapai</span>
+</div>
+</div>
+<div class="relative overflow-hidden rounded-[24px] bg-primary-container text-on-primary p-space-lg shadow-[0_16px_40px_-10px_rgba(42,37,69,0.25)] flex flex-col justify-between min-h-[175px]">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shadow-sm">
+<span class="material-symbols-outlined text-[18px]">payments</span>
+</div>
+<span class="font-title-md text-title-md text-on-primary">Pendapatan</span>
+</div>
+<span class="inline-flex items-center gap-1 bg-secondary-container/40 text-surface-container text-label-sm font-label-sm px-2.5 py-1 rounded-full">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span>
+          +24% minggu ini
+        </span>
+</div>
+<div class="my-2">
+<span class="font-headline-lg text-headline-lg font-medium tracking-tight text-surface-bright">Rp 3.825.000</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-primary-container pt-2">
+<span>Rata-rata Rp 26.900/sesi</span>
+<span class="text-secondary-fixed">Kas &amp; QRIS</span>
+</div>
+</div>
+<div class="relative overflow-hidden rounded-[24px] bg-surface-container-lowest p-space-lg shadow-[0_10px_30px_-10px_rgba(42,37,69,0.06)] flex flex-col justify-between min-h-[175px]">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface">Sesi Selesai</span>
+</div>
+<span class="inline-flex items-center gap-1 bg-rose-50 text-rose-700 text-label-sm font-label-sm px-2.5 py-1 rounded-full">
+<span class="material-symbols-outlined text-[14px]">error_outline</span>
+          4 Batal
+        </span>
+</div>
+<div class="my-2 flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg font-light text-primary">138</span>
+<span class="font-title-lg text-title-lg text-emerald-600 font-semibold">(97.2%)</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant pt-2">
+<span>Cetak fisik: 276 lembar</span>
+<span class="text-secondary font-medium">Kertas: 82%</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md items-start">
+<div class="lg:col-span-8 rounded-[28px] bg-surface-container-lowest p-space-lg shadow-[0_10px_30px_-10px_rgba(42,37,69,0.06)] flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-space-sm pb-2">
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface">Statistik Sesi &amp; Pendapatan</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Pantau volume pengunjung dan omzet berkala kiosk</p>
+</div>
+<div class="flex items-center bg-surface-container-low p-1 rounded-full">
+<button class="chart-tab px-4 py-1.5 rounded-full font-label-md text-label-md bg-primary-container text-on-primary shadow-sm transition-all" data-tab="harian" type="button">Harian</button>
+<button class="chart-tab px-4 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" data-tab="mingguan" type="button">Mingguan</button>
+<button class="chart-tab px-4 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" data-tab="bulanan" type="button">Bulanan</button>
+</div>
+</div>
+<div class="flex items-center gap-space-md text-label-sm font-label-sm">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<span class="text-on-surface">Volume Sesi</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-secondary-container"></span>
+<span class="text-on-surface-variant">Pendapatan (Skala IDR)</span>
+</div>
+</div>
+<div class="relative w-full h-[280px] mt-2 select-none">
+<svg class="w-full h-full overflow-visible" preserveAspectRatio="none" viewBox="0 0 700 240">
+<defs>
+<linearGradient id="sessionFill" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#aba7ff" stop-opacity="0.45"></stop>
+<stop offset="100%" stop-color="#f1ebff" stop-opacity="0.05"></stop>
+</linearGradient>
+<linearGradient id="lineStroke" x1="0%" x2="100%" y1="0%" y2="0%">
+<stop offset="0%" stop-color="#5854a6"></stop>
+<stop offset="50%" stop-color="#8e8cb5"></stop>
+<stop offset="100%" stop-color="#5854a6"></stop>
+</linearGradient>
+</defs>
+<line stroke="#f1ebff" stroke-dasharray="4 4" stroke-width="1" x1="20" x2="680" y1="30" y2="30"></line>
+<line stroke="#f1ebff" stroke-dasharray="4 4" stroke-width="1" x1="20" x2="680" y1="85" y2="85"></line>
+<line stroke="#f1ebff" stroke-dasharray="4 4" stroke-width="1" x1="20" x2="680" y1="140" y2="140"></line>
+<line stroke="#f1ebff" stroke-width="1" x1="20" x2="680" y1="195" y2="195"></line>
+<path d="M 40 170 C 100 160, 120 130, 150 120 C 190 108, 230 145, 270 130 C 310 115, 340 70, 390 60 C 440 50, 470 95, 510 45 C 550 -5, 590 60, 640 50 L 640 195 L 40 195 Z" fill="url(#sessionFill)"></path>
+<path d="M 40 170 C 100 160, 120 130, 150 120 C 190 108, 230 145, 270 130 C 310 115, 340 70, 390 60 C 440 50, 470 95, 510 45 C 550 -5, 590 60, 640 50" fill="none" stroke="url(#lineStroke)" stroke-linecap="round" stroke-width="3.5"></path>
+<circle class="transition-transform duration-200 hover:scale-150" cx="40" cy="170" fill="#5854a6" r="4.5"></circle>
+<circle class="transition-transform duration-200 hover:scale-150" cx="150" cy="120" fill="#5854a6" r="4.5"></circle>
+<circle class="transition-transform duration-200 hover:scale-150" cx="270" cy="130" fill="#5854a6" r="4.5"></circle>
+<circle class="transition-transform duration-200 hover:scale-150" cx="390" cy="60" fill="#5854a6" r="4.5"></circle>
+<circle cx="510" cy="45" fill="#15102f" r="6.5" stroke="#ffffff" stroke-width="2.5"></circle>
+<circle class="transition-transform duration-200 hover:scale-150" cx="640" cy="50" fill="#5854a6" r="4.5"></circle>
+<line stroke="#aba7ff" stroke-dasharray="3 3" stroke-width="1.5" x1="510" x2="510" y1="45" y2="195"></line>
+</svg>
+<div class="absolute left-[70%] top-[8%] -translate-x-1/2 bg-primary-container text-on-primary px-3.5 py-2 rounded-2xl shadow-[0_8px_24px_rgba(42,37,69,0.3)] pointer-events-none flex flex-col items-center">
+<span class="font-label-sm text-label-sm text-secondary-fixed">Pukul 18:00 WIB</span>
+<span class="font-label-lg text-label-lg font-semibold whitespace-nowrap">28 Sesi • Rp 760.000</span>
+<div class="w-2.5 h-2.5 bg-primary-container rotate-45 -mb-1 mt-1 rounded-xs"></div>
+</div>
+<div class="flex justify-between text-on-surface-variant font-label-sm text-label-sm px-4 mt-2">
+<span>10:00</span>
+<span>12:00</span>
+<span>14:00</span>
+<span>16:00</span>
+<span class="font-semibold text-primary">18:00</span>
+<span>20:00</span>
+<span>22:00</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 rounded-[28px] bg-surface-container-lowest p-space-lg shadow-[0_10px_30px_-10px_rgba(42,37,69,0.06)] flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface">Preset Terpopuler</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Paling sering dipilih pelanggan</p>
+</div>
+<span class="px-3 py-1 bg-surface-container rounded-full font-label-sm text-label-sm text-secondary font-medium">Hari ini</span>
+</div>
+<div class="flex flex-col gap-space-md">
+<div class="flex flex-col gap-2 p-2.5 rounded-2xl hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-11 h-14 rounded-lg bg-surface-container-high overflow-hidden flex-shrink-0 shadow-sm relative">
+<img class="w-full h-full object-cover" data-alt="Vertical vintage photo booth test strip showing 4 candid expressive smiling young adults with warm film tones and minimal white borders" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkVNU9xq3GHa4nfJzY7yuXm0ElxniGNkfoqZzCC9CX7-JkjJycT8AttNJHxdCCDAfXMSc4TSe0HLks-Me7FkXfvB_m-pay6fV2lwrZplJ7SjMYsYKLuQITAP4sdULLZ9eGF0KG69PoFngAK6l4ubPARoYtGv4vSKb2E0l4mccIqydM5kBqm9_sJjGJDhD5AQ5S6rxzBt0hXbMdceELECax13fKp4M_H27RUooHWFNitXohAmrc9LQRwA">
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface truncate">Klasik 4 Pose</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Rp 25k</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>78 transaksi</span>
+<span class="text-primary font-semibold">55%</span>
+</div>
+</div>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 55%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-2 p-2.5 rounded-2xl hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-11 h-14 rounded-lg bg-surface-container-high overflow-hidden flex-shrink-0 shadow-sm relative">
+<img class="w-full h-full object-cover" data-alt="Playful birthday themed photo strip showing celebration poses with confetti pastel balloon stickers and cheerful bright high-key lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxjiH2vNxEArXzhI5Niv4c0crCOcLYNiYJbBEDnahG1ZEUIM3AFwu7Sf8HBpcNbWd8o082yrc1aOeRveUSkY13aZe9YeQuccJH0T-IdaX7zfnjRBiPBV2Gu04Q_K8pPoZqQo8bbcxUQo0WsQPJcNY_NlrBlGmDwP_dNa68yQXAroA8TOcLDxZ-9o9JE5yP2uRO75X65-lVHRth8YSnKrKf5YmZ_mX_Gj4Px7Zsuxrepot0UzoMAr8y5A">
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface truncate">Ulang Tahun 6 Pose</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Rp 35k</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>38 transaksi</span>
+<span class="text-secondary font-semibold">27%</span>
+</div>
+</div>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 27%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-2 p-2.5 rounded-2xl hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-11 h-14 rounded-lg bg-surface-container-high overflow-hidden flex-shrink-0 shadow-sm relative">
+<img class="w-full h-full object-cover" data-alt="Clean and romantic wedding couple photo strip with soft botanical white floral frame minimalist typography and soft ambient glow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2GUyPqUMwAxYE3NlEo8rRWOn0ht67Jt_-_fu21WuvO48etw1Q4pZLqAxkeRpFPgGVBaDuz3kkFPsYO-M8LSGrUQSzmJtqlcNQErCotmM0mItDdm-Omc9t7T2aYe0ji9xBXaqNDLy6BnhpNWbKl4nFRSBIWA5kRKzFtTIOq2lgzONWFj0tQffJB3x1d8qzEObCwEwSHM4E5jDrvNLXU222P-S03s0ImTVpCq87X3GgsAqJlCTFueQw5Q">
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface truncate">Wedding 3 Pose</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Rp 30k</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>22 transaksi</span>
+<span class="text-secondary-container font-semibold">15%</span>
+</div>
+</div>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary-container rounded-full" style="width: 15%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-2 p-2.5 rounded-2xl hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-11 h-14 rounded-lg bg-surface-container-high overflow-hidden flex-shrink-0 shadow-sm relative">
+<img class="w-full h-full object-cover" data-alt="Chic duo friendship photo booth strip showing two teenage friends with cool poses soft lavender filter and aesthetic decorative washi tape" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbE9Xrkz41wZnXJBYdiUXPXS1XI-OSR6qvZwF5PHny9OKlvCqgWFG-t9Q7iAq7jQnVcxMdcIbi5jr4k4wbqtjbECdvUXvSuzw6QCb9V2YERdRAlYMeEZe425pV5VowELtiCsI9UFvJGiat5O1TU2lT--nz31fgGAq5q2e1oB9zfdXV1RuAnds8hRUQi-_SG4-Fa-VP0TSnWu2V5iZN808gfhGld_bWQaSfBVqm1s-6g371FryjfkprWw">
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface truncate">Custom Duo Pose</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Rp 20k</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>4 transaksi</span>
+<span class="text-outline font-semibold">3%</span>
+</div>
+</div>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-surface-dim rounded-full" style="width: 8%"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="rounded-[28px] bg-surface-container-lowest p-space-lg shadow-[0_10px_30px_-10px_rgba(42,37,69,0.06)] flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-space-xs">
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface">Sesi Terbaru Kiosk</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Aktivitas real-time pemotretan dan status printer</p>
+</div>
+<a class="inline-flex items-center gap-1 font-label-lg text-label-lg text-secondary hover:text-primary transition-colors" data-path="a7---dialog-sesi-berakhir" href="#">
+<span>Lihat semua riwayat sesi</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<div class="overflow-x-auto -mx-space-lg px-space-lg">
+<table class="w-full text-left border-collapse min-w-[760px]">
+<thead>
+<tr class="text-on-surface-variant font-label-sm text-label-sm bg-surface-container-low/60 rounded-xl">
+<th class="py-3 px-4 rounded-l-xl">ID SESI</th>
+<th class="py-3 px-4">WAKTU</th>
+<th class="py-3 px-4">PRESET</th>
+<th class="py-3 px-4">STATUS SESI</th>
+<th class="py-3 px-4">STATUS BAYAR</th>
+<th class="py-3 px-4 text-right rounded-r-xl">TOTAL</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high/40 font-body-md text-body-md">
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-4 px-4 font-label-md text-label-md text-primary font-semibold">SES-0042</td>
+<td class="py-4 px-4 text-on-surface-variant font-label-sm text-label-sm">14:35 WIB</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">burst_mode</span>
+<span class="font-medium text-on-surface">Klasik 4 Pose (4 Pose)</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+                Selesai Cetak
+              </span>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-emerald-600">check_circle</span>
+                Lunas - QRIS
+              </span>
+</td>
+<td class="py-4 px-4 text-right font-title-md text-title-md text-on-surface">Rp 25.000</td>
+</tr>
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-4 px-4 font-label-md text-label-md text-primary font-semibold">SES-0041</td>
+<td class="py-4 px-4 text-on-surface-variant font-label-sm text-label-sm">14:20 WIB</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">cake</span>
+<span class="font-medium text-on-surface">Ulang Tahun 6 Pose</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+                Selesai Cetak
+              </span>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-emerald-600">check_circle</span>
+                Lunas - GoPay
+              </span>
+</td>
+<td class="py-4 px-4 text-right font-title-md text-title-md text-on-surface">Rp 35.000</td>
+</tr>
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-4 px-4 font-label-md text-label-md text-primary font-semibold">SES-0040</td>
+<td class="py-4 px-4 text-on-surface-variant font-label-sm text-label-sm">14:05 WIB</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">burst_mode</span>
+<span class="font-medium text-on-surface">Klasik 4 Pose</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+                Selesai Cetak
+              </span>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-emerald-600">check_circle</span>
+                Lunas - DANA
+              </span>
+</td>
+<td class="py-4 px-4 text-right font-title-md text-title-md text-on-surface">Rp 25.000</td>
+</tr>
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-4 px-4 font-label-md text-label-md text-primary font-semibold">SES-0039</td>
+<td class="py-4 px-4 text-on-surface-variant font-label-sm text-label-sm">13:48 WIB</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">favorite</span>
+<span class="font-medium text-on-surface">Wedding 3 Pose</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+                Selesai Cetak
+              </span>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-emerald-600">check_circle</span>
+                Lunas - OVO
+              </span>
+</td>
+<td class="py-4 px-4 text-right font-title-md text-title-md text-on-surface">Rp 30.000</td>
+</tr>
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-4 px-4 font-label-md text-label-md text-primary font-semibold">SES-0038</td>
+<td class="py-4 px-4 text-on-surface-variant font-label-sm text-label-sm">13:30 WIB</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">burst_mode</span>
+<span class="font-medium text-on-surface">Klasik 4 Pose</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-rose-100 text-rose-800 font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-rose-600"></span>
+                Dibatalkan
+              </span>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-rose-50 text-rose-700 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">cancel</span>
+                Gagal / Expired
+              </span>
+</td>
+<td class="py-4 px-4 text-right font-title-md text-title-md text-on-surface-variant line-through">Rp 25.000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<script>
+  document.querySelectorAll('.chart-tab').forEach(tab => {
+    tab.addEventListener('click', function() {
+      document.querySelectorAll('.chart-tab').forEach(t => {
+        t.classList.remove('bg-primary-container', 'text-on-primary', 'shadow-sm');
+        t.classList.add('text-on-surface-variant');
+      });
+      this.classList.add('bg-primary-container', 'text-on-primary', 'shadow-sm');
+      this.classList.remove('text-on-surface-variant');
+    });
+  });
+</script></main></div><script src="router.js"></script></body></html>

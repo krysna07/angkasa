@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container-high":"#ebe5ff","surface":"#fcf8ff","secondary":"#5854a6","on-primary-fixed-variant":"#484264","on-secondary":"#ffffff","surface-variant":"#e5deff","tertiary":"#121032","surface-container-highest":"#e5deff","error-container":"#ffdad6","inverse-surface":"#312d47","on-tertiary-container":"#8e8cb5","on-error-container":"#93000a","inverse-primary":"#c9c1ea","inverse-on-surface":"#f4eeff","tertiary-fixed":"#e3dfff","primary":"#15102f","surface-container-lowest":"#ffffff","on-tertiary-fixed-variant":"#444367","on-primary":"#ffffff","outline-variant":"#c9c5ce","surface-container-low":"#f7f1ff","on-background":"#1b1830","secondary-fixed-dim":"#c4c0ff","secondary-container":"#aba7ff","tertiary-container":"#262548","outline":"#79767e","on-primary-container":"#938cb2","surface-dim":"#dcd6f7","tertiary-fixed-dim":"#c5c2ee","primary-container":"#2a2545","surface-bright":"#fcf8ff","secondary-fixed":"#e3dfff","on-tertiary-fixed":"#191739","error":"#ba1a1a","on-secondary-container":"#3d3889","on-primary-fixed":"#1c1736","surface-container":"#f1ebff","on-surface":"#1b1830","background":"#fcf8ff","on-secondary-fixed":"#130661","on-error":"#ffffff","on-tertiary":"#ffffff","on-secondary-fixed-variant":"#403c8d","primary-fixed-dim":"#c9c1ea","surface-tint":"#605a7d","on-surface-variant":"#48464d","primary-fixed":"#e6deff"},"borderRadius":{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},"spacing":{"space-md":"1rem","gutter-mobile":"1rem","gutter":"1.5rem","space-lg":"1.5rem","margin-mobile":"1.25rem","space-xs":"0.25rem","margin":"3rem","space-sm":"0.5rem","space-xl":"2.5rem"},"fontFamily":{"label-lg":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"title-lg":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"]},"fontSize":{"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.015em","fontWeight":"400"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"500"}],"title-md":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"display-lg":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"300"}],"title-lg":["20px",{"lineHeight":"28px","letterSpacing":"-0.005em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"500"}],"display-lg-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"300"}]}}}}</script></head><body class="bg-surface text-on-surface antialiased min-h-screen relative selection:bg-surface-container-high selection:text-primary"><div class="fixed inset-0 pointer-events-none bg-[radial-gradient(ellipse_80%_60%_at_50%_-15%,rgba(201,193,234,0.3),transparent_70%)] z-0"></div><aside class="fixed left-space-md top-space-md bottom-space-md w-[240px] bg-surface-container-lowest rounded-lg z-50 flex flex-col justify-between p-space-md shadow-[0_10px_30px_-10px_rgba(42,37,69,0.06),0_4px_12px_-2px_rgba(142,138,224,0.08)]"><div class="flex flex-col gap-space-lg"><div class="flex items-center gap-space-sm px-space-xs"><div class="w-9 h-9 rounded-full bg-primary-container flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[20px]">auto_awesome</span></div><div class="flex flex-col"><span class="font-title-md text-title-md text-on-surface leading-tight tracking-tight">Angkasa</span><span class="font-label-sm text-label-sm text-on-surface-variant font-semibold tracking-wider uppercase">ADMIN PANEL</span></div></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary rounded-full shadow-[0_8px_24px_-4px_rgba(42,37,69,0.35)]"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all duration-200" data-path="ringkasan" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Ringkasan</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all duration-200" data-path="preset" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span>Preset</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all duration-200" data-path="aset" href="#"><span class="material-symbols-outlined text-[20px]">photo_library</span><span>Aset</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm font-label-lg transition-all duration-200 bg-primary-container text-on-primary rounded-full shadow-[0_8px_24px_-4px_rgba(42,37,69,0.35)]" data-path="riwayat-sesi" href="#"><span class="material-symbols-outlined text-[20px]">history_toggle_off</span><span>Riwayat Sesi</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all duration-200" data-path="pengaturan" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>Pengaturan</span></a></nav></div><div class="flex items-center justify-between p-space-xs bg-surface-container-low rounded-full"><div class="flex items-center gap-space-sm min-w-0 pr-space-xs"><div class="relative flex-shrink-0 w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span><span class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-emerald-500 rounded-full ring-2 ring-surface-container-lowest"></span></div><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md text-on-surface truncate font-semibold">Admin Booth</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Terminal 01</span></div></div><button class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" title="Keluar" type="button"><span class="material-symbols-outlined text-[18px]">logout</span></button></div></aside><div class="pl-[272px] pr-space-md relative z-10"><header class="fixed top-0 left-[272px] right-space-md h-20 bg-surface/80 backdrop-blur-xl z-40 flex items-center justify-between px-space-md shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="flex items-center gap-space-md"><div class="inline-flex items-center gap-space-sm bg-surface-container-lowest px-space-md py-space-xs rounded-full shadow-[0_4px_12px_-2px_rgba(142,138,224,0.08)]"><span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span><span class="font-label-md text-label-md text-on-surface font-medium">Kiosk Aktif: <strong class="font-semibold">Booth Senopati-01</strong></span></div></div><div class="flex items-center gap-space-md"><button class="relative w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-on-surface shadow-[0_4px_12px_-2px_rgba(142,138,224,0.08)] hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 bg-error rounded-full ring-2 ring-surface-container-lowest"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden sm:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Operator Senopati</span><span class="font-label-sm text-label-sm text-on-surface-variant">Admin Booth</span></div></div></div></header><main class="w-full pt-20 pb-space-xl bg-transparent"><div class="flex flex-col w-full">
+<div class="flex flex-col gap-space-lg w-full max-w-[1360px] mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md pt-space-xs">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md">
+<span>Terminal</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface font-semibold">Riwayat Sesi</span>
+</nav>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm shadow-sm select-none">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span>Sinkronisasi Log Cloud...</span>
+</span>
+</div>
+<div class="flex items-baseline gap-space-sm mt-1">
+<h1 class="font-headline-lg text-headline-lg text-primary font-medium tracking-tight">Memuat Riwayat Sesi...</h1>
+<span class="inline-block animate-spin text-secondary select-none">
+<span class="material-symbols-outlined text-[24px]">sync</span>
+</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl leading-relaxed">
+          Menghubungkan ke basis data gateway pembayaran dan log terminal Senopati-01...
+        </p>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container-lowest px-4 py-2.5 rounded-full shadow-[0_4px_16px_rgba(42,37,69,0.04)]">
+<div class="w-2.5 h-2.5 rounded-full bg-secondary/40 animate-pulse"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase font-semibold">Senopati-01 • Realtime Sync</span>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-[0_10px_30px_-10px_rgba(42,37,69,0.06),0_4px_12px_-2px_rgba(142,138,224,0.08)] flex items-center justify-between overflow-hidden relative">
+<div class="flex flex-col gap-2 min-w-0">
+<div class="h-3 w-20 bg-surface-variant rounded-full animate-pulse"></div>
+<div class="h-6 w-28 bg-surface-container-high rounded-full animate-pulse"></div>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-high animate-pulse flex-shrink-0"></div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-[0_10px_30px_-10px_rgba(42,37,69,0.06),0_4px_12px_-2px_rgba(142,138,224,0.08)] flex items-center justify-between overflow-hidden relative">
+<div class="flex flex-col gap-2 min-w-0">
+<div class="h-3 w-24 bg-surface-variant rounded-full animate-pulse"></div>
+<div class="h-6 w-16 bg-surface-container-high rounded-full animate-pulse"></div>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-high animate-pulse flex-shrink-0"></div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-[0_10px_30px_-10px_rgba(42,37,69,0.06),0_4px_12px_-2px_rgba(142,138,224,0.08)] flex items-center justify-between overflow-hidden relative">
+<div class="flex flex-col gap-2 min-w-0">
+<div class="h-3 w-28 bg-surface-variant rounded-full animate-pulse"></div>
+<div class="h-6 w-32 bg-surface-container-high rounded-full animate-pulse"></div>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-high animate-pulse flex-shrink-0"></div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-[0_10px_30px_-10px_rgba(42,37,69,0.06),0_4px_12px_-2px_rgba(142,138,224,0.08)] flex items-center justify-between overflow-hidden relative">
+<div class="flex flex-col gap-2 min-w-0">
+<div class="h-3 w-24 bg-surface-variant rounded-full animate-pulse"></div>
+<div class="h-6 w-20 bg-surface-container-high rounded-full animate-pulse"></div>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-high animate-pulse flex-shrink-0"></div>
+</div>
+</div>
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<div class="w-full lg:w-80 h-12 rounded-full bg-surface-container-lowest shadow-[0_4px_16px_rgba(42,37,69,0.04)] px-4 flex items-center gap-space-sm">
+<div class="w-5 h-5 rounded-full bg-surface-variant animate-pulse flex-shrink-0"></div>
+<div class="h-3.5 w-40 bg-surface-variant/80 rounded-full animate-pulse"></div>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap">
+<div class="h-10 w-28 rounded-full bg-surface-container-lowest shadow-[0_4px_16px_rgba(42,37,69,0.04)] flex items-center justify-center gap-2 px-3">
+<div class="w-3.5 h-3.5 rounded-full bg-surface-variant animate-pulse"></div>
+<div class="w-14 h-3 bg-surface-variant rounded-full animate-pulse"></div>
+</div>
+<div class="h-10 w-32 rounded-full bg-surface-container-lowest shadow-[0_4px_16px_rgba(42,37,69,0.04)] flex items-center justify-center gap-2 px-3">
+<div class="w-3.5 h-3.5 rounded-full bg-surface-variant animate-pulse"></div>
+<div class="w-16 h-3 bg-surface-variant rounded-full animate-pulse"></div>
+</div>
+<div class="h-10 w-28 rounded-full bg-surface-container-lowest shadow-[0_4px_16px_rgba(42,37,69,0.04)] flex items-center justify-center gap-2 px-3">
+<div class="w-3.5 h-3.5 rounded-full bg-surface-variant animate-pulse"></div>
+<div class="w-12 h-3 bg-surface-variant rounded-full animate-pulse"></div>
+</div>
+<div class="h-10 w-32 rounded-full bg-surface-container-high shadow-[0_4px_16px_rgba(42,37,69,0.06)] flex items-center justify-center gap-2 px-4 ml-auto lg:ml-0">
+<div class="w-4 h-4 rounded-full bg-secondary/40 animate-pulse"></div>
+<div class="w-16 h-3 bg-secondary/40 rounded-full animate-pulse"></div>
+</div>
+</div>
+</div>
+<div class="w-full bg-surface-container-lowest rounded-xl p-6 shadow-[0_10px_30px_-10px_rgba(42,37,69,0.06),0_4px_12px_-2px_rgba(142,138,224,0.08)] flex flex-col gap-4 overflow-hidden">
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low rounded-full">
+<th class="py-3 px-4 font-label-md text-label-md text-on-surface-variant font-semibold first:rounded-l-full" scope="col">
+<div class="flex items-center gap-2">
+<span>ID Sesi</span>
+<div class="w-3 h-3 rounded-full bg-surface-variant animate-pulse"></div>
+</div>
+</th>
+<th class="py-3 px-4 font-label-md text-label-md text-on-surface-variant font-semibold" scope="col">
+<div class="flex items-center gap-2">
+<span>Waktu</span>
+<div class="w-3 h-3 rounded-full bg-surface-variant animate-pulse"></div>
+</div>
+</th>
+<th class="py-3 px-4 font-label-md text-label-md text-on-surface-variant font-semibold" scope="col">Preset</th>
+<th class="py-3 px-4 font-label-md text-label-md text-on-surface-variant font-semibold" scope="col">Metode</th>
+<th class="py-3 px-4 font-label-md text-label-md text-on-surface-variant font-semibold" scope="col">Total</th>
+<th class="py-3 px-4 font-label-md text-label-md text-on-surface-variant font-semibold" scope="col">Status</th>
+<th class="py-3 px-4 font-label-md text-label-md text-on-surface-variant font-semibold text-right last:rounded-r-full" scope="col">Aksi</th>
+</tr>
+</thead>
+<tbody class="divide-y-0">
+<tr class="hover:bg-surface-container-low transition-colors duration-150">
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="h-6 w-24 bg-surface-container-high rounded-full animate-pulse"></div>
+<div class="w-2 h-2 rounded-full bg-secondary/30"></div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-1.5">
+<div class="h-3.5 w-24 bg-surface-variant rounded-full animate-pulse"></div>
+<div class="h-2.5 w-16 bg-surface-container-high rounded-full animate-pulse"></div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-surface-container-high animate-pulse flex-shrink-0"></div>
+<div class="h-3.5 w-28 bg-surface-variant rounded-full animate-pulse"></div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-container-high animate-pulse"></div>
+<div class="h-3 w-16 bg-surface-variant rounded-full animate-pulse"></div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="h-4 w-20 bg-surface-container-high rounded-full animate-pulse"></div>
+</td>
+<td class="py-4 px-4">
+<div class="h-7 w-24 bg-surface-container-high rounded-full animate-pulse"></div>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="flex items-center justify-end gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-low animate-pulse"></div>
+<div class="w-8 h-8 rounded-full bg-surface-container-high animate-pulse"></div>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors duration-150">
+<td class="py-4 px-4">
+<div class="h-6 w-20 bg-surface-container-high rounded-full animate-pulse"></div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-1.5">
+<div class="h-3.5 w-28 bg-surface-variant rounded-full animate-pulse"></div>
+<div class="h-2.5 w-14 bg-surface-container-high rounded-full animate-pulse"></div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-surface-container-high animate-pulse flex-shrink-0"></div>
+<div class="h-3.5 w-32 bg-surface-variant rounded-full animate-pulse"></div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-container-high animate-pulse"></div>
+<div class="h-3 w-14 bg-surface-variant rounded-full animate-pulse"></div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="h-4 w-24 bg-surface-container-high rounded-full animate-pulse"></div>
+</td>
+<td class="py-4 px-4">
+<div class="h-7 w-20 bg-surface-variant rounded-full animate-pulse"></div>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="flex items-center justify-end gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-low animate-pulse"></div>
+<div class="w-8 h-8 rounded-full bg-surface-container-high animate-pulse"></div>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors duration-150">
+<td class="py-4 px-4">
+<div class="h-6 w-24 bg-surface-container-high rounded-full animate-pulse"></div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-1.5">
+<div class="h-3.5 w-20 bg-surface-variant rounded-full animate-pulse"></div>
+<div class="h-2.5 w-16 bg-surface-container-high rounded-full animate-pulse"></div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-surface-container-high animate-pulse flex-shrink-0"></div>
+<div class="h-3.5 w-24 bg-surface-variant rounded-full animate-pulse"></div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-container-high animate-pulse"></div>
+<div class="h-3 w-20 bg-surface-variant rounded-full animate-pulse"></div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="h-4 w-16 bg-surface-container-high rounded-full animate-pulse"></div>
+</td>
+<td class="py-4 px-4">
+<div class="h-7 w-28 bg-surface-container-high rounded-full animate-pulse"></div>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="flex items-center justify-end gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-low animate-pulse"></div>
+<div class="w-8 h-8 rounded-full bg-surface-container-high animate-pulse"></div>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors duration-150">
+<td class="py-4 px-4">
+<div class="h-6 w-28 bg-surface-container-high rounded-full animate-pulse"></div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-1.5">
+<div class="h-3.5 w-24 bg-surface-variant rounded-full animate-pulse"></div>
+<div class="h-2.5 w-14 bg-surface-container-high rounded-full animate-pulse"></div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-surface-container-high animate-pulse flex-shrink-0"></div>
+<div class="h-3.5 w-36 bg-surface-variant rounded-full animate-pulse"></div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-container-high animate-pulse"></div>
+<div class="h-3 w-16 bg-surface-variant rounded-full animate-pulse"></div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="h-4 w-20 bg-surface-container-high rounded-full animate-pulse"></div>
+</td>
+<td class="py-4 px-4">
+<div class="h-7 w-20 bg-surface-variant rounded-full animate-pulse"></div>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="flex items-center justify-end gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-low animate-pulse"></div>
+<div class="w-8 h-8 rounded-full bg-surface-container-high animate-pulse"></div>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors duration-150">
+<td class="py-4 px-4">
+<div class="h-6 w-20 bg-surface-container-high rounded-full animate-pulse"></div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-1.5">
+<div class="h-3.5 w-28 bg-surface-variant rounded-full animate-pulse"></div>
+<div class="h-2.5 w-16 bg-surface-container-high rounded-full animate-pulse"></div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-surface-container-high animate-pulse flex-shrink-0"></div>
+<div class="h-3.5 w-24 bg-surface-variant rounded-full animate-pulse"></div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-container-high animate-pulse"></div>
+<div class="h-3 w-14 bg-surface-variant rounded-full animate-pulse"></div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="h-4 w-20 bg-surface-container-high rounded-full animate-pulse"></div>
+</td>
+<td class="py-4 px-4">
+<div class="h-7 w-24 bg-surface-container-high rounded-full animate-pulse"></div>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="flex items-center justify-end gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-low animate-pulse"></div>
+<div class="w-8 h-8 rounded-full bg-surface-container-high animate-pulse"></div>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors duration-150">
+<td class="py-4 px-4">
+<div class="h-6 w-24 bg-surface-container-high rounded-full animate-pulse"></div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-1.5">
+<div class="h-3.5 w-20 bg-surface-variant rounded-full animate-pulse"></div>
+<div class="h-2.5 w-12 bg-surface-container-high rounded-full animate-pulse"></div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-surface-container-high animate-pulse flex-shrink-0"></div>
+<div class="h-3.5 w-30 bg-surface-variant rounded-full animate-pulse"></div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-container-high animate-pulse"></div>
+<div class="h-3 w-18 bg-surface-variant rounded-full animate-pulse"></div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="h-4 w-24 bg-surface-container-high rounded-full animate-pulse"></div>
+</td>
+<td class="py-4 px-4">
+<div class="h-7 w-20 bg-surface-variant rounded-full animate-pulse"></div>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="flex items-center justify-end gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-low animate-pulse"></div>
+<div class="w-8 h-8 rounded-full bg-surface-container-high animate-pulse"></div>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors duration-150">
+<td class="py-4 px-4">
+<div class="h-6 w-20 bg-surface-container-high rounded-full animate-pulse"></div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-1.5">
+<div class="h-3.5 w-24 bg-surface-variant rounded-full animate-pulse"></div>
+<div class="h-2.5 w-16 bg-surface-container-high rounded-full animate-pulse"></div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-surface-container-high animate-pulse flex-shrink-0"></div>
+<div class="h-3.5 w-28 bg-surface-variant rounded-full animate-pulse"></div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-container-high animate-pulse"></div>
+<div class="h-3 w-14 bg-surface-variant rounded-full animate-pulse"></div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="h-4 w-18 bg-surface-container-high rounded-full animate-pulse"></div>
+</td>
+<td class="py-4 px-4">
+<div class="h-7 w-24 bg-surface-container-high rounded-full animate-pulse"></div>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="flex items-center justify-end gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-low animate-pulse"></div>
+<div class="w-8 h-8 rounded-full bg-surface-container-high animate-pulse"></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pt-4 flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="h-3 w-36 bg-surface-variant rounded-full animate-pulse"></div>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-9 h-9 rounded-full bg-surface-container-high animate-pulse flex items-center justify-center text-on-surface-variant/40">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</div>
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary font-label-md text-label-md flex items-center justify-center shadow-sm">
+            1
+          </div>
+<div class="w-9 h-9 rounded-full bg-surface-container-high animate-pulse flex items-center justify-center"></div>
+<div class="w-9 h-9 rounded-full bg-surface-container-high animate-pulse flex items-center justify-center"></div>
+<span class="px-1 text-on-surface-variant/40 font-bold">...</span>
+<div class="w-9 h-9 rounded-full bg-surface-container-high animate-pulse flex items-center justify-center"></div>
+<div class="w-9 h-9 rounded-full bg-surface-container-high animate-pulse flex items-center justify-center text-on-surface-variant/40">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+    (function () {
+      const activeNavs = document.querySelectorAll('aside nav a');
+      activeNavs.forEach(link => {
+        if (link.getAttribute('data-path') === 'riwayat-sesi') {
+          link.classList.remove('text-on-surface-variant', 'hover:bg-surface-container-high');
+          link.classList.add('bg-primary-container', 'text-on-primary', 'rounded-full', 'shadow-[0_8px_24px_-4px_rgba(42,37,69,0.35)]');
+        }
+      });
+    })();
+  </script>
+</div></main></div><script src="router.js"></script></body></html>
