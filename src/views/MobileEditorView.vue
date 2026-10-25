@@ -789,7 +789,22 @@ function shareStrip() {
   }
 }
 
-onMounted(() => {
+onMounted(async () => {
+  // Fetch real captured camera photos from Kiosk for this session
+  if (sessionId.value) {
+    try {
+      const res = await fetch(`/api/session/${sessionId.value}`)
+      if (res.ok) {
+        const data = await res.json()
+        if (data.photos && data.photos.length > 0) {
+          photos.value = data.photos
+        }
+      }
+    } catch (e) {
+      console.warn('Could not fetch session photos from API:', e)
+    }
+  }
+
   paymentInterval = setInterval(() => {
     if (paymentSeconds.value > 0) paymentSeconds.value--
   }, 1000)

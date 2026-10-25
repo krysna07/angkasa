@@ -653,10 +653,25 @@ function triggerShutterFlash() {
         startPoseCountdown()
       }, 1500)
     } else {
-      setTimeout(() => {
+      setTimeout(async () => {
         stopWebcam()
         stage.value = 'qr-connect'
         showToast('Semua pose berhasil diambil!')
+
+        // Sync photos to server endpoint so HP gets real captured photos
+        try {
+          await fetch(`/api/session/${sessionCode.value}`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              sessionId: sessionCode.value,
+              preset: selectedPreset.value?.name,
+              photos: capturedPhotos.value
+            })
+          })
+        } catch (e) {
+          console.warn('Failed to sync session photos to API:', e)
+        }
       }, 1200)
     }
   }, 200)
