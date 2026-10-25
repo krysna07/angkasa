@@ -442,16 +442,24 @@
           </p>
         </div>
 
-        <!-- Download Action -->
-        <div class="flex items-center justify-center gap-3 mb-4">
+        <!-- Download & Browser Print Actions (Card B3) -->
+        <div class="flex flex-wrap items-center justify-center gap-3 mb-4">
           <button
-            v-if="capturedPhotos.length > 0"
-            @click="downloadCapturedStrip"
+            @click="triggerBrowserPrint"
+            class="px-6 py-2.5 rounded-full bg-secondary-fixed hover:bg-secondary-fixed-dim text-xs font-bold text-primary transition-all shadow-soft-sm flex items-center gap-2 cursor-pointer"
+          >
+            <span class="material-symbols-outlined text-[16px]">print</span>
+            <span>Cetak Lewat Browser (Ctrl+P)</span>
+          </button>
+
+          <router-link
+            :to="'/share/' + sessionCode"
+            target="_blank"
             class="px-6 py-2.5 rounded-full bg-surface-container hover:bg-surface-container-high text-xs font-semibold text-primary transition-colors flex items-center gap-2 cursor-pointer"
           >
-            <span class="material-symbols-outlined text-[16px]">download</span>
-            <span>Unduh File Foto Digital</span>
-          </button>
+            <span class="material-symbols-outlined text-[16px]">cloud_download</span>
+            <span>Buka Cloud Download</span>
+          </router-link>
         </div>
 
         <button
@@ -672,6 +680,11 @@ function simulatePaymentSuccess() {
       showToast('Cetak foto selesai!')
     }
   }, 400)
+}
+
+function triggerBrowserPrint() {
+  window.print()
+  showToast('Membuka dialog cetak browser...', 'info')
 }
 
 function downloadCapturedStrip() {

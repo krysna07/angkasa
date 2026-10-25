@@ -86,6 +86,14 @@
           </button>
 
           <button
+            @click="duplicatePreset(item)"
+            class="p-2 rounded-full hover:bg-surface-container text-on-surface-variant hover:text-secondary transition-colors"
+            title="Duplikat preset"
+          >
+            <span class="material-symbols-outlined text-[18px]">content_copy</span>
+          </button>
+
+          <button
             @click="toggleActive(item)"
             class="p-2 rounded-full hover:bg-surface-container transition-colors"
             :title="item.active ? 'Nonaktifkan preset' : 'Aktifkan preset'"
@@ -304,6 +312,17 @@ function savePreset() {
 function toggleActive(item) {
   item.active = !item.active
   showToast(`Preset "${item.name}" ${item.active ? 'diaktifkan' : 'dinonaktifkan'}.`)
+}
+
+function duplicatePreset(item) {
+  const newId = 'P' + (presets.value.length + 1).toString().padStart(2, '0')
+  const cloned = {
+    ...item,
+    id: newId,
+    name: `${item.name} (Salinan)`
+  }
+  presets.value.push(cloned)
+  showToast(`Preset "${cloned.name}" berhasil diduplikasi!`)
 }
 
 function confirmDelete(item) {

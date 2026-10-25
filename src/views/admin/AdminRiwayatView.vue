@@ -180,6 +180,15 @@
             <span>Cetak Ulang Lembar Fisik</span>
           </button>
 
+          <router-link
+            :to="'/share/' + selectedSession.id"
+            target="_blank"
+            class="w-full py-2.5 rounded-full bg-secondary-fixed hover:bg-secondary-fixed-dim text-xs font-semibold text-primary transition-colors flex items-center justify-center gap-1.5"
+          >
+            <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+            <span>Buka Halaman Unduh (/share/{{ selectedSession.id }})</span>
+          </router-link>
+
           <button
             @click="handleResend"
             class="w-full py-2.5 rounded-full bg-surface-container hover:bg-surface-container-high text-xs font-semibold text-primary transition-colors"

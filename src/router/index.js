@@ -40,6 +40,11 @@ const routes = [
     name: 'mobile-editor',
     component: MobileEditorView
   },
+  {
+    path: '/share/:token?',
+    name: 'share-download',
+    component: () => import('@/views/ShareDownloadView.vue')
+  },
   // Admin Portal Routes
   {
     path: '/admin',

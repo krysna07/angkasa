@@ -86,20 +86,85 @@
         </div>
 
         <div class="flex items-center gap-3">
-          <router-link
-            to="/"
-            class="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-container-low hover:bg-surface-container text-xs font-semibold text-primary transition-colors border border-surface-container-high/60"
-          >
-            <span class="material-symbols-outlined text-[16px]">home</span>
-            <span>Landing Page</span>
-          </router-link>
+          <!-- Live Sync Badge with 60s Auto Refresh -->
+          <div class="hidden md:flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-container-low border border-surface-container-high/70 text-xs">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span class="font-semibold text-primary">Tersinkron Live</span>
+            <span class="text-on-surface-variant font-mono text-[11px] bg-surface-container px-1.5 py-0.5 rounded-md">
+              {{ autoRefreshSeconds }}s
+            </span>
+          </div>
 
+          <!-- Notification Bell & Dropdown -->
+          <div class="relative">
+            <button
+              @click="showNotifications = !showNotifications"
+              class="w-10 h-10 rounded-full bg-surface-container-lowest hover:bg-surface-container-low border border-surface-container-high/70 flex items-center justify-center text-on-surface-variant hover:text-primary transition-all relative shadow-soft-sm"
+              title="Notifikasi Booth"
+            >
+              <span class="material-symbols-outlined text-[20px]">notifications</span>
+              <span 
+                v-if="unreadCount > 0"
+                class="absolute -top-0.5 -right-0.5 w-4 h-4 rounded-full bg-error text-on-error text-[9px] font-bold flex items-center justify-center animate-pulse"
+              >
+                {{ unreadCount }}
+              </span>
+            </button>
+
+            <!-- Notification Dropdown Panel -->
+            <div 
+              v-if="showNotifications"
+              class="absolute right-0 mt-2 w-80 sm:w-96 rounded-3xl bg-surface-container-lowest border border-surface-container-high/80 shadow-soft-xl p-4 z-50 animate-fade"
+            >
+              <div class="flex items-center justify-between pb-3 mb-3 border-b border-surface-container-high/60">
+                <div class="flex items-center gap-2">
+                  <span class="text-xs font-bold text-primary">Aktivitas & Notifikasi Booth</span>
+                  <span class="text-[10px] px-2 py-0.5 rounded-full bg-secondary-fixed text-primary font-bold">
+                    {{ unreadCount }} Baru
+                  </span>
+                </div>
+                <button 
+                  v-if="unreadCount > 0" 
+                  @click="markAllNotificationsRead" 
+                  class="text-[11px] text-secondary hover:underline font-semibold"
+                >
+                  Tandai Dibaca
+                </button>
+              </div>
+
+              <!-- Notifications list -->
+              <div class="space-y-2 max-h-72 overflow-y-auto pr-1">
+                <div 
+                  v-for="notif in notifications" 
+                  :key="notif.id"
+                  class="p-3 rounded-2xl transition-all border text-xs"
+                  :class="notif.read ? 'bg-surface-container-low/40 border-transparent opacity-60' : 'bg-surface-container-low border-surface-container-high/60'"
+                >
+                  <div class="flex items-start gap-2.5">
+                    <div 
+                      class="w-7 h-7 rounded-xl flex items-center justify-center shrink-0 mt-0.5"
+                      :class="notif.type === 'warning' ? 'bg-amber-100 text-amber-800' : notif.type === 'success' ? 'bg-emerald-100 text-emerald-800' : 'bg-secondary-fixed text-primary'"
+                    >
+                      <span class="material-symbols-outlined text-[16px]">{{ notif.icon }}</span>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                      <p class="font-bold text-primary text-[11px]">{{ notif.title }}</p>
+                      <p class="text-on-surface-variant text-[11px] leading-tight mt-0.5">{{ notif.desc }}</p>
+                      <span class="text-[9px] text-on-surface-variant/70 font-mono mt-1 block">{{ notif.time }}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Manual Sync Button -->
           <button
             @click="handleSync"
             class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-container-lowest hover:bg-surface-container-low text-xs font-semibold text-primary transition-colors border border-surface-container-high/60 shadow-soft-sm"
           >
             <span class="material-symbols-outlined text-[16px] text-emerald-600" :class="{ 'animate-spin': isSyncing }">sync</span>
-            <span>Sinkron Hardware</span>
+            <span class="hidden sm:inline">Sinkron Hardware</span>
           </button>
         </div>
       </header>
@@ -113,7 +178,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { adminAuth, showToast } from '@/composables/usePhotobooth'
 
@@ -130,10 +195,70 @@ defineProps({
   }
 })
 
+// 60-Second Auto Refresh Timer
+const autoRefreshSeconds = ref(60)
+let refreshTimer = null
+
+onMounted(() => {
+  refreshTimer = setInterval(() => {
+    if (autoRefreshSeconds.value > 1) {
+      autoRefreshSeconds.value--
+    } else {
+      autoRefreshSeconds.value = 60
+      // Auto refresh trigger
+      showToast('Data sesi & hardware diperbarui otomatis (Live 60s)', 'info', 2000)
+    }
+  }, 1000)
+})
+
+onUnmounted(() => {
+  if (refreshTimer) clearInterval(refreshTimer)
+})
+
+// Notifications State
+const showNotifications = ref(false)
+const notifications = ref([
+  {
+    id: 1,
+    title: 'Kertas Printer DNP Terpakai',
+    desc: 'Tersisa 412 lembar di Booth #01. Cukup untuk ~200 sesi cetak.',
+    time: '2 menit lalu',
+    icon: 'print',
+    type: 'info',
+    read: false
+  },
+  {
+    id: 2,
+    title: 'Pembayaran QRIS Berhasil',
+    desc: 'Sesi #SESI-20261025-089 senilai Rp 35.000 telah lunas dibayar.',
+    time: '8 menit lalu',
+    icon: 'payments',
+    type: 'success',
+    read: false
+  },
+  {
+    id: 3,
+    title: 'Peringatan Suhu Bilik Kiosk',
+    desc: 'Suhu pendingin kamera normal di 26°C.',
+    time: '25 menit lalu',
+    icon: 'thermostat',
+    type: 'warning',
+    read: true
+  }
+])
+
+const unreadCount = computed(() => notifications.value.filter(n => !n.read).length)
+
+function markAllNotificationsRead() {
+  notifications.value.forEach(n => n.read = true)
+  showToast('Semua notifikasi ditandai telah dibaca')
+}
+
 const isSyncing = ref(false)
 
 function handleSync() {
   isSyncing.value = true
+  autoRefreshSeconds.value = 60
   setTimeout(() => {
     isSyncing.value = false
     showToast('Koneksi hardware Canon EOS & DNP RX1 berhasil disinkronkan!')
