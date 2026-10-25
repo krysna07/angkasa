@@ -263,34 +263,12 @@
             <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
             <span>Scan dari HP — Jaringan WiFi yang Sama</span>
           </div>
-
-          <!-- QR Code Image Box -->
+          <!-- QR Mockup -->
           <div class="p-4 bg-white rounded-2xl shadow-soft-sm border border-surface-container-high mb-4">
-            <img :src="mobileEditorQR" alt="QR Code Editor Mobile" class="w-48 h-48 mx-auto" />
+            <img :src="mobileEditorQR" alt="QR Code Editor Mobile" class="w-44 h-44" />
           </div>
-
           <span class="text-[10px] font-mono bg-surface-container px-3 py-1.5 rounded-full text-primary break-all">{{ mobileEditorUrl }}</span>
           <span class="text-[10px] text-on-surface-variant mt-2">Buka di browser HP → dekorasi → bayar</span>
-
-          <!-- IP Hotspot Settings Box -->
-          <div class="mt-3 pt-3 border-t border-surface-container-high/60 w-full flex items-center justify-between text-[11px]">
-            <span class="text-on-surface-variant font-medium">IP Hotspot Laptop:</span>
-            <div class="flex items-center gap-1">
-              <input
-                v-model="serverIp"
-                type="text"
-                placeholder="10.100.121.13"
-                class="w-28 px-2 py-1 rounded-lg bg-surface border border-surface-container-high text-primary font-mono text-[11px] text-center focus:outline-none focus:border-secondary"
-              />
-              <button 
-                @click="resetIpDefault" 
-                class="p-1 rounded-lg hover:bg-surface-container text-on-surface-variant" 
-                title="Reset ke IP Default Hotspot"
-              >
-                <span class="material-symbols-outlined text-[14px]">refresh</span>
-              </button>
-            </div>
-          </div>
         </div>
 
         <div class="flex flex-wrap items-center justify-center gap-4">
@@ -502,22 +480,19 @@ import { presets, formatRupiah, showToast } from '@/composables/usePhotobooth'
 
 const stage = ref('idle') // idle, select-preset, camera, qr-connect, live-decor, payment, print-success
 
-// Dynamic mobile editor URL — uses the hotspot IP when opened on localhost so HP can scan & open
+// Dynamic mobile editor URL — uses the actual network IP so phones scanning QR can open it
 const sessionCode = ref('ANGKASA-' + Math.random().toString(36).substr(2, 6).toUpperCase())
-const serverIp = ref('10.100.121.13')
-
-function resetIpDefault() {
-  serverIp.value = '10.100.121.13'
-  showToast('IP direset ke 10.100.121.13')
-}
-
-const mobileEditorUrl = computed(() => {
-  let host = window.location.host // e.g. 10.100.121.13:5173 or localhost:5173
-  if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-    const port = window.location.port ? `:${window.location.port}` : ':5173'
-    host = `${serverIp.value}${port}`
+const networkHost = computed(() => {
+  const hostname = window.location.hostname
+  const port = window.location.port ? `:${window.location.port}` : ''
+  // If kiosk is accessed from localhost, substitute with the WiFi adapter IP so phone scanning works
+  if (hostname === 'localhost' || hostname === '127.0.0.1') {
+    return `10.100.121.13${port || ':5173'}`
   }
-  return `http://${host}/editor?session=${sessionCode.value}&package=${encodeURIComponent(selectedPreset.value?.name || 'Standard')}`
+  return window.location.host
+})
+const mobileEditorUrl = computed(() => {
+  return `http://${networkHost.value}/editor?session=${sessionCode.value}&package=${encodeURIComponent(selectedPreset.value?.name || 'Standard')}`
 })
 const mobileEditorQR = computed(() => {
   return `https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=${encodeURIComponent(mobileEditorUrl.value)}`
